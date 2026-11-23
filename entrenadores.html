@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Entrenadores Importantes — Galar</title>
+  <style>
+    :root {
+      --bg-app: #0f141c;
+      --bg-surface: #171f2c;
+      --bg-card: #1e293b;
+      --bg-card-hover: #253349;
+      --bg-input: #111827;
+      --border: #2e3d54;
+      --border-strong: #475569;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-soft: rgba(56, 189, 248, 0.14);
+      --accent-2: #a78bfa;
+      --accent-2-soft: rgba(167, 139, 250, 0.15);
+      --gold: #fbbf24;
+      --gold-soft: rgba(251, 191, 36, 0.14);
+      --emerald: #34d399;
+      --emerald-soft: rgba(52, 211, 153, 0.14);
+      --radius-lg: 14px;
+      --radius-md: 10px;
+      --radius-sm: 7px;
+      --shadow-modal: 0 24px 64px rgba(0, 0, 0, 0.65);
+
+      --t-normal: #94a3b8;
+      --t-fuego: #f97316;
+      --t-agua: #38bdf8;
+      --t-planta: #22c55e;
+      --t-electrico: #eab308;
+      --t-hielo: #67e8f9;
+      --t-lucha: #ef4444;
+      --t-veneno: #a855f7;
+      --t-tierra: #d97706;
+      --t-volador: #818cf8;
+      --t-psiquico: #ec4899;
+      --t-bicho: #84cc16;
+      --t-roca: #b45309;
+      --t-fantasma: #6366f1;
+      --t-dragon: #7c3aed;
+      --t-siniestro: #475569;
+      --t-acero: #64748b;
+      --t-hada: #f472b6;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: radial-gradient(circle at top right, #1b283d 0%, var(--bg-app) 55%);
+      color: var(--text-main);
+      min-height: 100vh;
+      line-height: 1.45;
+    }
+
+    .app-shell {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 28px 20px 64px;
+    }
+
+    .topbar {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 22px;
+    }
+
+    .brand-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand h1 {
+      font-size: 1.45rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand-dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      box-shadow: 0 0 12px var(--accent);
+    }
+
+    .nav-link-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      background: var(--bg-card);
+      color: var(--accent);
+      border: 1px solid rgba(56, 189, 248, 0.35);
+      border-radius: var(--radius-sm);
+      padding: 6px 12px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      transition: background 0.15s ease, border-color 0.15s ease, transform 0.12s ease;
+    }
+
+    .nav-link-btn:hover {
+      background: var(--accent-soft);
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .brand p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      margin-top: 6px;
+    }
+
+    .stats-strip {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .stat-chip {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 8px 12px;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .stat-chip strong { color: var(--text-main); font-weight: 600; }
+
+    .selector-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+      align-items: end;
+    }
+
+    .control-group { display: flex; flex-direction: column; gap: 7px; }
+
+    .control-group label {
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    select, input[type="search"] {
+      width: 100%;
+      background: var(--bg-input);
+      color: var(--text-main);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+      font-size: 0.93rem;
+      outline: none;
+    }
+
+    select:focus, input[type="search"]:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-soft);
+    }
+
+    .encounter-banner {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 22px 24px;
+      margin-bottom: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .encounter-title-wrap { display: flex; flex-direction: column; gap: 6px; }
+    .badges-row { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 0.76rem;
+      font-weight: 600;
+    }
+
+    .badge-cat { background: var(--accent-soft); color: var(--accent); border: 1px solid rgba(56, 189, 248, 0.28); }
+    .badge-format { background: var(--accent-2-soft); color: var(--accent-2); border: 1px solid rgba(167, 139, 250, 0.28); }
+    .badge-count { background: var(--emerald-soft); color: var(--emerald); border: 1px solid rgba(52, 211, 153, 0.28); }
+
+    .encounter-name { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.015em; }
+
+    .encounter-note {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 14px;
+      max-width: 520px;
+    }
+
+    .encounter-note span { color: var(--gold); font-weight: 600; margin-right: 4px; }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+      gap: 18px;
+    }
+
+    .poke-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      transition: transform 0.16s ease, border-color 0.16s ease, background 0.16s ease;
+    }
+
+    .poke-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--border-strong);
+      background: var(--bg-card-hover);
+    }
+
+    .poke-card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 12px;
+    }
+
+    .poke-identity {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .poke-sprite {
+      width: 54px;
+      height: 54px;
+      object-fit: contain;
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+      flex-shrink: 0;
+    }
+
+    .poke-name { font-size: 1.12rem; font-weight: 700; color: var(--text-main); }
+
+    .poke-level {
+      background: var(--gold-soft);
+      color: var(--gold);
+      border: 1px solid rgba(251, 191, 36, 0.32);
+      border-radius: var(--radius-sm);
+      padding: 3px 9px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      font-size: 0.84rem;
+    }
+
+    .meta-box {
+      background: var(--bg-surface);
+      border: 1px solid rgba(148, 163, 184, 0.14);
+      border-radius: var(--radius-sm);
+      padding: 8px 10px;
+    }
+
+    .meta-label {
+      display: block;
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 2px;
+    }
+
+    .meta-value { font-weight: 600; color: var(--text-main); word-break: break-word; }
+    .meta-value.muted { color: var(--text-muted); font-weight: 400; font-style: italic; }
+
+    .interactive-trigger {
+      cursor: pointer;
+      border-style: dashed !important;
+      border-color: rgba(56, 189, 248, 0.45) !important;
+    }
+
+    .interactive-trigger:hover {
+      background: var(--accent-soft) !important;
+      border-color: var(--accent) !important;
+    }
+
+    .interactive-trigger .meta-value { color: var(--accent); }
+
+    .stats-box {
+      background: var(--bg-surface);
+      border: 1px solid rgba(148, 163, 184, 0.16);
+      border-radius: var(--radius-md);
+      padding: 10px 12px;
+    }
+
+    .stats-title-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+      font-size: 0.7rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .stat-legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 8px;
+      font-size: 0.66rem;
+      color: var(--text-muted);
+    }
+
+    .stat-legend-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .stat-legend-swatch {
+      width: 8px;
+      height: 8px;
+      border-radius: 2px;
+      display: inline-block;
+    }
+
+    .stats-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .stats-table th {
+      font-size: 0.68rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      font-weight: 700;
+      padding: 0 4px 6px;
+      border-bottom: 1px solid var(--border);
+      text-align: right;
+    }
+
+    .stats-table th:first-child { text-align: left; }
+    .stats-table th.bar-col { text-align: left; padding-left: 8px; }
+
+    .stats-table td {
+      padding: 5px 4px;
+      border-bottom: 1px solid rgba(46, 61, 84, 0.45);
+      vertical-align: middle;
+    }
+
+    .stats-table tr:last-child td { border-bottom: none; }
+
+    .stat-name {
+      font-weight: 600;
+      color: var(--text-muted);
+      white-space: nowrap;
+      width: 68px;
+    }
+
+    .stat-bar-cell { padding-left: 8px !important; width: 100%; }
+
+    .stat-track {
+      width: 100%;
+      height: 7px;
+      background: rgba(15, 20, 28, 0.85);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .stat-fill {
+      height: 100%;
+      border-radius: 999px;
+      transition: width 0.2s ease;
+    }
+
+    .tier-low {
+      background: linear-gradient(90deg, #dc2626, #ef4444);
+      box-shadow: 0 0 6px rgba(239, 68, 68, 0.35);
+    }
+    .tier-mid-low {
+      background: linear-gradient(90deg, #d97706, #eab308);
+      box-shadow: 0 0 6px rgba(234, 179, 8, 0.35);
+    }
+    .tier-mid-high {
+      background: linear-gradient(90deg, #16a34a, #22c55e);
+      box-shadow: 0 0 6px rgba(34, 197, 94, 0.35);
+    }
+    .tier-high {
+      background: linear-gradient(90deg, #0284c7, #38bdf8);
+      box-shadow: 0 0 6px rgba(56, 189, 248, 0.35);
+    }
+    .tier-peak {
+      background: linear-gradient(90deg, #7c3aed, #c084fc);
+      box-shadow: 0 0 7px rgba(168, 85, 247, 0.4);
+    }
+
+    .stat-num {
+      text-align: right;
+      font-variant-numeric: tabular-nums;
+      font-weight: 700;
+      min-width: 34px;
+    }
+
+    .stat-base.c-low { color: #f87171; }
+    .stat-base.c-mid-low { color: #facc15; }
+    .stat-base.c-mid-high { color: #4ade80; }
+    .stat-base.c-high { color: #38bdf8; }
+    .stat-base.c-peak { color: #c084fc; }
+
+    .stat-iv { color: var(--text-muted); font-weight: 600; }
+    .stat-ev { color: var(--emerald); }
+    .stat-ev.zero { color: var(--text-muted); font-weight: 500; }
+
+    .moves-section { display: flex; flex-direction: column; gap: 7px; }
+
+    .moves-header {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+    }
+
+    .moves-list { display: grid; grid-template-columns: 1fr 1fr; gap: 7px; }
+
+    .move-btn {
+      --type-color: var(--t-normal);
+      background: color-mix(in srgb, var(--type-color) 16%, var(--bg-surface));
+      border: 1px solid color-mix(in srgb, var(--type-color) 52%, transparent);
+      border-left: 4px solid var(--type-color);
+      border-radius: var(--radius-sm);
+      padding: 7px 9px;
+      color: var(--text-main);
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 6px;
+      transition: transform 0.12s ease, background 0.14s ease, border-color 0.14s ease;
+    }
+
+    .move-btn:hover {
+      transform: translateY(-1px);
+      background: color-mix(in srgb, var(--type-color) 28%, var(--bg-surface));
+      border-color: var(--type-color);
+    }
+
+    .move-meta-right {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      flex-shrink: 0;
+    }
+
+    .move-type-pill {
+      font-size: 0.64rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      padding: 1px 5px;
+      border-radius: 4px;
+      background: color-mix(in srgb, var(--type-color) 26%, #0f172a);
+      color: #f8fafc;
+    }
+
+    .move-arrow {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    .type-normal { --type-color: var(--t-normal); }
+    .type-fuego { --type-color: var(--t-fuego); }
+    .type-agua { --type-color: var(--t-agua); }
+    .type-planta { --type-color: var(--t-planta); }
+    .type-electrico { --type-color: var(--t-electrico); }
+    .type-hielo { --type-color: var(--t-hielo); }
+    .type-lucha { --type-color: var(--t-lucha); }
+    .type-veneno { --type-color: var(--t-veneno); }
+    .type-tierra { --type-color: var(--t-tierra); }
+    .type-volador { --type-color: var(--t-volador); }
+    .type-psiquico { --type-color: var(--t-psiquico); }
+    .type-bicho { --type-color: var(--t-bicho); }
+    .type-roca { --type-color: var(--t-roca); }
+    .type-fantasma { --type-color: var(--t-fantasma); }
+    .type-dragon { --type-color: var(--t-dragon); }
+    .type-siniestro { --type-color: var(--t-siniestro); }
+    .type-acero { --type-color: var(--t-acero); }
+    .type-hada { --type-color: var(--t-hada); }
+
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(5, 8, 15, 0.78);
+      backdrop-filter: blur(5px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      z-index: 1000;
+    }
+
+    .modal-backdrop.open { display: flex; }
+
+    .modal-dialog {
+      width: 100%;
+      max-width: 540px;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-strong);
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-modal);
+      overflow: hidden;
+    }
+
+    .modal-head {
+      padding: 18px 22px;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+    }
+
+    .modal-type-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 3px 9px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      margin-bottom: 5px;
+      display: inline-block;
+    }
+
+    .modal-type-tag.move-tag { background: var(--accent-2-soft); color: var(--accent-2); }
+    .modal-title { font-size: 1.2rem; font-weight: 700; }
+
+    .modal-close {
+      background: transparent;
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+
+    .modal-body { padding: 20px 22px; display: flex; flex-direction: column; gap: 14px; }
+    .modal-stats-row { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; }
+    @media (min-width: 480px) { .modal-stats-row.cols-4 { grid-template-columns: repeat(4, 1fr); } }
+
+    .modal-stat {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 10px 12px;
+    }
+
+    .modal-stat span { display: block; font-size: 0.7rem; text-transform: uppercase; color: var(--text-muted); }
+    .modal-stat strong { font-size: 0.95rem; color: var(--text-main); }
+
+    .modal-desc {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 13px 15px;
+      font-size: 0.92rem;
+    }
+
+    .modal-footer {
+      padding: 14px 22px;
+      background: var(--bg-card);
+      border-top: 1px solid var(--border);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: #08121e;
+      border: none;
+      border-radius: var(--radius-sm);
+      padding: 8px 14px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-row">
+          <h1><span class="brand-dot"></span>Entrenadores Importantes — Galar</h1>
+          <a href="index.html" class="nav-link-btn">← Ir a la Pokédex</a>
+        </div>
+        <p>Estadísticas base con color escalonado, IVs (0 por defecto) y EVs por combate, con movimientos por tipo.</p>
+      </div>
+      <div class="stats-strip" id="globalStats"></div>
+    </header>
+
+    <section class="selector-panel" aria-label="Selector de entrenadores">
+      <div class="control-group">
+        <label for="categoryFilter">Categoría</label>
+        <select id="categoryFilter"></select>
+      </div>
+      <div class="control-group">
+        <label for="searchFilter">Buscar entrenador o Pokémon</label>
+        <input id="searchFilter" type="search" placeholder="Ej. Bea, Lionel, Charizard, Ruta 5..." />
+      </div>
+      <div class="control-group">
+        <label for="trainerSelect">Entrenador / Combate</label>
+        <select id="trainerSelect"></select>
+      </div>
+    </section>
+
+    <section class="encounter-banner" id="encounterBanner"></section>
+    <main class="team-grid" id="teamGrid" aria-live="polite"></main>
+  </div>
+
+  <div class="modal-backdrop" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-dialog">
+      <div class="modal-head">
+        <div>
+          <span class="modal-type-tag" id="modalKindTag">Habilidad</span>
+          <h2 class="modal-title" id="modalTitle">—</h2>
+        </div>
+        <button class="modal-close" id="modalCloseBtn" aria-label="Cerrar ventana">✕</button>
+      </div>
+      <div class="modal-body" id="modalBody"></div>
+      <div class="modal-footer">
+        <span id="modalSourceHint">Consulta rápida de datos de combate</span>
+        <button class="btn-primary" id="modalOkBtn">Cerrar</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const FALLBACK_TRAINERS_DATA = [{"id": "enc-001", "category": "Combates contra el rival", "name": "Paul - Ruta 2 (si elegiste Grookey)", "format": "Combate individual", "note": "", "team": [{"pokemon": "Wooloo", "level": "11", "item": "", "ability": "Peluche", "nature": "Plácida", "evs": "20 PS/20 Defensa", "moves": ["División Defensa", "Placaje", "rizo defensa", "Imagen"]}, {"pokemon": "Rockruff", "level": "11", "item": "", "ability": "Espíritu Vital", "nature": "Firme", "evs": "20 Ataque/20 Vel.", "moves": ["Lanzarrocas", "Antojo", "Esfuerzo"]}, {"pokemon": "Fletchling", "level": "11", "item": "", "ability": "Alas Vendaval", "nature": "Ingenua", "evs": "30 Ataque/30 Spd", "moves": ["Picotazo", "Gruñido", "Ataque Rápido", "Ascuas"]}, {"pokemon": "Sobble", "level": "12", "item": "Baya Aranja", "ability": "Francotirador", "nature": "Ingenua", "evs": "30 At. Esp./30 Vel.", "moves": ["Hidropulso", "Canto Helado", "Pistola Agua", "Atadura"]}]}];
+    let TRAINERS_DATA = [...FALLBACK_TRAINERS_DATA];
+
+    const BASE_STATS = {"Absol": {"hp": 65, "atk": 130, "def": 60, "spa": 75, "spd": 60, "spe": 75}, "Aegislash": {"hp": 60, "atk": 50, "def": 140, "spa": 50, "spd": 140, "spe": 60}, "Alcremie (Gigamax)": {"hp": 65, "atk": 60, "def": 75, "spa": 110, "spd": 121, "spe": 64}, "Altaria": {"hp": 75, "atk": 70, "def": 90, "spa": 70, "spd": 105, "spe": 80}, "Arcanine": {"hp": 90, "atk": 110, "def": 80, "spa": 100, "spd": 80, "spe": 95}, "Arctovish": {"hp": 90, "atk": 90, "def": 100, "spa": 80, "spd": 90, "spe": 55}, "Barraskewda": {"hp": 61, "atk": 123, "def": 60, "spa": 60, "spd": 50, "spe": 136}, "Beheeyem": {"hp": 75, "atk": 75, "def": 75, "spa": 125, "spd": 95, "spe": 40}, "Bellossom": {"hp": 75, "atk": 80, "def": 95, "spa": 90, "spd": 100, "spe": 50}, "Blaziken": {"hp": 80, "atk": 120, "def": 70, "spa": 110, "spd": 70, "spe": 80}, "Centiskorch (Gigamax)": {"hp": 100, "atk": 115, "def": 65, "spa": 90, "spd": 90, "spe": 65}, "Chandelure": {"hp": 60, "atk": 55, "def": 90, "spa": 145, "spd": 90, "spe": 80}, "Charizard (Gigamax)": {"hp": 78, "atk": 84, "def": 78, "spa": 109, "spd": 85, "spe": 100}, "Cherrim (Forma Encapotada)": {"hp": 70, "atk": 60, "def": 70, "spa": 87, "spd": 78, "spe": 85}, "Chewtle": {"hp": 50, "atk": 64, "def": 50, "spa": 38, "spd": 38, "spe": 44}, "Cinderace": {"hp": 80, "atk": 116, "def": 75, "spa": 65, "spd": 75, "spe": 119}, "Cinderace (Gigamax)": {"hp": 80, "atk": 116, "def": 75, "spa": 65, "spd": 75, "spe": 119}, "Clefable": {"hp": 95, "atk": 70, "def": 73, "spa": 95, "spd": 90, "spe": 60}, "Coalossal (Gigamax)": {"hp": 110, "atk": 80, "def": 120, "spa": 80, "spd": 90, "spe": 30}, "Comfey": {"hp": 51, "atk": 52, "def": 90, "spa": 82, "spd": 110, "spe": 100}, "Copperajah": {"hp": 122, "atk": 130, "def": 69, "spa": 80, "spd": 69, "spe": 30}, "Copperajah (Gigamax)": {"hp": 122, "atk": 130, "def": 69, "spa": 80, "spd": 69, "spe": 30}, "Cramorant": {"hp": 70, "atk": 85, "def": 55, "spa": 85, "spd": 95, "spe": 85}, "Cursola": {"hp": 60, "atk": 95, "def": 50, "spa": 145, "spd": 130, "spe": 30}, "Decidueye": {"hp": 78, "atk": 107, "def": 75, "spa": 100, "spd": 100, "spe": 70}, "Diancie": {"hp": 50, "atk": 100, "def": 150, "spa": 100, "spd": 150, "spe": 50}, "Doublade": {"hp": 59, "atk": 110, "def": 150, "spa": 45, "spd": 49, "spe": 35}, "Dragapult": {"hp": 88, "atk": 120, "def": 75, "spa": 100, "spd": 75, "spe": 142}, "Dragonite": {"hp": 91, "atk": 134, "def": 95, "spa": 100, "spd": 100, "spe": 80}, "Drednaw (Dinamax)": {"hp": 90, "atk": 115, "def": 90, "spa": 48, "spd": 68, "spe": 74}, "Drednaw (Gigamax)": {"hp": 90, "atk": 115, "def": 90, "spa": 48, "spd": 68, "spe": 74}, "Drizzile": {"hp": 65, "atk": 60, "def": 55, "spa": 95, "spd": 55, "spe": 65}, "Dubwool": {"hp": 72, "atk": 80, "def": 100, "spa": 60, "spd": 90, "spe": 88}, "Duosion": {"hp": 65, "atk": 40, "def": 50, "spa": 125, "spd": 60, "spe": 30}, "Duraludon de Galar (Gigamax)": {"hp": 70, "atk": 95, "def": 115, "spa": 120, "spd": 50, "spe": 85}, "Dusclops": {"hp": 40, "atk": 70, "def": 130, "spa": 60, "spd": 130, "spe": 25}, "Eevee": {"hp": 55, "atk": 55, "def": 50, "spa": 45, "spd": 65, "spe": 55}, "Eldegoss (Dinamax)": {"hp": 60, "atk": 50, "def": 90, "spa": 80, "spd": 120, "spe": 60}, "Elgyem": {"hp": 55, "atk": 55, "def": 55, "spa": 85, "spd": 55, "spe": 30}, "Espurr": {"hp": 62, "atk": 48, "def": 54, "spa": 63, "spd": 60, "spe": 68}, "Excadrill": {"hp": 110, "atk": 135, "def": 60, "spa": 50, "spd": 65, "spe": 88}, "Ferrothorn": {"hp": 74, "atk": 94, "def": 131, "spa": 54, "spd": 116, "spe": 20}, "Fletchling": {"hp": 45, "atk": 50, "def": 43, "spa": 40, "spd": 38, "spe": 62}, "Flygon": {"hp": 80, "atk": 100, "def": 80, "spa": 80, "spd": 80, "spe": 100}, "Froslass": {"hp": 70, "atk": 80, "def": 70, "spa": 80, "spd": 70, "spe": 110}, "Garbador (Gigamax)": {"hp": 80, "atk": 95, "def": 82, "spa": 60, "spd": 82, "spe": 75}, "Garchomp": {"hp": 108, "atk": 130, "def": 95, "spa": 80, "spd": 85, "spe": 102}, "Gardevoir": {"hp": 68, "atk": 65, "def": 65, "spa": 125, "spd": 115, "spe": 80}, "Gengar (Gigamax)": {"hp": 60, "atk": 65, "def": 60, "spa": 130, "spd": 75, "spe": 110}, "Golurk": {"hp": 89, "atk": 124, "def": 80, "spa": 55, "spd": 80, "spe": 55}, "Gothita": {"hp": 45, "atk": 30, "def": 50, "spa": 55, "spd": 65, "spe": 45}, "Gothitelle": {"hp": 70, "atk": 55, "def": 95, "spa": 95, "spd": 110, "spe": 65}, "Gothorita": {"hp": 60, "atk": 45, "def": 70, "spa": 75, "spd": 85, "spe": 55}, "Gourgeist": {"hp": 65, "atk": 90, "def": 122, "spa": 58, "spd": 75, "spe": 84}, "Grapploct": {"hp": 80, "atk": 118, "def": 90, "spa": 70, "spd": 80, "spe": 42}, "Grimmsnarl": {"hp": 95, "atk": 120, "def": 65, "spa": 95, "spd": 75, "spe": 60}, "Grimmsnarl (Gigamax)": {"hp": 95, "atk": 120, "def": 65, "spa": 95, "spd": 75, "spe": 60}, "Grookey": {"hp": 50, "atk": 65, "def": 50, "spa": 40, "spd": 40, "spe": 65}, "Growlithe": {"hp": 55, "atk": 70, "def": 45, "spa": 70, "spd": 50, "spe": 60}, "Hatenna": {"hp": 42, "atk": 30, "def": 45, "spa": 56, "spd": 53, "spe": 39}, "Hatterene": {"hp": 57, "atk": 90, "def": 95, "spa": 136, "spd": 103, "spe": 29}, "Hatterene (Gigamax)": {"hp": 57, "atk": 90, "def": 95, "spa": 136, "spd": 103, "spe": 29}, "Hattrem": {"hp": 57, "atk": 40, "def": 65, "spa": 86, "spd": 73, "spe": 49}, "Haxorus": {"hp": 76, "atk": 147, "def": 90, "spa": 60, "spd": 70, "spe": 97}, "Heatmor": {"hp": 85, "atk": 97, "def": 66, "spa": 105, "spd": 66, "spe": 65}, "Heracross": {"hp": 80, "atk": 125, "def": 75, "spa": 40, "spd": 95, "spe": 85}, "Hippowdon": {"hp": 108, "atk": 112, "def": 118, "spa": 68, "spd": 72, "spe": 47}, "Hitmontop": {"hp": 50, "atk": 95, "def": 95, "spa": 35, "spd": 110, "spe": 70}, "Incineroar": {"hp": 95, "atk": 115, "def": 90, "spa": 80, "spd": 90, "spe": 60}, "Inteleon": {"hp": 70, "atk": 85, "def": 65, "spa": 125, "spd": 65, "spe": 120}, "Inteleon (Gigamax)": {"hp": 70, "atk": 85, "def": 65, "spa": 125, "spd": 65, "spe": 120}, "Jellicent": {"hp": 100, "atk": 60, "def": 70, "spa": 85, "spd": 105, "spe": 60}, "Jynx": {"hp": 65, "atk": 50, "def": 35, "spa": 115, "spd": 95, "spe": 95}, "Kangaskhan": {"hp": 105, "atk": 95, "def": 80, "spa": 40, "spd": 80, "spe": 90}, "Kommo-o": {"hp": 75, "atk": 110, "def": 125, "spa": 100, "spd": 105, "spe": 85}, "Krookodile": {"hp": 95, "atk": 117, "def": 80, "spa": 65, "spd": 70, "spe": 92}, "Lapras (Gigamax)": {"hp": 130, "atk": 85, "def": 80, "spa": 85, "spd": 95, "spe": 60}, "Lombre": {"hp": 60, "atk": 50, "def": 50, "spa": 60, "spd": 70, "spe": 50}, "Lopunny": {"hp": 65, "atk": 76, "def": 84, "spa": 54, "spd": 96, "spe": 105}, "Lotad": {"hp": 40, "atk": 30, "def": 30, "spa": 40, "spd": 50, "spe": 30}, "Lucario": {"hp": 70, "atk": 110, "def": 70, "spa": 115, "spd": 70, "spe": 90}, "Lycanroc Day": {"hp": 75, "atk": 115, "def": 65, "spa": 55, "spd": 65, "spe": 112}, "Lycanroc Dusk": {"hp": 75, "atk": 117, "def": 65, "spa": 55, "spd": 65, "spe": 110}, "Lycanroc Night": {"hp": 85, "atk": 115, "def": 75, "spa": 55, "spd": 75, "spe": 82}, "Machamp (Gigamax)": {"hp": 90, "atk": 130, "def": 80, "spa": 65, "spd": 85, "spe": 55}, "Malamar": {"hp": 86, "atk": 92, "def": 88, "spa": 68, "spd": 75, "spe": 73}, "Maractus": {"hp": 75, "atk": 86, "def": 67, "spa": 106, "spd": 67, "spe": 60}, "Mawile": {"hp": 50, "atk": 85, "def": 85, "spa": 55, "spd": 55, "spe": 50}, "Melmetal": {"hp": 135, "atk": 143, "def": 143, "spa": 80, "spd": 65, "spe": 34}, "Metagross": {"hp": 80, "atk": 135, "def": 130, "spa": 95, "spd": 90, "spe": 70}, "Mienshao": {"hp": 65, "atk": 125, "def": 60, "spa": 95, "spd": 60, "spe": 105}, "Milotic": {"hp": 95, "atk": 60, "def": 79, "spa": 100, "spd": 125, "spe": 81}, "Mimikyu": {"hp": 55, "atk": 90, "def": 80, "spa": 50, "spd": 105, "spe": 96}, "Morgrem": {"hp": 65, "atk": 60, "def": 45, "spa": 75, "spd": 55, "spe": 70}, "Morpeko": {"hp": 58, "atk": 95, "def": 58, "spa": 70, "spd": 58, "spe": 97}, "Mr. Mime": {"hp": 40, "atk": 45, "def": 65, "spa": 100, "spd": 120, "spe": 90}, "Mr. Rime": {"hp": 80, "atk": 85, "def": 75, "spa": 110, "spd": 100, "spe": 70}, "Ninetales": {"hp": 73, "atk": 76, "def": 75, "spa": 81, "spd": 100, "spe": 100}, "Noivern": {"hp": 85, "atk": 70, "def": 80, "spa": 97, "spd": 80, "spe": 123}, "Obstagoon": {"hp": 93, "atk": 90, "def": 101, "spa": 60, "spd": 81, "spe": 95}, "Oddish": {"hp": 45, "atk": 50, "def": 55, "spa": 75, "spd": 65, "spe": 30}, "Onix": {"hp": 35, "atk": 45, "def": 160, "spa": 30, "spd": 45, "spe": 70}, "Pangoro": {"hp": 95, "atk": 124, "def": 78, "spa": 69, "spd": 71, "spe": 58}, "Passimian": {"hp": 100, "atk": 120, "def": 90, "spa": 40, "spd": 60, "spe": 80}, "Pelipper": {"hp": 60, "atk": 50, "def": 100, "spa": 95, "spd": 70, "spe": 65}, "Ponyta": {"hp": 50, "atk": 85, "def": 55, "spa": 65, "spd": 65, "spe": 90}, "Primarina": {"hp": 80, "atk": 74, "def": 74, "spa": 126, "spd": 116, "spe": 60}, "Quagsire": {"hp": 95, "atk": 85, "def": 85, "spa": 65, "spd": 65, "spe": 35}, "Raboot": {"hp": 65, "atk": 86, "def": 60, "spa": 55, "spd": 60, "spe": 94}, "Rapidash de Galar": {"hp": 65, "atk": 100, "def": 70, "spa": 80, "spd": 80, "spe": 105}, "Relicanth": {"hp": 100, "atk": 90, "def": 130, "spa": 45, "spd": 65, "spe": 55}, "Reuniclus": {"hp": 110, "atk": 65, "def": 75, "spa": 125, "spd": 85, "spe": 30}, "Rhyperior": {"hp": 115, "atk": 140, "def": 130, "spa": 55, "spd": 55, "spe": 40}, "Rillaboom": {"hp": 100, "atk": 125, "def": 90, "spa": 60, "spd": 70, "spe": 85}, "Rillaboom (Gigamax)": {"hp": 100, "atk": 125, "def": 90, "spa": 60, "spd": 70, "spe": 85}, "Rockruff": {"hp": 45, "atk": 65, "def": 40, "spa": 30, "spd": 40, "spe": 60}, "Rotom de Galarhost": {"hp": 50, "atk": 50, "def": 77, "spa": 95, "spd": 77, "spe": 91}, "Runerigus": {"hp": 58, "atk": 95, "def": 145, "spa": 50, "spd": 105, "spe": 30}, "Sableye": {"hp": 50, "atk": 75, "def": 75, "spa": 65, "spd": 65, "spe": 50}, "Salazzle": {"hp": 68, "atk": 64, "def": 60, "spa": 111, "spd": 60, "spe": 117}, "Sceptile": {"hp": 70, "atk": 85, "def": 65, "spa": 105, "spd": 85, "spe": 120}, "Scorbunny": {"hp": 50, "atk": 71, "def": 40, "spa": 40, "spd": 40, "spe": 69}, "Scrafty": {"hp": 65, "atk": 90, "def": 115, "spa": 45, "spd": 115, "spe": 58}, "Seaking": {"hp": 80, "atk": 92, "def": 65, "spa": 65, "spd": 80, "spe": 68}, "Seismitoad": {"hp": 105, "atk": 95, "def": 75, "spa": 85, "spd": 75, "spe": 74}, "Shuckle": {"hp": 20, "atk": 10, "def": 230, "spa": 10, "spd": 230, "spe": 5}, "Silvally-Steel": {"hp": 95, "atk": 95, "def": 95, "spa": 95, "spd": 95, "spe": 95}, "Sirfetch'd": {"hp": 62, "atk": 135, "def": 95, "spa": 68, "spd": 82, "spe": 65}, "Skarmory": {"hp": 65, "atk": 80, "def": 140, "spa": 40, "spd": 70, "spe": 70}, "Sobble": {"hp": 50, "atk": 40, "def": 40, "spa": 70, "spd": 40, "spe": 70}, "Solosis": {"hp": 45, "atk": 30, "def": 40, "spa": 105, "spd": 50, "spe": 20}, "Solrock": {"hp": 90, "atk": 95, "def": 85, "spa": 55, "spd": 65, "spe": 70}, "Stonjourner": {"hp": 100, "atk": 125, "def": 135, "spa": 20, "spd": 20, "spe": 70}, "Swampert": {"hp": 100, "atk": 110, "def": 90, "spa": 85, "spd": 90, "spe": 60}, "Swoobat": {"hp": 67, "atk": 57, "def": 55, "spa": 77, "spd": 55, "spe": 114}, "Tangela": {"hp": 65, "atk": 55, "def": 115, "spa": 100, "spd": 40, "spe": 60}, "Tentacruel": {"hp": 80, "atk": 70, "def": 65, "spa": 80, "spd": 120, "spe": 100}, "Thwackey": {"hp": 70, "atk": 85, "def": 70, "spa": 55, "spd": 60, "spe": 80}, "Togekiss": {"hp": 85, "atk": 50, "def": 95, "spa": 120, "spd": 115, "spe": 80}, "Torkoal": {"hp": 70, "atk": 85, "def": 140, "spa": 85, "spd": 70, "spe": 20}, "Toxtricity (Forma Grave)": {"hp": 75, "atk": 98, "def": 70, "spa": 114, "spd": 70, "spe": 75}, "Tsareena": {"hp": 72, "atk": 120, "def": 98, "spa": 50, "spd": 98, "spe": 72}, "Tyranitar": {"hp": 100, "atk": 134, "def": 110, "spa": 95, "spd": 100, "spe": 61}, "Vanilluxe": {"hp": 71, "atk": 95, "def": 85, "spa": 110, "spd": 95, "spe": 79}, "Walrein": {"hp": 110, "atk": 80, "def": 90, "spa": 95, "spd": 90, "spe": 65}, "Weezing de Galar": {"hp": 65, "atk": 90, "def": 120, "spa": 85, "spd": 70, "spe": 60}, "Whiscash": {"hp": 110, "atk": 78, "def": 73, "spa": 76, "spd": 71, "spe": 60}, "Wigglytuff": {"hp": 140, "atk": 70, "def": 45, "spa": 85, "spd": 50, "spe": 45}, "Wooloo": {"hp": 42, "atk": 40, "def": 55, "spa": 40, "spd": 45, "spe": 48}, "Wooper": {"hp": 55, "atk": 45, "def": 45, "spa": 25, "spd": 25, "spe": 15}, "Zoroark": {"hp": 60, "atk": 105, "def": 60, "spa": 120, "spd": 60, "spe": 105}, "Zygarde (Forma 10 %)": {"hp": 54, "atk": 100, "def": 71, "spa": 61, "spd": 85, "spe": 115}};
+    const MOVE_TYPES = {"A Bocajarro": "Lucha", "Absorbefuerza": "Planta", "Absorber": "Planta", "Acua Aro": "Agua", "Acua Cola": "Agua", "Acua Jet": "Agua", "Adaptación": "Normal", "Afilagarras": "Normal", "Aguijón Letal": "Bicho", "Ala Bis": "Volador", "Alarido": "Siniestro", "Amplificador": "Eléctrico", "Anticipo": "Normal", "Antojo": "Normal", "Anulación": "Normal", "Arenas Ardientes": "Tierra", "Ascuas": "Fuego", "Atadura": "Normal", "Ataque Rápido": "Normal", "Aullido": "Normal", "Aura Wheel": "Eléctrico", "Avalancha": "Roca", "Balón Ígneo": "Fuego", "Barrera Espinosa": "Planta", "Batería Asalto": "Planta", "Beso Drenaje": "Hada", "Bola Sombra": "Fantasma", "Bomba Germen": "Planta", "Bomba Lodo": "Veneno", "Bostezo": "Normal", "Bote": "Volador", "Branquibocado": "Agua", "Brillo Mágico": "Hada", "Buceo": "Agua", "Cabeza de Hierro": "Acero", "Cabezazo Zen": "Psíquico", "Cambiazo": "Normal", "Cambio de Banda": "Fantasma", "Campo Psíquico": "Psíquico", "Campo de Hierba": "Planta", "Canon": "Normal", "Canto Helado": "Hielo", "Canto Mortal": "Normal", "Carantoña": "Hada", "Cargatóxica": "Veneno", "Chispazo": "Eléctrico", "Choque Anímico": "Hada", "Chuzos": "Hielo", "Ciclón de Hojas": "Planta", "Clanging Scales": "Dragón", "Clangorous Soul": "Dragón", "Colmillo Hielo": "Hielo", "Colmillo Rayo": "Eléctrico", "Colmillo Ígneo": "Fuego", "Cometa Draco": "Dragón", "Concha Filo": "Agua", "Confusión": "Psíquico", "Contoneo": "Normal", "Corpulencia": "Lucha", "Cosquillas": "Normal", "Cotton Guard": "Planta", "Court Change": "Normal", "Cover": "Normal", "Cuchillada": "Normal", "Cuerpo Pesado": "Acero", "Cántico Desenlace": "Hada", "Danza Amiga": "Normal", "Danza Caos": "Planta", "Danza Dragón": "Dragón", "Danza Espada": "Normal", "Danza Lluvia": "Agua", "Demolición": "Lucha", "Desahogo": "Siniestro", "Desarme": "Siniestro", "Descanso": "Psíquico", "Deseo": "Normal", "Despejar": "Volador", "Disparo Certero": "Agua", "Disparo Lodo": "Tierra", "División Defensa": "Normal", "Doble Filo": "Normal", "Doble Patada": "Lucha", "Doble Rayo": "Bicho", "Dragoaliento": "Dragón", "Drenadoras": "Planta", "Día Soleado": "Fuego", "Energibola": "Planta", "Enfado": "Dragón", "Envidia Ardiente": "Fuego", "Envite Ígneo": "Fuego", "Escaldar": "Agua", "Escudo Real": "Acero", "Esfera Aural": "Lucha", "Esfuerzo": "Normal", "Espacio Raro": "Psíquico", "Espada Santa": "Lucha", "Estruendo": "Normal", "Estruendo Escama": "Dragón", "Ferropuño Doble": "Acero", "Fitoimpulso": "Planta", "Foco Energía": "Normal", "Foco Resplandor": "Acero", "Fotón Geyser": "Psíquico", "Fragor Escamas": "Dragón", "Fuego Fatuo": "Fuego", "Fuego Sagrado": "Fuego", "Fuerza Bruta": "Lucha", "Fuerza Equina": "Tierra", "Fuerza Lunar": "Hada", "Garra Dragón": "Dragón", "Garra Umbría": "Fantasma", "Gigadrenado": "Planta", "Giro Fuego": "Fuego", "Giro Rápido": "Normal", "Giro Vil": "Lucha", "Golpe Bajo": "Siniestro", "Golpe Cabeza": "Normal", "Golpe Calor": "Fuego", "Golpe Cuerpo": "Normal", "Golpe Mordaza": "Siniestro", "Granizo": "Hielo", "Gruñido": "Normal", "Haze": "Hielo", "Hidroariete": "Agua", "Hidrobomba": "Agua", "Hidropulso": "Agua", "Hoja Afilada": "Planta", "Hoja Aguda": "Planta", "Hoja Mágica": "Planta", "Ida y Vuelta": "Bicho", "Imagen": "Normal", "Infortunio": "Fantasma", "Inversión": "Lucha", "King's Shield": "Acero", "Lanza Mugre": "Veneno", "Lanzallamas": "Fuego", "Lanzarrocas": "Roca", "Lariat Oscuro": "Siniestro", "Latigazo": "Planta", "Leer": "Normal", "Light Screen": "Psíquico", "Liofilización": "Hielo", "Llama Embrujada": "Hada", "Látigo Ígneo": "Fuego", "Magical Leaf": "Planta", "Maldición": "Fantasma", "Maquinación": "Siniestro", "Martillo Dragón": "Dragón", "Mazazo": "Planta", "Megaagotar": "Planta", "Megacuerno": "Bicho", "Metaláser": "Acero", "Meteoimpacto": "Acero", "Meteorobola": "Normal", "Mil Flechas": "Tierra", "Mil Temblores": "Tierra", "Mofa": "Siniestro", "Moflete Estático": "Eléctrico", "Mordisco": "Siniestro", "Multiataque": "Normal", "Neblina": "Hielo", "Niebla": "Hielo", "Nitrocarga": "Fuego", "Obstruct": "Siniestro", "Obstrucción": "Siniestro", "Octopresa": "Lucha", "Onda Certera": "Lucha", "Onda Trueno": "Eléctrico", "Onda Tóxica": "Veneno", "Onda Ígnea": "Fuego", "Overdrive": "Eléctrico", "Palmeo": "Lucha", "Pantalla de Luz": "Psíquico", "Paralizador": "Planta", "Paranormal": "Psíquico", "Patada Baja": "Lucha", "Patada Salto Alta": "Lucha", "Patada Tropical": "Planta", "Patada Ígnea": "Fuego", "Pataleta": "Tierra", "Paz Mental": "Psíquico", "Pedrada": "Roca", "Picadura": "Bicho", "Picotazo": "Volador", "Picoteo": "Volador", "Pin Misil": "Bicho", "Pisotón": "Normal", "Pistola Agua": "Agua", "Placaje": "Normal", "Placaje Eléctrico": "Eléctrico", "Plancha": "Lucha", "Poder Pasado": "Roca", "Poder Reserva": "Psíquico", "Poltergeist": "Fantasma", "Protección": "Normal", "Psicocarga": "Psíquico", "Psicocolmillo": "Psíquico", "Psicocorte": "Psíquico", "Psicorrayo": "Psíquico", "Psybeam": "Psíquico", "Psíquico": "Psíquico", "Pulso Dragón": "Dragón", "Pulso Umbrío": "Siniestro", "Punzada Rama": "Planta", "Puya Nociva": "Veneno", "Puño Bala": "Acero", "Puño Dinámico": "Lucha", "Puño Drenaje": "Lucha", "Puño Fuego": "Fuego", "Puño Hielo": "Hielo", "Puño Incremento": "Lucha", "Puño Meteoro": "Acero", "Puño Trueno": "Eléctrico", "Pájaro Osado": "Volador", "Púas": "Tierra", "Púas Tóxicas": "Veneno", "Rastrillaje": "Bicho", "Rayo": "Eléctrico", "Rayo Burbuja": "Agua", "Rayo Hielo": "Hielo", "Rayo Meteórico": "Roca", "Rayo Solar": "Planta", "Recuperación": "Normal", "Recurrente": "Planta", "Reflejo": "Psíquico", "Refuerzo": "Normal", "Relajo": "Normal", "Represalia": "Normal", "Respiro": "Volador", "Rest": "Psíquico", "Rizo Algodón": "Planta", "Rizo Defensa": "Normal", "Roca Afilada": "Roca", "Roca Veloz": "Roca", "Rodar": "Roca", "Rompecoraza": "Normal", "Rueda Aural": "Eléctrico", "Rueda Fuego": "Fuego", "Ráfaga Escamas": "Dragón", "Salpicar": "Agua", "Sandstorm": "Roca", "Scorching Sands": "Tierra", "Shell Smash": "Normal", "Skitter Smack": "Bicho", "Sol Matinal": "Normal", "Sombra Vil": "Fantasma", "Somnífero": "Planta", "Sorpresa": "Normal", "Strange Steam": "Hada", "Stun Spore": "Planta", "Sunny Day": "Fuego", "Superdiente": "Normal", "Surf": "Agua", "Sustituto": "Normal", "Tajo Aéreo": "Volador", "Taladradora": "Tierra", "Teletransporte": "Psíquico", "Terratemblor": "Tierra", "Terremoto": "Tierra", "Testarazo": "Roca", "Thousand Arrows": "Tierra", "Thousand Waves": "Tierra", "Throat Chop": "Siniestro", "Tickle": "Normal", "Tierra Viva": "Tierra", "Tijera X": "Bicho", "Tinieblas": "Fantasma", "Torment": "Siniestro", "Tormenta Arena": "Roca", "Tormento": "Siniestro", "Trampa Rocas": "Roca", "Triple Axel": "Hielo", "Triturar": "Siniestro", "Truco": "Psíquico", "Tumba Rocas": "Roca", "Tóxico": "Veneno", "U-Turn": "Bicho", "Vasta Fuerza": "Lucha", "Vastaguardia": "Roca", "Vasto Impacto": "Dragón", "Velo Aurora": "Hielo", "Velocidad Extrema": "Normal", "Vendaval": "Volador", "Vendetta": "Siniestro", "Ventisca": "Hielo", "Viento Hielo": "Hielo", "Viraje": "Bicho", "Voltiocambio": "Eléctrico", "Voz Cautivadora": "Hada", "Vozarrón": "Normal", "Vínculo Destino": "Fantasma", "Zona Extraña": "Psíquico", "chispazo": "Eléctrico", "dragoaliento": "Dragón", "enfado": "Dragón", "fuerza bruta": "Lucha", "pedrada": "Roca", "psicocolmillo": "Psíquico", "psicorrayo": "Psíquico", "rizo defensa": "Normal", "rueda fuego": "Fuego", "Última Palabra": "Siniestro", "ほっぺすりすり": "Eléctrico", "吸": "Planta", "逆": "Dragón"};
+
+    const TYPE_CLASS_MAP = {
+      "Normal": "type-normal", "Fuego": "type-fuego", "Agua": "type-agua",
+      "Planta": "type-planta", "Eléctrico": "type-electrico", "Hielo": "type-hielo",
+      "Lucha": "type-lucha", "Veneno": "type-veneno", "Tierra": "type-tierra",
+      "Volador": "type-volador", "Psíquico": "type-psiquico", "Bicho": "type-bicho",
+      "Roca": "type-roca", "Fantasma": "type-fantasma", "Dragón": "type-dragon",
+      "Siniestro": "type-siniestro", "Acero": "type-acero", "Hada": "type-hada"
+    };
+
+    const STAT_ROWS = [
+      { key: "hp",  label: "PS" },
+      { key: "atk", label: "Ataque" },
+      { key: "def", label: "Defensa" },
+      { key: "spa", label: "At. Esp." },
+      { key: "spd", label: "Def. Esp." },
+      { key: "spe", label: "Vel." }
+    ];
+
+    function getStatColorTier(val) {
+      if (val < 50) return { barClass: "tier-low", numClass: "c-low" };
+      if (val < 90) return { barClass: "tier-mid-low", numClass: "c-mid-low" };
+      if (val < 120) return { barClass: "tier-mid-high", numClass: "c-mid-high" };
+      if (val < 150) return { barClass: "tier-high", numClass: "c-high" };
+      return { barClass: "tier-peak", numClass: "c-peak" };
+    }
+
+    const categoryFilter = document.getElementById("categoryFilter");
+    const searchFilter = document.getElementById("searchFilter");
+    const trainerSelect = document.getElementById("trainerSelect");
+    const encounterBanner = document.getElementById("encounterBanner");
+    const teamGrid = document.getElementById("teamGrid");
+    const globalStats = document.getElementById("globalStats");
+
+    const modal = document.getElementById("detailModal");
+    const modalKindTag = document.getElementById("modalKindTag");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalBody = document.getElementById("modalBody");
+    const modalSourceHint = document.getElementById("modalSourceHint");
+    const modalCloseBtn = document.getElementById("modalCloseBtn");
+    const modalOkBtn = document.getElementById("modalOkBtn");
+
+    let filteredEncounters = [...TRAINERS_DATA];
+    let currentEncounterId = TRAINERS_DATA[0]?.id || "";
+
+    function parseEvs(evStr) {
+      const result = { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
+      if (!evStr || evStr.trim().toLowerCase() === "(none)") return result;
+      for (const rawPart of evStr.split("/")) {
+        const part = rawPart.trim().toLowerCase();
+        if (!part) continue;
+        const numMatch = part.match(/\d+/);
+        if (!numMatch) continue;
+        const val = parseInt(numMatch[0], 10);
+        const label = part.replace(numMatch[0], "").trim();
+        if (label.includes("ps") || label.includes("hp")) result.hp += val;
+        else if (label.includes("at. esp") || label.includes("spa") || label.includes("sp. atk")) result.spa += val;
+        else if (label.includes("def. esp") || label.includes("spd") || label.includes("sp. def")) result.spd += val;
+        else if (label.includes("ataque") || label.includes("atk")) result.atk += val;
+        else if (label.includes("defensa") || label.includes("def")) result.def += val;
+        else if (label.includes("vel") || label.includes("spe")) result.spe += val;
+      }
+      return result;
+    }
+
+    function initCategories() {
+      const counts = {};
+      TRAINERS_DATA.forEach(e => {
+        counts[e.category] = (counts[e.category] || 0) + 1;
+      });
+      categoryFilter.innerHTML = `<option value="ALL">Todas las categorías (${TRAINERS_DATA.length})</option>`;
+      Object.entries(counts).forEach(([cat, cnt]) => {
+        const opt = document.createElement("option");
+        opt.value = cat;
+        opt.textContent = `${cat} (${cnt})`;
+        categoryFilter.appendChild(opt);
+      });
+    }
+
+    function renderGlobalStats() {
+      const totalPokemonSlots = TRAINERS_DATA.reduce((acc, e) => acc + e.team.length, 0);
+      const doubleBattles = TRAINERS_DATA.filter(e => e.format.toLowerCase().includes("doble")).length;
+      globalStats.innerHTML = `
+        <div class="stat-chip">Combates: <strong>${TRAINERS_DATA.length}</strong></div>
+        <div class="stat-chip">Pokémon registrados: <strong>${totalPokemonSlots}</strong></div>
+        <div class="stat-chip">Combates dobles: <strong>${doubleBattles}</strong></div>
+      `;
+    }
+
+    function applyFilters() {
+      const cat = categoryFilter.value;
+      const q = searchFilter.value.trim().toLowerCase();
+
+      filteredEncounters = TRAINERS_DATA.filter(enc => {
+        const matchesCat = cat === "ALL" || enc.category === cat;
+        if (!matchesCat) return false;
+        if (!q) return true;
+        return (
+          enc.name.toLowerCase().includes(q) ||
+          enc.category.toLowerCase().includes(q) ||
+          enc.team.some(p =>
+            p.pokemon.toLowerCase().includes(q) ||
+            (p.ability || "").toLowerCase().includes(q) ||
+            (p.moves || []).some(m => m.toLowerCase().includes(q))
+          )
+        );
+      });
+
+      populateTrainerDropdown();
+
+      if (filteredEncounters.length > 0) {
+        if (!filteredEncounters.some(e => e.id === currentEncounterId)) {
+          currentEncounterId = filteredEncounters[0].id;
+        }
+        trainerSelect.value = currentEncounterId;
+        renderEncounter(filteredEncounters.find(e => e.id === currentEncounterId));
+      } else {
+        encounterBanner.innerHTML = `
+          <div class="encounter-title-wrap">
+            <h2 class="encounter-name">Sin resultados</h2>
+            <p style="color: var(--text-muted); font-size: 0.9rem;">No se encontraron combates o Pokémon con ese filtro.</p>
+          </div>
+        `;
+        teamGrid.innerHTML = "";
+      }
+    }
+
+    function populateTrainerDropdown() {
+      trainerSelect.innerHTML = "";
+      const grouped = {};
+      filteredEncounters.forEach(enc => {
+        if (!grouped[enc.category]) grouped[enc.category] = [];
+        grouped[enc.category].push(enc);
+      });
+
+      Object.entries(grouped).forEach(([cat, items]) => {
+        const optgroup = document.createElement("optgroup");
+        optgroup.label = cat;
+        items.forEach(enc => {
+          const opt = document.createElement("option");
+          opt.value = enc.id;
+          opt.textContent = `${enc.name} (Nv. ${enc.team[0]?.level ?? "?"}–${enc.team[enc.team.length - 1]?.level ?? "?"})`;
+          optgroup.appendChild(opt);
+        });
+        trainerSelect.appendChild(optgroup);
+      });
+    }
+
+    function renderEncounter(enc) {
+      if (!enc) return;
+      encounterBanner.innerHTML = `
+        <div class="encounter-title-wrap">
+          <div class="badges-row">
+            <span class="badge badge-cat">${escapeHtml(enc.category)}</span>
+            <span class="badge badge-format">${escapeHtml(enc.format)}</span>
+            <span class="badge badge-count">${enc.team.length} Pokémon</span>
+          </div>
+          <h2 class="encounter-name">${escapeHtml(enc.name)}</h2>
+        </div>
+        ${enc.note ? `<div class="encounter-note"><span>Nota:</span>${escapeHtml(enc.note)}</div>` : ""}
+      `;
+
+      teamGrid.innerHTML = "";
+      enc.team.forEach((p, idx) => {
+        const base = BASE_STATS[p.pokemon] || { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
+        const ivs = p.ivs ? { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0, ...p.ivs } : { hp: 0, atk: 0, def: 0, spa: 0, spd: 0, spe: 0 };
+        const evs = parseEvs(p.evs);
+        const bst = base.hp + base.atk + base.def + base.spa + base.spd + base.spe;
+        const moves = Array.isArray(p.moves) ? p.moves : [];
+
+        const statRowsHtml = STAT_ROWS.map(row => {
+          const bVal = base[row.key] ?? 0;
+          const iVal = ivs[row.key] ?? 0;
+          const eVal = evs[row.key] ?? 0;
+          const pct = Math.min(100, Math.round((bVal / 230) * 100));
+          const tier = getStatColorTier(bVal);
+          return `
+            <tr>
+              <td class="stat-name">${row.label}</td>
+              <td class="stat-bar-cell">
+                <div class="stat-track"><div class="stat-fill ${tier.barClass}" style="width: ${pct}%"></div></div>
+              </td>
+              <td class="stat-num stat-base ${tier.numClass}">${bVal}</td>
+              <td class="stat-num stat-iv">${iVal}</td>
+              <td class="stat-num stat-ev ${eVal === 0 ? "zero" : ""}">${eVal}</td>
+            </tr>
+          `;
+        }).join("");
+
+        const movesHtml = moves.length
+          ? moves.map(mv => {
+              const mType = MOVE_TYPES[mv] || "Normal";
+              const typeCls = TYPE_CLASS_MAP[mType] || "type-normal";
+              return `
+                <button type="button" class="move-btn ${typeCls}" data-move="${escapeAttr(mv)}" data-type="${escapeAttr(mType)}" data-poke="${escapeAttr(p.pokemon)}">
+                  <span>${escapeHtml(mv)}</span>
+                  <span class="move-meta-right">
+                    <span class="move-type-pill">${escapeHtml(mType)}</span>
+                    <span class="move-arrow">↗</span>
+                  </span>
+                </button>
+              `;
+            }).join("")
+          : `<div class="meta-box" style="grid-column: 1 / -1;"><span class="meta-value muted">Sin movimientos registrados</span></div>`;
+
+        const spriteHtml = p.sprite
+          ? `<img class="poke-sprite" src="${escapeAttr(p.sprite)}" alt="${escapeAttr(p.pokemon)}" loading="lazy" />`
+          : "";
+
+        const card = document.createElement("article");
+        card.className = "poke-card";
+        card.innerHTML = `
+          <div class="poke-card-top">
+            <div class="poke-identity">
+              ${spriteHtml}
+              <div>
+                <div style="font-size: 0.72rem; color: var(--text-muted); margin-bottom: 2px;">#${idx + 1} en equipo</div>
+                <h3 class="poke-name">${escapeHtml(p.pokemon)}</h3>
+              </div>
+            </div>
+            <span class="poke-level">Nv. ${escapeHtml(p.level || "?")}</span>
+          </div>
+
+          <div class="meta-grid">
+            <div class="meta-box interactive-trigger" data-ability="${escapeAttr(p.ability || "")}" data-poke="${escapeAttr(p.pokemon)}">
+              <span class="meta-label">Habilidad · Ver info</span>
+              <span class="meta-value">${p.ability ? escapeHtml(p.ability) : '<span class="muted">No especificada</span>'}</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Objeto</span>
+              <span class="meta-value ${p.item ? "" : "muted"}">${p.item ? escapeHtml(p.item) : "Ninguno"}</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Naturaleza</span>
+              <span class="meta-value ${p.nature ? "" : "muted"}">${p.nature ? escapeHtml(p.nature) : "—"}</span>
+            </div>
+            <div class="meta-box">
+              <span class="meta-label">Total Base (BST)</span>
+              <span class="meta-value">${bst}</span>
+            </div>
+          </div>
+
+          <div class="stats-box">
+            <div class="stats-title-row">
+              <span>Estadísticas Base · IVs · EVs</span>
+              <span>${p.evs && p.evs !== "(none)" ? escapeHtml(p.evs) : "Sin EVs"}</span>
+            </div>
+            <div class="stat-legend" aria-hidden="true">
+              <span class="stat-legend-item"><span class="stat-legend-swatch" style="background:#ef4444"></span>&lt;50</span>
+              <span class="stat-legend-item"><span class="stat-legend-swatch" style="background:#eab308"></span>50–89</span>
+              <span class="stat-legend-item"><span class="stat-legend-swatch" style="background:#22c55e"></span>90–119</span>
+              <span class="stat-legend-item"><span class="stat-legend-swatch" style="background:#38bdf8"></span>120–149</span>
+              <span class="stat-legend-item"><span class="stat-legend-swatch" style="background:#a855f7"></span>150+</span>
+            </div>
+            <table class="stats-table">
+              <thead>
+                <tr>
+                  <th>Stat</th>
+                  <th class="bar-col">Base</th>
+                  <th>Base</th>
+                  <th>IVs</th>
+                  <th>EVs</th>
+                </tr>
+              </thead>
+              <tbody>${statRowsHtml}</tbody>
+            </table>
+          </div>
+
+          <div class="moves-section">
+            <span class="moves-header">Movimientos por tipo</span>
+            <div class="moves-list">${movesHtml}</div>
+          </div>
+        `;
+
+        const abilityBox = card.querySelector("[data-ability]");
+        if (abilityBox) {
+          abilityBox.addEventListener("click", () => {
+            openAbilityModal(p.ability || "Habilidad no especificada", p.pokemon);
+          });
+        }
+
+        card.querySelectorAll(".move-btn").forEach(btn => {
+          btn.addEventListener("click", () => {
+            openMoveModal(btn.dataset.move, btn.dataset.type, btn.dataset.poke);
+          });
+        });
+
+        teamGrid.appendChild(card);
+      });
+    }
+
+    const ABILITY_DESCRIPTIONS = {"Aclimatación": "Anula los efectos de los climas (lluvia, sol, tormenta de arena y granizo) sobre los Pokémon en el campo.", "Agallas": "Aumenta el Ataque en un 50 % cuando el Pokémon sufre un problema de estado (quemadura, parálisis, envenenamiento o sueño), e ignora la reducción de Ataque por quemadura.", "Allanamiento": "Permite que los ataques del Pokémon ignoren Sustituto, Reflejo, Pantalla de Luz, Velo Aurora y Niebla Aromática del objetivo.", "Alma Errante": "Al ser golpeado por un movimiento de contacto, intercambia su habilidad con la del atacante.", "Antibalas": "Inmuniza al Pokémon contra movimientos de bala, bomba o proyectil (como Bola Sombra, Bomba Lodo, Esfera Aural, Semilladora, etc.).", "Antibarrera": "Al entrar a combatir, elimina los efectos de Reflejo, Pantalla de Luz y Velo Aurora de ambos bandos.", "Armadura Frágil": "Al recibir un golpe físico, reduce la Defensa en 1 nivel pero aumenta la Velocidad en 2 niveles.", "Autoestima": "Aumenta el Ataque en 1 nivel cada vez que el Pokémon debilita a un objetivo.", "Bailar": "Copia y ejecuta automáticamente al final del turno cualquier movimiento de danza que haya usado otro Pokémon en el campo.", "Bromista": "Otorga +1 de prioridad a los movimientos de estado del Pokémon (afectados por inmunidades de tipo Siniestro).", "Cabeza Roca": "Evita el daño de retroceso que sufriría el Pokémon al usar movimientos que dañan al usuario (como Testarazo o Doble Filo).", "Cambio Táctico": "Cambia entre forma Escudo y forma Filo antes de ejecutar un movimiento de ataque o al usar Escudo Real.", "Caparazón": "Protege al Pokémon contra golpes críticos.", "Chaleco Asalto": "En este combate figura asignada como habilidad/efecto de soporte; en combate estándar Chaleco Asalto es un objeto que sube Def. Esp. un 50 % e impide movimientos de estado.", "Chorro Arena": "Inicia una tormenta de arena al entrar en combate (dura 5 turnos o 8 con Roca Suave).", "Combustible": "Aumenta la Velocidad en 6 niveles al recibir un ataque de tipo Agua o Fuego.", "Comatose": "El Pokémon siempre actúa como si estuviera dormido (puede atacar dormido y no puede recibir otro problema de estado).", "Compensación": "Reduce a la mitad el daño recibido cuando el Pokémon tiene todos sus PS.", "Corrosión": "Permite envenenar a Pokémon de tipo Acero o Veneno.", "Cotton Down": "Al ser golpeado por un ataque, reduce en 1 nivel la Velocidad de todos los demás Pokémon en el campo.", "Cromolente": "Duplica la potencia de los movimientos que son 'no muy eficaces' contra el objetivo.", "Cura Lluvia": "Recupera 1/16 de los PS máximos al final de cada turno si está lloviendo.", "Cuerpo Maldito": "Tiene un 30 % de probabilidad de anular el último movimiento usado por el atacante al recibir un golpe.", "Cuerpo Mortal": "Si el Pokémon es debilitado por un movimiento de contacto, el atacante también queda debilitado tras 3 turnos (salvo cambio o inmunidad).", "Cuerpo Puro": "Impide que otros Pokémon reduzcan las características de este Pokémon.", "Despiste": "Evita que el Pokémon caiga bajo los efectos de Atracción, Mofa o Intimidación.", "Dicha": "Duplica la probabilidad de que los efectos secundarios de los movimientos del Pokémon se activen.", "Disfraz": "Bloquea el daño del primer ataque que reciba una vez por combate, perdiendo su disfraz y recibiendo un leve daño residual.", "Encadenado": "Hace que los movimientos de golpe múltiple (como Pin Misil o Recurrente) golpeen siempre el máximo número de veces (5).", "Escama Especial": "Aumenta la Defensa en 1 nivel cuando el Pokémon sufre un problema de estado.", "Espejo Mágico": "Refleja de vuelta al usuario la mayoría de movimientos de estado (Trampa Rocas, Mofa, Onda Trueno, Tóxico, etc.).", "Espíritu Vital": "Evita que el Pokémon se quede dormido.", "Experto": "Aumenta en un 50 % la potencia de los movimientos con potencia base de 60 o inferior.", "Filtro": "Reduce en un 25 % el daño de los movimientos supereficaces recibidos.", "Francotirador": "Aumenta el daño de los golpes críticos de x1.5 a x2.25.", "Fuente Energía": "Potencia ligeramente los movimientos de tipo Roca de los aliados (o del usuario en este set).", "Garra Dura": "Aumenta en un 30 % la potencia de los movimientos que hacen contacto físico.", "Genetic Instability": "Habilidad personalizada de Eevee en este set: refuerza su versatilidad ofensiva/defensiva durante el combate.", "Gula": "Hace que el Pokémon consuma sus bayas cuando sus PS bajan del 50 % en lugar del 25 %.", "Healer": "Al final de cada turno, tiene un 30 % de probabilidad de curar el problema de estado de un aliado adyacente.", "Herbogénesis": "Crea un Campo de Hierba al entrar en combate (potencia movimientos Planta un 30 % y cura 1/16 de PS cada turno).", "Hidratación": "Cura los problemas de estado del Pokémon al final de cada turno si está lloviendo.", "Humedad": "Impide que cualquier Pokémon use movimientos explosivos como Autodestrucción o Explosión.", "Ignorante": "Ignora los cambios en las características (subidas o bajadas) del rival tanto al atacar como al recibir daño.", "Ilusión": "Hace que el Pokémon entre en combate disfrazado del último Pokémon de su equipo hasta recibir un golpe directo.", "Impulso": "Aumenta la Velocidad en 1 nivel al final de cada turno.", "Indefenso": "Hace que tanto los movimientos del usuario como los dirigidos a él acierten siempre (excepto en turnos de semifase de vuelo/buceo/excavar).", "Intimidación": "Al entrar en combate, reduce el Ataque de los rivales adyacentes en 1 nivel.", "Intrépido": "Permite que movimientos de tipo Normal y Lucha golpeen a Pokémon de tipo Fantasma, e impide que baje la Intimidación.", "Justified": "Aumenta el Ataque en 1 nivel al recibir un ataque de tipo Siniestro (además de aplicar el daño del ataque).", "Levitación": "Hace que el Pokémon sea inmune a los movimientos de tipo Tierra y a Púas/Púas Tóxicas/Red Viscosa.", "Liviano": "Duplica la Velocidad del Pokémon si pierde o consume el objeto que llevaba equipado.", "Llovizna": "Inicia lluvia al entrar en combate (dura 5 turnos o 8 con Roca Lluvia).", "Líbero": "Cambia el tipo del Pokémon al tipo del movimiento que va a usar justo antes de ejecutarlo.", "Mandíbula Fuerte": "Aumenta en un 50 % la potencia de los movimientos de mordisco o mandíbula (Mordisco, Triturar, Colmillo Hielo, Branquibocado, etc.).", "Metal Pesado": "Duplica el peso del Pokémon, aumentando la potencia de movimientos como Cuerpo Pesado o Golpe Calor en su contra y reduciendo Patada Baja/Hierba Lazo.", "Mudar": "Al final de cada turno, tiene un 30 % de probabilidad de curar su problema de estado.", "Muro Mágico": "El Pokémon solo recibe daño de ataques directos; es inmune a veneno, quemadura, clima, Trampa Rocas, Púas, retroceso y Drenadoras.", "Mutapetito": "Alterna la forma de Morpeko (Saciada / Voraz) y el tipo de Rueda Aural (Eléctrico / Siniestro) cada turno.", "Nado Rápido": "Duplica la Velocidad del Pokémon cuando está lloviendo.", "Nebulogénesis": "Crea un Campo de Niebla al entrar en combate (reduce el daño de ataques de Dragón a la mitad y protege de cambios de estado en el suelo).", "Nevada": "Inicia granizo al entrar en combate (dura 5 turnos o 8 con Roca Helada).", "Ojo Compuesto": "Aumenta la precisión de los movimientos del Pokémon en un 30 %.", "Pararrayos": "Atrae hacia sí los movimientos de tipo Eléctrico, los anula y sube el Ataque Especial en 1 nivel.", "Peluche": "Reduce a la mitad el daño de movimientos de contacto, pero duplica el daño recibido por movimientos de tipo Fuego.", "Piel Feérica": "Convierte los movimientos de tipo Normal en tipo Hada y aumenta su potencia en un 20 %.", "Poder Arena": "Aumenta en un 30 % la potencia de los movimientos de tipo Tierra, Roca y Acero durante una tormenta de arena.", "Potencia": "Duplica el Ataque del Pokémon.", "Potencia Bruta": "Elimina los efectos secundarios de los movimientos a cambio de aumentar su potencia en un 30 %.", "Primer Auxilio": "Otorga +3 de prioridad a los movimientos curativos del Pokémon.", "Puño Férreo": "Aumenta en un 20 % la potencia de los movimientos de puño.", "Regeneración": "Recupera 1/3 de sus PS máximos al ser cambiado y retirado del combate.", "Regia Presencia": "Impide que los rivales usen movimientos con prioridad positiva contra el Pokémon o sus aliados.", "Remoto": "Aumenta en un 20 % la potencia de los movimientos que no hacen contacto físico.", "Respondón": "Invierte los cambios de características: las subidas bajan y las bajadas suben.", "Roca Sólida": "Reduce en un 25 % el daño de los movimientos supereficaces recibidos.", "Robustez": "Evita que el Pokémon sea debilitado de un solo golpe cuando tiene todos sus PS (actúa como Banda Focus).", "Rompeaura": "Invierte los efectos de Aura Oscura y Aura Feérica mientras esté en el campo.", "Rompemoldes": "Permite que los movimientos del Pokémon ignoren las habilidades defensivas o inmunidades del objetivo.", "Reacción Química": "Habilidad asignada en este set de Duraludon; su efecto de combate se aplica según el encuentro.", "Receptor": "Copia la habilidad de un aliado debilitado en combates dobles.", "Ritmo Propio": "Evita que el Pokémon sea confundido y bloquea el efecto de Intimidación.", "Sequía": "Crea un día soleado intenso al entrar en combate (dura 5 turnos o 8 con Roca Calor).", "Shadow Tag": "Impide que los Pokémon rivales huyan o cambien mientras este Pokémon esté en combate.", "Sincronía": "Si el Pokémon es quemado, envenenado o paralizado por otro Pokémon, contagia el mismo problema de estado al causante.", "Sistema Alfa": "Adapta el tipo de Multiataque según el disco equipado (en este set, tipo Acero).", "Soul Heart": "Aumenta el Ataque Especial en 1 nivel cada vez que un Pokémon en el campo es debilitado.", "Steadfast": "Aumenta la Velocidad en 1 nivel cada vez que el Pokémon retrocede.", "Torrente": "Aumenta en un 50 % la potencia de los movimientos de tipo Agua cuando los PS están en 1/3 o menos.", "Trace": "Copia la habilidad del rival al entrar en combate.", "Tragamisil": "Al usar Surf o Buceo (teniendo más de la mitad de PS), cambia a Forma Tragamisil o Forma Engullidora según el caso.", "Velo Pastel": "Protege al Pokémon y a sus aliados del envenenamiento y cura el veneno al entrar en combate.", "Velo Dulce": "Protege al Pokémon y a sus aliados de quedarse dormidos.", "punk rock": "Aumenta en un 30 % la potencia de los movimientos basados en sonido y reduce a la mitad el daño de movimientos de sonido recibidos.", "身": "Habilidad especial asignada en este set de combate.", "Absorbe Agua": "Anula los ataques de tipo Agua y recupera el 25 % de los PS máximos del usuario al ser alcanzado por uno.", "Alas Vendaval": "Otorga +1 de prioridad a los movimientos de tipo Volador cuando el usuario tiene todos sus PS.", "Baya Alcho": "Baya equipada que restaura 1/3 de los PS máximos cuando el Pokémon baja de 1/4 de PS (y confunde si no le gusta el sabor).", "Chlorophyll": "Duplica la Velocidad del Pokémon cuando hace sol intenso.", "Parental Bond": "Permite que los ataques dañinos golpeen dos veces en el mismo turno (el segundo golpe inflige un 25 % del daño original).", "Punta Acero": "Si el usuario es golpeado por un movimiento de contacto, el atacante recibe un daño equivalente a 1/8 de sus PS máximos.", "Ímpetu Ardiente": "Aumenta el Ataque Especial en 1 nivel cuando el Pokémon sufre una quemadura (e ignora la reducción de Ataque físico si aplica)."};
+    const MOVE_METADATA = {"A Bocajarro": ["Lucha", "Físico", "120", "100%", "5", "Golpea con fuerza pero baja en 1 nivel la Defensa y la Defensa Especial del usuario."], "Absorbefuerza": ["Planta", "Especial", "75", "100%", "10", "Drena PS y recupera el 50 % del daño infligido al objetivo."], "Acua Aro": ["Agua", "Estado", "—", "—", "20", "Rodea al usuario con un velo de agua que recupera 1/16 de sus PS máximos al final de cada turno."], "Acua Cola": ["Agua", "Físico", "90", "90%", "10", "Ataca golpeando violentamente con la cola."], "Acua Jet": ["Agua", "Físico", "40", "100%", "20", "Ataque rápido de prioridad +1 que golpea primero."], "Adaptación": ["Normal", "Estado", "—", "—", "30", "Sube la Defensa Especial del usuario en 1 nivel (o cambia su tipo en condiciones especiales)."], "Afilagarras": ["Normal", "Estado", "—", "—", "15", "Aumenta el Ataque y la precisión del usuario en 1 nivel."], "Aguijón Letal": ["Bicho", "Físico", "50", "100%", "25", "Si debilita al objetivo con este ataque, sube el Ataque del usuario en 3 niveles."], "Ala Bis": ["Volador", "Físico", "60", "100%", "20", "Golpea dos veces en un mismo turno."], "Alarido": ["Siniestro", "Especial", "55", "95%", "15", "Ataca con un gruñido furioso y reduce en 1 nivel el Ataque Especial del objetivo."], "Anticipo": ["Normal", "Estado", "—", "—", "20", "Detecta si el rival conoce movimientos peligrosos o supereficaces."], "Antojo": ["Normal", "Físico", "60", "100%", "10", "Ataca y consume la baya equipada del objetivo para obtener su efecto."], "Anulación": ["Normal", "Estado", "—", "100%", "10", "Impide que el objetivo vuelva a usar el último movimiento que ejecutó durante varios turnos."], "Ascuas": ["Fuego", "Especial", "40", "100%", "25", "Ataque de fuego ligero con un 10 % de probabilidad de quemar."], "Atadura": ["Normal", "Físico", "15", "85%", "20", "Atrapa y oprime al objetivo durante 4 o 5 turnos causándole daño residual en cada uno."], "Ataque Rápido": ["Normal", "Físico", "40", "100%", "30", "Ataque de prioridad +1 que suele golpear primero."], "Aullido": ["Normal", "Estado", "—", "—", "40", "Aumenta el Ataque del usuario en 1 nivel."], "Aura Wheel": ["Eléctrico", "Físico", "110", "100%", "10", "Golpea con energía eléctrica (o Siniestro si Morpeko está en Forma Voraz) y sube la Velocidad 1 nivel."], "Avalancha": ["Roca", "Físico", "75", "90%", "10", "Lanza grandes rocas; tiene un 30 % de probabilidad de hacer retroceder al objetivo."], "Balón Ígneo": ["Fuego", "Físico", "120", "90%", "5", "Lanza un balón de fuego ardiente con un 10 % de probabilidad de quemar."], "Barrera Espinosa": ["Planta", "Estado", "—", "—", "10", "Protege al usuario de ataques este turno; si lo golpea un movimiento de contacto, baja su Ataque 2 niveles."], "Batería Asalto": ["Planta", "Físico", "70", "100%", "10", "Golpea rítmicamente con un tambor de madera con prioridad +1."], "Beso Drenaje": ["Hada", "Especial", "50", "100%", "10", "Absorbe energía y recupera el 75 % del daño causado."], "Bola Sombra": ["Fantasma", "Especial", "80", "100%", "15", "Lanza una esfera oscura con un 20 % de probabilidad de bajar la Defensa Especial 1 nivel."], "Bomba Germen": ["Planta", "Físico", "80", "100%", "15", "Dispara semillas pesadas desde arriba sobre el objetivo."], "Bomba Lodo": ["Veneno", "Especial", "90", "100%", "10", "Arroja lodo tóxico con un 30 % de probabilidad de envenenar."], "Bostezo": ["Normal", "Estado", "—", "—", "10", "Provoca un bostezo que hace que el objetivo se duerma al final del siguiente turno."], "Bote": ["Volador", "Físico", "85", "85%", "5", "Salta alto en el primer turno y golpea en el segundo con un 30 % de probabilidad de paralizar."], "Branquibocado": ["Agua", "Físico", "85", "100%", "10", "Muerde con fuerza; si ataca primero, duplica su potencia base."], "Brillo Mágico": ["Hada", "Especial", "80", "100%", "10", "Emite un destello dañino que golpea a los objetivos adyacentes."], "Buceo": ["Agua", "Físico", "80", "100%", "10", "Se sumerge en el primer turno (evitando ataques) y golpea en el segundo."], "Cabeza de Hierro": ["Acero", "Físico", "80", "100%", "15", "Golpea con la cabeza dura; tiene un 30 % de probabilidad de hacer retroceder."], "Cabezazo Zen": ["Psíquico", "Físico", "80", "90%", "15", "Concentra energía psíquica en la cabeza y embiste; 20 % de probabilidad de retroceso."], "Cambio de Banda": ["Fantasma", "Estado", "—", "—", "15", "Intercambia posiciones con un Pokémon aliado en combates dobles."], "Campo Psíquico": ["Psíquico", "Estado", "—", "—", "10", "Potencia movimientos Psíquico en un 30 % y bloquea ataques con prioridad contra objetivos en el suelo."], "Campo de Hierba": ["Planta", "Estado", "—", "—", "10", "Potencia movimientos Planta en un 30 % y cura 1/16 de PS cada turno a Pokémon en el suelo."], "Canon": ["Normal", "Especial", "40", "100%", "15", "Dispara una ráfaga; si otros aliados usan Canon en el mismo turno, aumenta su potencia."], "Canto Helado": ["Hielo", "Físico", "40", "100%", "30", "Lanza trozos de hielo con prioridad +1."], "Canto Mortal": ["Normal", "Estado", "—", "—", "5", "Los Pokémon que escuchan el canto quedan debilitados tras 3 turnos si no cambian."], "Carantoña": ["Hada", "Físico", "90", "90%", "10", "Juega brusco con el objetivo y tiene un 10 % de probabilidad de bajar su Ataque 1 nivel."], "Cargatóxica": ["Veneno", "Especial", "65", "100%", "10", "Duplica su potencia si el objetivo ya está envenenado."], "Choque Anímico": ["Hada", "Físico", "75", "100%", "15", "Ataca con fuerza y reduce en 1 nivel el Ataque Especial del objetivo."], "Chuzos": ["Hielo", "Físico", "85", "100%", "10", "Lanza carámbanos afilados con un 30 % de probabilidad de hacer retroceder."], "Ciclón de Hojas": ["Planta", "Especial", "65", "90%", "10", "Crea un torbellino de hojas cortantes con un 50 % de probabilidad de bajar la precisión 1 nivel."], "Clanging Scales": ["Dragón", "Especial", "110", "100%", "5", "Genera escamas resonantes que dañan a los rivales y bajan la Defensa del usuario 1 nivel."], "Clangorous Soul": ["Dragón", "Estado", "—", "100%", "5", "Sacrifica 1/3 de los PS máximos del usuario para subir todas sus estadísticas principales 1 nivel."], "Colmillo Hielo": ["Hielo", "Físico", "65", "95%", "15", "Muerde con colmillos helados; puede hacer retroceder (10 %) o congelar (10 %)."], "Colmillo Rayo": ["Eléctrico", "Físico", "65", "95%", "15", "Muerde con colmillos cargados; puede hacer retroceder (10 %) o paralizar (10 %)."], "Colmillo Ígneo": ["Fuego", "Físico", "65", "95%", "15", "Muerde con colmillos ígneos; puede hacer retroceder (10 %) o quemar (10 %)."], "Cometa Draco": ["Dragón", "Especial", "130", "90%", "5", "Invoca meteoritos sobre el objetivo; baja el Ataque Especial del usuario 2 niveles."], "Concha Filo": ["Agua", "Físico", "75", "95%", "10", "Corta con su concha afilada y tiene un 50 % de probabilidad de bajar la Defensa 1 nivel."], "Confusión": ["Psíquico", "Especial", "50", "100%", "25", "Ataque psíquico débil con un 10 % de probabilidad de confundir al objetivo."], "Contoneo": ["Normal", "Estado", "—", "85%", "15", "Confunde al objetivo pero sube su Ataque en 2 niveles."], "Corpulencia": ["Lucha", "Estado", "—", "—", "20", "Aumenta el Ataque y la Defensa del usuario en 1 nivel."], "Cotton Guard": ["Planta", "Estado", "—", "—", "10", "Se envuelve en algodón y aumenta su Defensa en 3 niveles."], "Court Change": ["Normal", "Estado", "—", "—", "10", "Intercambia los efectos de campo (Trampa Rocas, Púas, Pantallas, Velo Aurora) entre ambos bandos."], "Cover": ["Normal", "Estado", "—", "—", "10", "Protege al usuario de movimientos dirigidos a él durante el turno."], "Cuchillada": ["Normal", "Físico", "70", "100%", "20", "Corta con garras o cuchillas; tiene alta probabilidad de golpe crítico."], "Cuerpo Pesado": ["Acero", "Físico", "Var.", "100%", "10", "Cuanto más pese el usuario respecto al objetivo, mayor será el daño causado."], "Danza Amiga": ["Normal", "Estado", "—", "—", "20", "El usuario baila y permite que el Pokémon que actúa a continuación use su movimiento de inmediato."], "Danza Caos": ["Planta", "Estado", "—", "—", "20", "Confunde a los Pokémon adyacentes."], "Danza Dragón": ["Dragón", "Estado", "—", "—", "20", "Aumenta el Ataque y la Velocidad del usuario en 1 nivel."], "Danza Espada": ["Normal", "Estado", "—", "—", "20", "Aumenta el Ataque del usuario en 2 niveles."], "Danza Lluvia": ["Agua", "Estado", "—", "—", "5", "Invoca lluvia durante 5 turnos, potenciando ataques de Agua y debilitando los de Fuego."], "Demolición": ["Lucha", "Físico", "75", "100%", "15", "Golpea con fuerza y destruye barreras como Reflejo o Pantalla de Luz del lado rival."], "Desahogo": ["Siniestro", "Físico", "Var.", "100%", "10", "Su potencia aumenta cuanto más hayan subido las características del usuario."], "Desarme": ["Siniestro", "Físico", "65", "100%", "20", "Golpea y tira el objeto equipado del objetivo (aumenta su daño si llevaba objeto)."], "Descanso": ["Psíquico", "Estado", "—", "—", "5", "El usuario duerme 2 turnos y recupera todos sus PS y cura sus problemas de estado."], "Deseo": ["Normal", "Estado", "—", "—", "10", "Al final del siguiente turno, cura la mitad de los PS máximos al Pokémon activo en esa posición."], "Despejar": ["Volador", "Estado", "—", "—", "15", "Baja la evasión del objetivo y elimina trampas/pantallas de campo."], "Disparo Certero": ["Agua", "Especial", "80", "100%", "15", "Dispara agua a presión con alta probabilidad de golpe crítico."], "Disparo Lodo": ["Tierra", "Especial", "55", "95%", "15", "Lanza lodo y tiene un 30 % de probabilidad de bajar la Velocidad del objetivo 1 nivel."], "División Defensa": ["Normal", "Estado", "—", "—", "30", "Aumenta la Defensa del usuario en 1 nivel."], "Doble Filo": ["Normal", "Físico", "120", "100%", "15", "Placaje potente que causa un daño de retroceso equivalente a 1/3 del daño infligido."], "Doble Patada": ["Lucha", "Físico", "30", "100%", "30", "Patea dos veces seguidas en el mismo turno."], "Doble Rayo": ["Bicho", "Especial", "75", "100%", "10", "Dispara un rayo luminoso con un 10 % de probabilidad de confundir al objetivo."], "Drenadoras": ["Planta", "Estado", "—", "90%", "10", "Planta semillas en el objetivo que le drenan PS al final de cada turno para curar al usuario."], "Energibola": ["Planta", "Especial", "90", "100%", "10", "Reúne energía natural y la dispara; tiene un 10 % de probabilidad de bajar la Defensa Especial 1 nivel."], "Envidia Ardiente": ["Fuego", "Especial", "70", "100%", "5", "Quema a los objetivos cuyas características hayan subido este turno."], "Envite Ígneo": ["Fuego", "Físico", "120", "100%", "15", "Carga envuelto en llamas; causa retroceso de 1/3 del daño hecho y puede quemar (10 %)."], "Escaldar": ["Agua", "Especial", "80", "100%", "15", "Dispara agua hirviendo con un 30 % de probabilidad de quemar al objetivo."], "Esfera Aural": ["Lucha", "Especial", "80", "—", "20", "Lanza una esfera de aura que nunca falla."], "Esfuerzo": ["Normal", "Físico", "Var.", "100%", "5", "Iguala los PS restantes del objetivo a los del usuario si el objetivo tiene más PS."], "Espacio Raro": ["Psíquico", "Estado", "—", "—", "5", "Durante 5 turnos, los Pokémon más lentos actúan primero."], "Espada Santa": ["Lucha", "Físico", "90", "100%", "15", "Ataca con una espada e ignora los cambios en las características del objetivo."], "Estruendo": ["Normal", "Especial", "140", "100%", "10", "Ataque sónico muy potente que golpea a todos los Pokémon adyacentes."], "Ferropuño Doble": ["Acero", "Físico", "60", "100%", "10", "Golpea dos veces seguidas con puños metálicos."], "Fitoimpulso": ["Planta", "Físico", "70", "100%", "20", "Golpea con fuerza; si hay un Campo de Hierba activo, duplica su potencia."], "Foco Energía": ["Normal", "Estado", "—", "—", "30", "Aumenta la probabilidad de asestar golpes críticos del usuario."], "Foco Resplandor": ["Acero", "Especial", "80", "100%", "10", "Dispara un haz de luz metálica con un 10 % de probabilidad de bajar la Defensa Especial 1 nivel."], "Fotón Geyser": ["Psíquico", "Especial", "100", "100%", "5", "Ataque psíquico potente que usa el Ataque o Ataque Especial del usuario según cuál sea mayor."], "Fuego Fatuo": ["Fuego", "Estado", "—", "85%", "15", "Causa quemadura al objetivo, reduciendo su daño físico y restándole PS cada turno."], "Fuego Sagrado": ["Fuego", "Físico", "100", "95%", "5", "Ataque de fuego místico con un 50 % de probabilidad de quemar al objetivo."], "Fuerza Equina": ["Tierra", "Físico", "95", "95%", "10", "Ataca con toda la fuerza del cuerpo sobre el objetivo."], "Fuerza Lunar": ["Hada", "Especial", "95", "100%", "15", "Usa el poder de la luna y tiene un 30 % de probabilidad de bajar el Ataque Especial 1 nivel."], "Garra Dragón": ["Dragón", "Físico", "80", "100%", "15", "Araña al objetivo con garras afiladas."], "Garra Umbría": ["Fantasma", "Físico", "70", "100%", "15", "Ataca con garras sombrías y tiene alta probabilidad de golpe crítico."], "Gigadrenado": ["Planta", "Especial", "75", "100%", "10", "Absorbe energía y recupera el 50 % del daño causado."], "Giro Fuego": ["Fuego", "Especial", "35", "85%", "15", "Encierra al objetivo en un vórtice de fuego durante 4-5 turnos con daño residual."], "Giro Rápido": ["Normal", "Físico", "50", "100%", "40", "Gira a gran velocidad; limpia trampas de entrada (Trampa Rocas, Púas, etc.) y sube la Velocidad 1 nivel."], "Giro Vil": ["Lucha", "Físico", "60", "100%", "20", "Gira rápidamente para golpear y sube la Velocidad del usuario en 1 nivel."], "Golpe Bajo": ["Siniestro", "Físico", "70", "100%", "5", "Ataque de prioridad +1 que solo funciona si el objetivo va a usar un movimiento de daño ese turno."], "Golpe Cabeza": ["Normal", "Físico", "70", "100%", "15", "Embiste con la cabeza y tiene un 30 % de probabilidad de hacer retroceder."], "Golpe Calor": ["Fuego", "Físico", "Var.", "100%", "10", "Cuanto más pese el usuario respecto al objetivo, mayor será el daño causado."], "Golpe Cuerpo": ["Normal", "Físico", "85", "100%", "15", "Se deja caer sobre el objetivo con un 30 % de probabilidad de paralizar."], "Granizo": ["Hielo", "Estado", "—", "—", "10", "Inicia granizo durante 5 turnos, dañando a los Pokémon que no sean de tipo Hielo."], "Gruñido": ["Normal", "Estado", "—", "100%", "40", "Baja el Ataque del objetivo en 1 nivel."], "Haze": ["Hielo", "Estado", "—", "—", "30", "Anula todos los cambios en las características (subidas y bajadas) de todos los Pokémon en el campo."], "Hidroariete": ["Agua", "Físico", "85", "100%", "10", "Embiste con un chorro de agua; impide que el objetivo use movimientos de sonido este turno."], "Hidrobomba": ["Agua", "Especial", "110", "80%", "5", "Lanza un potente chorro de agua a alta presión."], "Hidropulso": ["Agua", "Especial", "60", "100%", "20", "Dispara una onda de agua con un 20 % de probabilidad de confundir."], "Hoja Afilada": ["Planta", "Físico", "55", "95%", "25", "Lanza hojas cortantes con alta probabilidad de golpe crítico y golpea a adyacentes."], "Hoja Aguda": ["Planta", "Físico", "90", "100%", "15", "Corta con una hoja afilada y tiene alta probabilidad de golpe crítico."], "Ida y Vuelta": ["Bicho", "Físico", "70", "100%", "20", "Ataca y, tras golpear, cambia automáticamente al usuario por otro Pokémon de su equipo."], "Imagen": ["Normal", "Físico", "70", "100%", "20", "Duplica su potencia (a 140) si el usuario está quemado, paralizado o envenenado."], "Infortunio": ["Fantasma", "Especial", "65", "100%", "10", "Duplica su potencia (a 130) si el objetivo sufre un problema de estado."], "Inversión": ["Lucha", "Físico", "Var.", "100%", "10", "Causa más daño cuantos menos PS le queden al usuario."], "King's Shield": ["Acero", "Estado", "—", "—", "10", "Protege al usuario de ataques este turno; si lo golpea un movimiento de contacto, baja su Ataque 2 niveles."], "Lanza Mugre": ["Veneno", "Físico", "120", "80%", "5", "Arroja basura tóxica con un 30 % de probabilidad de envenenar."], "Lanzallamas": ["Fuego", "Especial", "90", "100%", "15", "Lanza una llama intensa con un 10 % de probabilidad de quemar."], "Lanzarrocas": ["Roca", "Físico", "50", "90%", "15", "Arroja piedras al objetivo."], "Lariat Oscuro": ["Siniestro", "Físico", "85", "100%", "10", "Golpea con los brazos e ignora los cambios en las características del objetivo."], "Latigazo": ["Planta", "Físico", "120", "85%", "10", "Azota violentamente con lianas o apéndices."], "Leer": ["Normal", "Estado", "—", "100%", "30", "Baja la Defensa del objetivo en 1 nivel."], "Light Screen": ["Psíquico", "Estado", "—", "—", "30", "Crea una pantalla luminosa que reduce a la mitad el daño de ataques especiales durante 5 turnos."], "Liofilización": ["Hielo", "Especial", "70", "100%", "20", "Congela y es supereficaz contra Pokémon de tipo Agua; puede congelar (10 %)."], "Llama Embrujada": ["Hada", "Especial", "75", "100%", "10", "Ataca con una llama mística y baja el Ataque Especial del objetivo en 1 nivel."], "Látigo Ígneo": ["Fuego", "Físico", "80", "100%", "15", "Azota con un látigo de fuego y baja la Defensa del objetivo en 1 nivel."], "Magical Leaf": ["Planta", "Especial", "60", "—", "20", "Lanza hojas mágicas que nunca fallan."], "Maldición": ["Fantasma", "Estado", "—", "—", "10", "Si lo usa un tipo Fantasma, pierde la mitad de sus PS máximos y maldice al rival (daño cada turno)."], "Maquinación": ["Siniestro", "Estado", "—", "—", "20", "Aumenta el Ataque Especial del usuario en 2 niveles."], "Martillo Dragón": ["Dragón", "Físico", "100", "90%", "10", "Golpea con fuerza usando una cola o extremidad dracónica."], "Mazazo": ["Planta", "Físico", "120", "100%", "15", "Golpea con toda su masa; causa retroceso de 1/3 del daño infligido."], "Megaagotar": ["Planta", "Especial", "40", "100%", "15", "Absorbe PS y recupera el 50 % del daño causado."], "Megacuerno": ["Bicho", "Físico", "120", "85%", "10", "Embiste violentamente con su cuerno."], "Metaláser": ["Acero", "Especial", "140", "95%", "5", "Dispara un rayo metálico potente que cuesta al usuario la mitad de sus PS actuales."], "Meteoimpacto": ["Acero", "Físico", "100", "100%", "5", "Embiste como un meteorito e ignora la habilidad del objetivo."], "Meteorobola": ["Normal", "Especial", "50", "100%", "10", "Cambia su tipo y duplica su potencia según el clima activo (Sol, Lluvia, Arena, Granizo)."], "Mofa": ["Siniestro", "Estado", "—", "100%", "20", "Obliga al objetivo a usar solo movimientos de ataque durante 3 turnos."], "Mordisco": ["Siniestro", "Físico", "60", "100%", "25", "Muerde con un 30 % de probabilidad de hacer retroceder al objetivo."], "Multiataque": ["Normal", "Físico", "120", "100%", "10", "Su tipo varía según el disco equipado (en este set, Acero)."], "Neblina": ["Hielo", "Estado", "—", "—", "30", "Protege al bando del usuario de que le bajen las características durante 5 turnos."], "Nitrocarga": ["Fuego", "Físico", "50", "100%", "20", "Ataca envuelto en llamas y aumenta la Velocidad del usuario en 1 nivel."], "Obstruct": ["Siniestro", "Estado", "—", "—", "10", "Bloquea ataques este turno; si lo golpea un contacto, baja la Defensa del rival 2 niveles."], "Octopresa": ["Lucha", "Estado", "—", "100%", "15", "Baja la Defensa del objetivo en 1 nivel cada turno y le impide huir."], "Onda Certera": ["Lucha", "Especial", "120", "70%", "5", "Libera una onda de energía con un 10 % de probabilidad de bajar la Defensa Especial 1 nivel."], "Onda Trueno": ["Eléctrico", "Estado", "—", "90%", "20", "Paraliza al objetivo, reduciendo su Velocidad y pudiendo impedirle actuar."], "Onda Tóxica": ["Veneno", "Especial", "95", "100%", "10", "Lanza ondas tóxicas a los adyacentes con un 10 % de probabilidad de envenenar."], "Onda Ígnea": ["Fuego", "Especial", "95", "90%", "10", "Exhala un aliento ardiente con un 10 % de probabilidad de quemar."], "Overdrive": ["Eléctrico", "Especial", "80", "100%", "10", "Golpea con ondas eléctricas vibratorias a los Pokémon adyacentes."], "Palmeo": ["Lucha", "Físico", "60", "100%", "10", "Golpea con un 30 % de probabilidad de paralizar al objetivo."], "Paranormal": ["Psíquico", "Especial", "80", "100%", "20", "Ataque psíquico con un 10 % de probabilidad de hacer retroceder al objetivo."], "Patada Baja": ["Lucha", "Físico", "Var.", "100%", "20", "Inflige más daño cuanto más pesado sea el objetivo."], "Patada Salto Alta": ["Lucha", "Físico", "130", "90%", "10", "Patada muy potente; si falla o es bloqueada, el usuario pierde la mitad de sus PS máximos."], "Patada Tropical": ["Planta", "Físico", "70", "100%", "15", "Patea y baja el Ataque del objetivo en 1 nivel."], "Patada Ígnea": ["Fuego", "Físico", "85", "90%", "10", "Patada ardiente con alta probabilidad de crítico y 10 % de probabilidad de quemar."], "Pataleta": ["Tierra", "Físico", "75", "100%", "10", "Golpea el suelo; si el golpe anterior del usuario falló, duplica su potencia (a 150)."], "Paz Mental": ["Psíquico", "Estado", "—", "—", "20", "Aumenta el Ataque Especial y la Defensa Especial del usuario en 1 nivel."], "Picadura": ["Bicho", "Físico", "60", "100%", "20", "Picotea y consume la baya equipada del objetivo para obtener su efecto."], "Picotazo": ["Volador", "Físico", "35", "100%", "35", "Ataca picoteando al objetivo."], "Picoteo": ["Volador", "Físico", "60", "100%", "20", "Picotea y roba/consume la baya del objetivo."], "Pin Misil": ["Bicho", "Físico", "25", "95%", "20", "Dispara púas de 2 a 5 veces seguidas en el mismo turno."], "Pisotón": ["Normal", "Físico", "65", "100%", "20", "Pisa al objetivo con un 30 % de probabilidad de hacer retroceder."], "Pistola Agua": ["Agua", "Especial", "40", "100%", "25", "Dispara un chorro de agua a presión."], "Placaje": ["Normal", "Físico", "40", "100%", "35", "Embiste con todo el cuerpo."], "Placaje Eléctrico": ["Eléctrico", "Físico", "120", "100%", "15", "Carga envuelto en electricidad; causa 1/3 de retroceso y 10 % de probabilidad de paralizar."], "Plancha": ["Lucha", "Físico", "80", "100%", "10", "Ataque físico que usa el valor de Defensa del usuario en lugar de su Ataque."], "Poder Pasado": ["Roca", "Especial", "60", "100%", "5", "Tiene un 10 % de probabilidad de subir todas las estadísticas principales del usuario en 1 nivel."], "Poder Reserva": ["Psíquico", "Especial", "20", "100%", "10", "Gana +20 de potencia por cada subida de característica que tenga el usuario."], "Poltergeist": ["Fantasma", "Físico", "110", "90%", "5", "Hace que el objeto equipado del objetivo lo ataque (solo funciona si el objetivo lleva objeto)."], "Protección": ["Normal", "Estado", "—", "—", "10", "Evita todos los ataques dirigidos al usuario durante el turno (puede fallar si se usa seguido)."], "Psicocarga": ["Psíquico", "Especial", "80", "100%", "10", "Causa daño especial pero calcula el daño contra la Defensa física del objetivo."], "Psicocorte": ["Psíquico", "Físico", "70", "100%", "20", "Corta con cuchillas psíquicas y tiene alta probabilidad de golpe crítico."], "Psybeam": ["Psíquico", "Especial", "65", "100%", "20", "Emite un rayo psíquico con un 10 % de probabilidad de confundir."], "Psíquico": ["Psíquico", "Especial", "90", "100%", "10", "Ataque psíquico potente con un 10 % de probabilidad de bajar la Defensa Especial 1 nivel."], "Pulso Dragón": ["Dragón", "Especial", "85", "100%", "10", "Libera una onda de choque dracónica."], "Pulso Umbrío": ["Siniestro", "Especial", "80", "100%", "15", "Libera un aura oscura con un 20 % de probabilidad de hacer retroceder."], "Punzada Rama": ["Planta", "Físico", "40", "100%", "25", "Golpea con una rama; tiene prioridad +1."], "Puya Nociva": ["Veneno", "Físico", "80", "100%", "20", "Golpea con una púa venenosa y tiene un 30 % de probabilidad de envenenar."], "Puño Bala": ["Acero", "Físico", "40", "100%", "30", "Puñetazo ultrarrápido de prioridad +1."], "Puño Dinámico": ["Lucha", "Físico", "100", "50%", "5", "Puñetazo potente que siempre confunde al objetivo si acierta."], "Puño Drenaje": ["Lucha", "Físico", "75", "100%", "10", "Golpea y recupera el 50 % del daño infligido en PS."], "Puño Fuego": ["Fuego", "Físico", "75", "100%", "15", "Puñetazo ígneo con un 10 % de probabilidad de quemar."], "Puño Hielo": ["Hielo", "Físico", "75", "100%", "15", "Puñetazo helado con un 10 % de probabilidad de congelar."], "Puño Incremento": ["Lucha", "Físico", "40", "100%", "20", "Aumenta el Ataque del usuario en 1 nivel cada vez que golpea."], "Puño Meteoro": ["Acero", "Físico", "90", "90%", "10", "Golpea como un meteorito y tiene un 20 % de probabilidad de subir el Ataque 1 nivel."], "Puño Trueno": ["Eléctrico", "Físico", "75", "100%", "15", "Puñetazo eléctrico con un 10 % de probabilidad de paralizar."], "Pájaro Osado": ["Volador", "Físico", "120", "100%", "15", "Carga en picado con gran fuerza; causa retroceso de 1/3 del daño hecho."], "Púas": ["Tierra", "Estado", "—", "—", "20", "Coloca púas en el campo rival que dañan a los Pokémon que entren y no vuelen/leviten."], "Púas Tóxicas": ["Veneno", "Estado", "—", "—", "20", "Coloca púas venenosas que envenenan (o gravemente) a los rivales que entren en el suelo."], "Rayo": ["Eléctrico", "Especial", "90", "100%", "15", "Descarga eléctrica potente con un 10 % de probabilidad de paralizar."], "Rayo Burbuja": ["Agua", "Especial", "65", "100%", "20", "Lanza burbujas con un 10 % de probabilidad de bajar la Velocidad 1 nivel."], "Rayo Hielo": ["Hielo", "Especial", "90", "100%", "10", "Dispara un rayo gélido con un 10 % de probabilidad de congelar."], "Rayo Meteórico": ["Roca", "Especial", "130", "90%", "5", "Lanza un haz de energía rocosa muy potente pero baja el Ataque Especial 2 niveles."], "Rayo Solar": ["Planta", "Especial", "120", "100%", "10", "Acumula energía en el primer turno y ataca en el segundo (golpea en 1 turno bajo sol)."], "Recuperación": ["Normal", "Estado", "—", "—", "5", "Restaura la mitad (50 %) de los PS máximos del usuario."], "Recurrente": ["Planta", "Físico", "25", "100%", "30", "Dispara semillas de 2 a 5 veces seguidas en el mismo turno."], "Reflejo": ["Psíquico", "Estado", "—", "—", "20", "Crea una barrera que reduce a la mitad el daño de ataques físicos durante 5 turnos."], "Refuerzo": ["Normal", "Estado", "—", "—", "20", "Aumenta la Defensa del usuario en 1 nivel."], "Relajo": ["Normal", "Estado", "—", "—", "5", "Restaura la mitad (50 %) de los PS máximos del usuario."], "Represalia": ["Normal", "Físico", "70", "100%", "5", "Duplica su potencia (a 140) si un aliado del usuario fue debilitado en el turno anterior."], "Respiro": ["Volador", "Estado", "—", "—", "5", "Restaura el 50 % de los PS máximos y suprime temporalmente el tipo Volador este turno."], "Rest": ["Psíquico", "Estado", "—", "—", "5", "El usuario duerme 2 turnos y recupera todos sus PS y cura sus estados alterados."], "Roca Afilada": ["Roca", "Físico", "100", "80%", "5", "Clava piedras afiladas en el objetivo; tiene alta probabilidad de golpe crítico."], "Roca Veloz": ["Roca", "Físico", "40", "100%", "20", "Arroja una roca con prioridad +1."], "Rodar": ["Roca", "Físico", "30", "90%", "20", "Rueda durante 5 turnos aumentando su potencia en cada golpe consecutivo."], "Ráfaga Escamas": ["Dragón", "Físico", "25", "90%", "20", "Golpea de 2 a 5 veces con escamas; sube la Velocidad 1 nivel y baja la Defensa 1 nivel."], "Salpicar": ["Agua", "Especial", "Var.", "100%", "10", "Causa más daño cuantos más PS le queden al usuario."], "Sandstorm": ["Roca", "Estado", "—", "—", "10", "Inicia una tormenta de arena durante 5 turnos que daña a los Pokémon no Tierra/Roca/Acero."], "Scorching Sands": ["Tierra", "Especial", "70", "100%", "10", "Lanza arena abrasadora con un 30 % de probabilidad de quemar al objetivo."], "Shell Smash": ["Normal", "Estado", "—", "—", "15", "Baja Defensa y Def. Esp. en 1 nivel pero sube Ataque, At. Esp. y Velocidad en 2 niveles."], "Skitter Smack": ["Bicho", "Físico", "70", "90%", "10", "Ataca por detrás y reduce el Ataque Especial del objetivo en 1 nivel."], "Sol Matinal": ["Normal", "Estado", "—", "—", "5", "Recupera PS (50 % normal, 66 % bajo sol, 25 % en otro clima)."], "Sombra Vil": ["Fantasma", "Físico", "40", "100%", "30", "Ataca desde las sombras con prioridad +1."], "Somnífero": ["Planta", "Estado", "—", "75%", "15", "Esparce esporas que duermen al objetivo."], "Sorpresa": ["Normal", "Físico", "40", "100%", "10", "Prioridad +3; hace retroceder al objetivo pero solo funciona en el primer turno en campo."], "Strange Steam": ["Hada", "Especial", "90", "95%", "10", "Libera vapor místico con un 20 % de probabilidad de confundir al objetivo."], "Stun Spore": ["Planta", "Estado", "—", "75%", "30", "Esparce esporas que paralizan al objetivo."], "Sunny Day": ["Fuego", "Estado", "—", "—", "5", "Intensa luz solar durante 5 turnos: potencia ataques de Fuego y debilita los de Agua."], "Superdiente": ["Normal", "Físico", "Var.", "90%", "10", "Reduce los PS restantes del objetivo a la mitad de su valor actual."], "Surf": ["Agua", "Especial", "90", "100%", "15", "Genera una gran ola que golpea a todos los Pokémon adyacentes."], "Sustituto": ["Normal", "Estado", "—", "—", "10", "Crea un señuelo con 1/4 de los PS máximos del usuario que absorbe daño y estados."], "Tajo Aéreo": ["Volador", "Especial", "75", "95%", "15", "Ataca con una ráfaga de aire afilado; tiene un 30 % de probabilidad de hacer retroceder."], "Taladradora": ["Tierra", "Físico", "80", "95%", "10", "Gira como un taladro con alta probabilidad de golpe crítico."], "Teletransporte": ["Psíquico", "Estado", "—", "—", "20", "Permite cambiar al usuario por otro Pokémon de su equipo con prioridad negativa."], "Terratemblor": ["Tierra", "Físico", "60", "100%", "20", "Sacude el suelo dañando a los adyacentes y bajando su Velocidad en 1 nivel."], "Terremoto": ["Tierra", "Físico", "100", "100%", "10", "Provoca un terremoto potente que afecta a los Pokémon adyacentes en el suelo."], "Testarazo": ["Roca", "Físico", "150", "80%", "5", "Cabezazo devastador que causa un retroceso de la mitad del daño infligido."], "Thousand Arrows": ["Tierra", "Físico", "90", "100%", "10", "Golpea a objetivos en el suelo y también a tipos Volador o con Levitación, dejándolos vulnerables a Tierra."], "Thousand Waves": ["Tierra", "Físico", "90", "100%", "10", "Daña a los objetivos y evita que escapen o cambien mientras el usuario permanezca en combate."], "Throat Chop": ["Siniestro", "Físico", "80", "100%", "15", "Golpea la garganta e impide que el objetivo use movimientos basados en sonido durante 2 turnos."], "Tickle": ["Normal", "Estado", "—", "100%", "20", "Hace cosquillas al objetivo y reduce su Ataque y Defensa en 1 nivel."], "Tierra Viva": ["Tierra", "Especial", "90", "100%", "10", "Hace erupcionar el suelo bajo el objetivo con un 10 % de probabilidad de bajar Def. Esp. 1 nivel."], "Tijera X": ["Bicho", "Físico", "80", "100%", "15", "Cruza las extremidades como unas tijeras para cortar al objetivo."], "Tinieblas": ["Fantasma", "Especial", "Var.", "100%", "15", "Inflige un daño fijo igual al nivel del usuario."], "Torment": ["Siniestro", "Estado", "—", "100%", "15", "Impide que el objetivo use el mismo movimiento dos turnos seguidos."], "Trampa Rocas": ["Roca", "Estado", "—", "—", "20", "Coloca rocas flotantes que dañan según debilidad a Roca al entrar cada Pokémon rival."], "Triple Axel": ["Hielo", "Físico", "20+", "90%", "10", "Patea hasta 3 veces seguidas aumentando la potencia en cada golpe acertado (20, 40, 60)."], "Triturar": ["Siniestro", "Físico", "80", "100%", "15", "Tritura con colmillos y tiene un 20 % de probabilidad de bajar la Defensa 1 nivel."], "Truco": ["Psíquico", "Estado", "—", "100%", "10", "Intercambia el objeto equipado del usuario con el del objetivo."], "Tumba Rocas": ["Roca", "Físico", "60", "95%", "15", "Lanza rocas para golpear y baja la Velocidad del objetivo en 1 nivel."], "Tóxico": ["Veneno", "Estado", "—", "90%", "10", "Envenena gravemente al objetivo; el daño aumenta cada turno."], "U-Turn": ["Bicho", "Físico", "70", "100%", "20", "Ataca y cambia automáticamente al usuario por otro Pokémon de su equipo."], "Vasta Fuerza": ["Lucha", "Especial", "20", "100%", "10", "Gana +20 de potencia por cada subida de característica que tenga el usuario."], "Vastaguardia": ["Roca", "Estado", "—", "—", "10", "Protege a todo el bando del usuario de ataques dirigidos a múltiples objetivos este turno."], "Vasto Impacto": ["Dragón", "Físico", "120", "100%", "5", "Carga con fuerza dracónica pero baja Defensa y Defensa Especial del usuario 1 nivel."], "Velo Aurora": ["Hielo", "Estado", "—", "—", "20", "Solo usable con granizo; reduce a la mitad el daño físico y especial durante 5 turnos."], "Velocidad Extrema": ["Normal", "Físico", "80", "100%", "5", "Carga a velocidad máxima con prioridad +2."], "Vendaval": ["Volador", "Especial", "110", "70%", "10", "Azota con un viento huracanado; puede confundir (30 %) y acierta siempre bajo lluvia."], "Vendetta": ["Siniestro", "Físico", "60", "100%", "10", "Duplica su potencia (a 120) si el usuario ya recibió daño este turno."], "Ventisca": ["Hielo", "Especial", "110", "70%", "10", "Desata una ventisca que golpea a los adyacentes y tiene un 10 % de probabilidad de congelar."], "Viento Hielo": ["Hielo", "Especial", "55", "95%", "15", "Sopla aire helado a los adyacentes y baja su Velocidad en 1 nivel."], "Viraje": ["Bicho", "Físico", "70", "100%", "20", "Ataca y cambia automáticamente al usuario por otro Pokémon de su equipo."], "Voltiocambio": ["Eléctrico", "Especial", "70", "100%", "20", "Golpea con electricidad y permite cambiar al usuario por otro Pokémon de su equipo."], "Voz Cautivadora": ["Hada", "Especial", "40", "—", "15", "Emite una voz encantadora que nunca falla y confunde o daña a los adyacentes."], "Vozarrón": ["Normal", "Especial", "90", "100%", "10", "Ataca con un grito potente que afecta a los Pokémon adyacentes."], "Vínculo Destino": ["Fantasma", "Estado", "—", "—", "5", "Si el usuario es debilitado antes de su siguiente acción, el Pokémon que lo debilitó cae con él."], "Zona Extraña": ["Psíquico", "Estado", "—", "—", "10", "Intercambia los valores de Defensa y Defensa Especial de todos los Pokémon durante 5 turnos."], "chispazo": ["Eléctrico", "Especial", "80", "100%", "15", "Descarga eléctrica que golpea a los adyacentes con un 30 % de probabilidad de paralizar."], "dragoaliento": ["Dragón", "Especial", "60", "100%", "20", "Exhala un aliento dracónico con un 30 % de probabilidad de paralizar."], "enfado": ["Dragón", "Físico", "120", "100%", "10", "Ataca con furia durante 2 o 3 turnos seguidos y luego confunde al usuario."], "fuerza bruta": ["Lucha", "Físico", "120", "100%", "10", "Golpea con fuerza bruta pero reduce en 1 nivel el Ataque y la Defensa del usuario."], "pedrada": ["Roca", "Físico", "25", "90%", "15", "Lanza rocas de 2 a 5 veces seguidas en el mismo turno."], "psicocolmillo": ["Psíquico", "Físico", "85", "100%", "10", "Muerde con energía psíquica y rompe barreras como Reflejo o Pantalla de Luz."], "psicorrayo": ["Psíquico", "Especial", "65", "100%", "20", "Dispara un rayo psíquico con un 10 % de probabilidad de confundir."], "rizo defensa": ["Normal", "Estado", "—", "—", "40", "Aumenta la Defensa del usuario en 1 nivel."], "rueda fuego": ["Fuego", "Físico", "60", "100%", "25", "Rueda envuelto en llamas con un 10 % de probabilidad de quemar (y descongela al usuario)."], "Última Palabra": ["Siniestro", "Estado", "—", "100%", "20", "Reduce el Ataque y Ataque Especial del objetivo en 1 nivel y obliga a cambiar al usuario."], "ほっぺすりすり": ["Eléctrico", "Físico", "20", "100%", "20", "Frota las mejillas cargadas de electricidad y paraliza al objetivo de forma segura."], "吸": ["Planta", "Especial", "20", "100%", "25", "Absorbe una pequeña cantidad de PS del objetivo para curar al usuario."], "逆": ["Dragón", "Físico", "120", "100%", "10", "Ataque dracónico de alta potencia que deja confundido al usuario tras finalizar su racha."]};
+
+    function openAbilityModal(abilityName, pokemonName) {
+      const desc = ABILITY_DESCRIPTIONS[abilityName] || "Efecto de habilidad asignada a este Pokémon en el combate.";
+      modalKindTag.textContent = "Habilidad";
+      modalKindTag.className = "modal-type-tag";
+      modalTitle.textContent = abilityName;
+      modalSourceHint.textContent = `Pokémon: ${pokemonName}`;
+      modalBody.innerHTML = `
+        <div class="modal-stats-row">
+          <div class="modal-stat"><span>Pokémon</span><strong>${escapeHtml(pokemonName)}</strong></div>
+          <div class="modal-stat"><span>Tipo de dato</span><strong>Habilidad</strong></div>
+        </div>
+        <div class="modal-desc">
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);margin-bottom:6px;font-weight:700;">¿Qué hace?</div>
+          <div>${escapeHtml(desc)}</div>
+        </div>
+      `;
+      showModal();
+    }
+
+    function openMoveModal(moveName, moveType, pokemonName) {
+      const meta = MOVE_METADATA[moveName];
+      const type = meta ? meta[0] : (moveType || "Normal");
+      const category = meta ? meta[1] : "—";
+      const power = meta ? meta[2] : "—";
+      const accuracy = meta ? meta[3] : "—";
+      const pp = meta ? meta[4] : "—";
+      const desc = meta ? meta[5] : `Movimiento ${moveName} de tipo ${type}.`;
+
+      modalKindTag.textContent = `Movimiento · ${type} · ${category}`;
+      modalKindTag.className = "modal-type-tag move-tag";
+      modalTitle.textContent = moveName;
+      modalSourceHint.textContent = `Usuario: ${pokemonName}`;
+      modalBody.innerHTML = `
+        <div class="modal-stats-row cols-4">
+          <div class="modal-stat"><span>Tipo</span><strong>${escapeHtml(type)}</strong></div>
+          <div class="modal-stat"><span>Categoría</span><strong>${escapeHtml(category)}</strong></div>
+          <div class="modal-stat"><span>Potencia</span><strong>${escapeHtml(power)}</strong></div>
+          <div class="modal-stat"><span>Precisión · PP</span><strong>${escapeHtml(accuracy)} · ${escapeHtml(pp)}</strong></div>
+        </div>
+        <div class="modal-desc">
+          <div style="font-size:0.72rem;text-transform:uppercase;letter-spacing:0.05em;color:var(--text-muted);margin-bottom:6px;font-weight:700;">Efecto y detalles</div>
+          <div>${escapeHtml(desc)}</div>
+        </div>
+      `;
+      showModal();
+    }
+
+    function showModal() {
+      modal.classList.add("open");
+      modalOkBtn.focus();
+    }
+
+    function closeModal() {
+      modal.classList.remove("open");
+    }
+
+    function escapeHtml(str) {
+      return String(str).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+    }
+
+    function escapeAttr(str) {
+      return escapeHtml(str).replace(/'/g, "&#39;");
+    }
+
+    categoryFilter.addEventListener("change", applyFilters);
+    searchFilter.addEventListener("input", applyFilters);
+    trainerSelect.addEventListener("change", e => {
+      currentEncounterId = e.target.value;
+      const found = filteredEncounters.find(item => item.id === currentEncounterId);
+      renderEncounter(found);
+    });
+
+    modalCloseBtn.addEventListener("click", closeModal);
+    modalOkBtn.addEventListener("click", closeModal);
+    modal.addEventListener("click", e => { if (e.target === modal) closeModal(); });
+    document.addEventListener("keydown", e => {
+      if (e.key === "Escape" && modal.classList.contains("open")) closeModal();
+    });
+
+    async function loadTrainersJson() {
+      for (const file of ["trainers_data_v2.json", "trainers_data_2_2.json"]) {
+        try {
+          const res = await fetch(file);
+          if (res.ok) {
+            const parsed = await res.json();
+            const list = Array.isArray(parsed) ? parsed : (parsed.trainers || parsed.encounters || []);
+            if (list.length > 0) {
+              TRAINERS_DATA = list;
+              currentEncounterId = TRAINERS_DATA[0].id;
+              return;
+            }
+          }
+        } catch {}
+      }
+    }
+
+    async function init() {
+      await loadTrainersJson();
+      initCategories();
+      renderGlobalStats();
+      applyFilters();
+    }
+
+    init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,4380 @@
+[
+  {
+    "id": "enc-001",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 2 (si elegiste Grookey)",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "11",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Plácida",
+        "evs": "20 PS/20 Defensa",
+        "moves": [
+          "División Defensa",
+          "Placaje",
+          "Rizo Defensa",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "11",
+        "item": "",
+        "ability": "Espíritu Vital",
+        "nature": "Firme",
+        "evs": "20 Ataque/20 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Antojo",
+          "Esfuerzo"
+        ]
+      },
+      {
+        "pokemon": "Fletchling",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/661.png",
+        "level": "11",
+        "item": "",
+        "ability": "Alas Vendaval",
+        "nature": "Ingenua",
+        "evs": "30 Ataque/30 Spd",
+        "moves": [
+          "Picotazo",
+          "Gruñido",
+          "Ataque Rápido",
+          "Ascuas"
+        ]
+      },
+      {
+        "pokemon": "Sobble",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/816.png",
+        "level": "12",
+        "item": "Baya Aranja",
+        "ability": "Francotirador",
+        "nature": "Ingenua",
+        "evs": "30 At. Esp./30 Vel.",
+        "moves": [
+          "Hidropulso",
+          "Canto Helado",
+          "Pistola Agua",
+          "Atadura"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-002",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 2 (si elegiste Scorbunny)",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "11",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Plácida",
+        "evs": "20 PS/20 Defensa",
+        "moves": [
+          "División Defensa",
+          "Placaje",
+          "Rizo Defensa",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "11",
+        "item": "",
+        "ability": "Espíritu Vital",
+        "nature": "Firme",
+        "evs": "20 Ataque/20 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Antojo",
+          "Esfuerzo"
+        ]
+      },
+      {
+        "pokemon": "Chewtle",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/833.png",
+        "level": "11",
+        "item": "",
+        "ability": "Mandíbula Fuerte",
+        "nature": "Plácida",
+        "evs": "30 PS/30 Defensa",
+        "moves": [
+          "Placaje",
+          "Pistola Agua",
+          "Mordisco"
+        ]
+      },
+      {
+        "pokemon": "Grookey",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/810.png",
+        "level": "12",
+        "item": "Baya Aranja",
+        "ability": "Herbogénesis",
+        "nature": "Plácida",
+        "evs": "30 PS/ 30 Defensa",
+        "moves": [
+          "Hoja Afilada",
+          "Sorpresa",
+          "Punzada Rama",
+          "Mofa"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-003",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 2 (si elegiste Sobble)",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "11",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Plácida",
+        "evs": "20 PS/20 Defensa",
+        "moves": [
+          "División Defensa",
+          "Placaje",
+          "Rizo Defensa",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "11",
+        "item": "",
+        "ability": "Espíritu Vital",
+        "nature": "Firme",
+        "evs": "20 Ataque/20 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Antojo",
+          "Esfuerzo"
+        ]
+      },
+      {
+        "pokemon": "Lotad",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/270.png",
+        "level": "11",
+        "item": "",
+        "ability": "Ritmo Propio",
+        "nature": "Plácida",
+        "evs": "30 PS/30 Defensa",
+        "moves": [
+          "Neblina",
+          "Gruñido",
+          "Absorber",
+          "Pistola Agua"
+        ]
+      },
+      {
+        "pokemon": "Scorbunny",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/813.png",
+        "level": "12",
+        "item": "Baya Aranja",
+        "ability": "Líbero",
+        "nature": "Ingenua",
+        "evs": "30 Ataque/30 Vel.",
+        "moves": [
+          "Doble Patada",
+          "Ascuas",
+          "Gruñido",
+          "Ataque Rápido"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-004",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Par (si elegiste Grookey)",
+    "format": "Combate individual",
+    "note": "Imagen · Ascuas · Atadura",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "15",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "División Defensa",
+          "Pisotón",
+          "Rodar",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "15",
+        "item": "",
+        "ability": "Steadfast",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Leer",
+          "Esfuerzo",
+          "Antojo"
+        ]
+      },
+      {
+        "pokemon": "Growlithe",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+        "level": "16",
+        "item": "",
+        "ability": "Intimidación",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Spd",
+        "moves": [
+          "Rueda Fuego",
+          "Aullido",
+          "Mordisco"
+        ]
+      },
+      {
+        "pokemon": "Drizzile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
+        "level": "17",
+        "item": "Baya Aranja",
+        "ability": "Francotirador",
+        "nature": "Modesta",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Hidropulso",
+          "Canto Helado",
+          "Aguijón Letal",
+          "Atadura"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-005",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Par (si elegiste Scorbunny)",
+    "format": "Combate individual",
+    "note": "Ascuas · Atadura · Imagen · Mofa",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "15",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "División Defensa",
+          "Pisotón",
+          "Rodar",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "15",
+        "item": "",
+        "ability": "Espíritu Vital",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Leer",
+          "Esfuerzo",
+          "Cover"
+        ]
+      },
+      {
+        "pokemon": "Wooper",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/194.png",
+        "level": "16",
+        "item": "",
+        "ability": "Absorbe Agua",
+        "nature": "Grosera",
+        "evs": "50 PS/50 Def. Esp.",
+        "moves": [
+          "Danza Lluvia",
+          "Niebla",
+          "Pistola Agua",
+          "Disparo Lodo"
+        ]
+      },
+      {
+        "pokemon": "Thwackey",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
+        "level": "17",
+        "item": "Baya Aranja",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "50 PS/50 Ataque",
+        "moves": [
+          "Mofa",
+          "Sorpresa",
+          "Hoja Afilada",
+          "Drenadoras"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-006",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Par (si elegiste Sobble)",
+    "format": "Combate individual",
+    "note": "Mofa · Imagen · Pistola Agua · Ataque Rápido",
+    "team": [
+      {
+        "pokemon": "Wooloo",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/831.png",
+        "level": "15",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "División Defensa",
+          "Pisotón",
+          "Rodar",
+          "Imagen"
+        ]
+      },
+      {
+        "pokemon": "Rockruff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/744.png",
+        "level": "15",
+        "item": "",
+        "ability": "Steadfast",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Lanzarrocas",
+          "Leer",
+          "Esfuerzo",
+          "Cover"
+        ]
+      },
+      {
+        "pokemon": "Oddish",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/43.png",
+        "level": "16",
+        "item": "",
+        "ability": "Chlorophyll",
+        "nature": "Modesta",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Drenadoras",
+          "Megaagotar",
+          "Día Soleado",
+          "Paralizador"
+        ]
+      },
+      {
+        "pokemon": "Raboot",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
+        "level": "17",
+        "item": "Baya Aranja",
+        "ability": "Líbero",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Doble Patada",
+          "Gruñido",
+          "Ascuas",
+          "Ataque Rápido"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-007",
+    "category": "Combates contra el rival",
+    "name": "Berto - Mina de Galar",
+    "format": "Combate individual",
+    "note": "Imagen · Antojo · Atadura",
+    "team": [
+      {
+        "pokemon": "Solosis",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/577.png",
+        "level": "19",
+        "item": "Refleluz",
+        "ability": "Muro Mágico",
+        "nature": "Modesta",
+        "evs": "50 PS/50 Def. Esp.",
+        "moves": [
+          "Psicorrayo",
+          "Reflejo",
+          "Recuperación",
+          "Pantalla de Luz"
+        ]
+      },
+      {
+        "pokemon": "Gothita",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/574.png",
+        "level": "19",
+        "item": "",
+        "ability": "Shadow Tag",
+        "nature": "Osada",
+        "evs": "50 At. Esp./50 Vel.",
+        "moves": [
+          "Psicorrayo",
+          "Sorpresa",
+          "Cosquillas",
+          "Tormento"
+        ]
+      },
+      {
+        "pokemon": "Espurr",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/677.png",
+        "level": "20",
+        "item": "",
+        "ability": "Ritmo Propio",
+        "nature": "Modesta",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Confusión",
+          "Bostezo",
+          "Sorpresa",
+          "Voz Cautivadora"
+        ]
+      },
+      {
+        "pokemon": "Hatenna",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/856.png",
+        "level": "21",
+        "item": "Baya Aranja",
+        "ability": "Espejo Mágico",
+        "nature": "Modesta",
+        "evs": "59 PS/50 At. Esp.",
+        "moves": [
+          "Hoja Mágica",
+          "Psicorrayo",
+          "Moflete Estático",
+          "Voz Cautivadora"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-008",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 5 (si elegiste Grookey)",
+    "format": "Combate doble",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "27",
+        "item": "Baya Atania",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "Descanso",
+          "Doble Patada",
+          "Golpe Cabeza",
+          "Nitrocarga"
+        ]
+      },
+      {
+        "pokemon": "Growlithe",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/58.png",
+        "level": "27",
+        "item": "",
+        "ability": "Intimidación",
+        "nature": "Huraña",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Danza Amiga",
+          "Alarido",
+          "Doble Patada",
+          "Colmillo Ígneo"
+        ]
+      },
+      {
+        "pokemon": "Eevee",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+        "level": "28",
+        "item": "Mineral Evolutivo",
+        "ability": "Genetic Instability",
+        "nature": "Alocada",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Recurrente",
+          "Viento Hielo",
+          "Giro Fuego",
+          "Alarido"
+        ]
+      },
+      {
+        "pokemon": "Lycanroc Day",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+        "level": "28",
+        "item": "",
+        "ability": "Allanamiento",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Roca Veloz",
+          "Golpe Bajo",
+          "Anticipo",
+          "Antojo"
+        ]
+      },
+      {
+        "pokemon": "Drizzile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/817.png",
+        "level": "29",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Acua Jet",
+          "Golpe Bajo",
+          "Aguijón Letal",
+          "Canto Helado"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-009",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 5 (si elegiste Scorbunny)",
+    "format": "Combate doble",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "27",
+        "item": "Baya Atania",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "Descanso",
+          "Doble Patada",
+          "Golpe Cabeza",
+          "Nitrocarga"
+        ]
+      },
+      {
+        "pokemon": "Lycanroc Dusk",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+        "level": "27",
+        "item": "",
+        "ability": "Garra Dura",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Roca Veloz",
+          "Golpe Bajo",
+          "Anticipo",
+          "Antojo"
+        ]
+      },
+      {
+        "pokemon": "Eevee",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+        "level": "28",
+        "item": "Mineral Evolutivo",
+        "ability": "Genetic Instability",
+        "nature": "Alocada",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Recurrente",
+          "Viento Hielo",
+          "Giro Fuego",
+          "Alarido"
+        ]
+      },
+      {
+        "pokemon": "Quagsire",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+        "level": "28",
+        "item": "",
+        "ability": "Absorbe Agua",
+        "nature": "Grosera",
+        "evs": "50 PS/50 Def. Esp.",
+        "moves": [
+          "Acua Cola",
+          "Danza Lluvia",
+          "Terratemblor",
+          "Bostezo"
+        ]
+      },
+      {
+        "pokemon": "Thwackey",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/811.png",
+        "level": "29",
+        "item": "Cubresuelos",
+        "ability": "Herbogénesis",
+        "nature": "Fuerte",
+        "evs": "(none)",
+        "moves": [
+          "Mofa",
+          "Sorpresa",
+          "Hoja Afilada",
+          "Desarme"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-010",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ruta 5 (si elegiste Sobble)",
+    "format": "Combate doble",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "27",
+        "item": "Baya Atania",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "Descanso",
+          "Doble Patada",
+          "Golpe Cabeza",
+          "Nitrocarga"
+        ]
+      },
+      {
+        "pokemon": "Lycanroc Night",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/745.png",
+        "level": "27",
+        "item": "",
+        "ability": "Intimidación",
+        "nature": "Plácida",
+        "evs": "50 PS/50 Defensa",
+        "moves": [
+          "Desahogo",
+          "Golpe Bajo",
+          "Enfado",
+          "Tumba Rocas"
+        ]
+      },
+      {
+        "pokemon": "Eevee",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/133.png",
+        "level": "28",
+        "item": "Mineral Evolutivo",
+        "ability": "Genetic Instability",
+        "nature": "Alocada",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Recurrente",
+          "Viento Hielo",
+          "Giro Fuego",
+          "Alarido"
+        ]
+      },
+      {
+        "pokemon": "Bellossom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/182.png",
+        "level": "28",
+        "item": "",
+        "ability": "Healer",
+        "nature": "Grosera",
+        "evs": "50 PS/50 At. Esp.",
+        "moves": [
+          "Danza Caos",
+          "Somnífero",
+          "Campo de Hierba",
+          "Fitoimpulso"
+        ]
+      },
+      {
+        "pokemon": "Raboot",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/814.png",
+        "level": "29",
+        "item": "Baya Zidra",
+        "ability": "Líbero",
+        "nature": "Firme",
+        "evs": "50 Ataque/50 Vel.",
+        "moves": [
+          "Golpe Bajo",
+          "Nitrocarga",
+          "Superdiente",
+          "Doble Patada"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-011",
+    "category": "Combates contra el rival",
+    "name": "Berto - Mina de Galar n.º 2",
+    "format": "Combate individual",
+    "note": "Nitrocarga · Colmillo Ígneo · Alarido · Antojo",
+    "team": [
+      {
+        "pokemon": "Duosion",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/578.png",
+        "level": "34",
+        "item": "Refleluz",
+        "ability": "Muro Mágico",
+        "nature": "Modesta",
+        "evs": "100 PS/100 At. Esp.",
+        "moves": [
+          "Reflejo",
+          "Recuperación",
+          "Psicocarga",
+          "Pantalla de Luz"
+        ]
+      },
+      {
+        "pokemon": "Gothorita",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/575.png",
+        "level": "34",
+        "item": "Gafas Elegidas",
+        "ability": "Shadow Tag",
+        "nature": "Osada",
+        "evs": "100 Defensa/100 Def. Esp.",
+        "moves": [
+          "Truco",
+          "Psicorrayo",
+          "Psicocarga",
+          "Vendetta"
+        ]
+      },
+      {
+        "pokemon": "Ponyta",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/77.png",
+        "level": "35",
+        "item": "Baya Dillo",
+        "ability": "Velo Pastel",
+        "nature": "Alocada",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Doble Patada",
+          "Sol Matinal",
+          "Cabezazo Zen",
+          "Pisotón"
+        ]
+      },
+      {
+        "pokemon": "Elgyem",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/605.png",
+        "level": "35",
+        "item": "Mineral Evolutivo",
+        "ability": "Sincronía",
+        "nature": "Modesta",
+        "evs": "100 At. Esp./100 Def. Esp.",
+        "moves": [
+          "Zona Extraña",
+          "Psicorrayo",
+          "Onda Trueno",
+          "Anulación"
+        ]
+      },
+      {
+        "pokemon": "Swoobat",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/528.png",
+        "level": "35",
+        "item": "",
+        "ability": "Soul Heart",
+        "nature": "Modesta",
+        "evs": "100 At. Esp./100 Vel.",
+        "moves": [
+          "Psicorrayo",
+          "Doble Rayo",
+          "Tajo Aéreo",
+          "Respiro"
+        ]
+      },
+      {
+        "pokemon": "Hattrem",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/857.png",
+        "level": "36",
+        "item": "Baya Zidra",
+        "ability": "Espejo Mágico",
+        "nature": "Modesta",
+        "evs": "100 PS/100 At. Esp.",
+        "moves": [
+          "Hoja Mágica",
+          "Brillo Mágico",
+          "Moflete Estático",
+          "Psicorrayo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-012",
+    "category": "Combates contra el rival",
+    "name": "Roxy - Hostal Budew de Pueblo Par",
+    "format": "Combate individual",
+    "note": "Pantalla de Luz · Vendetta · Pisotón · Anulación",
+    "team": [
+      {
+        "pokemon": "Sableye",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
+        "level": "39",
+        "item": "Restos",
+        "ability": "Espejo Mágico",
+        "nature": "Agitada",
+        "evs": "100 PS/100 Def. Esp.",
+        "moves": [
+          "Fuego Fatuo",
+          "Sorpresa",
+          "Garra Umbría",
+          "Golpe Bajo"
+        ]
+      },
+      {
+        "pokemon": "Scrafty",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+        "level": "39",
+        "item": "Baya Ziuela",
+        "ability": "Autoestima",
+        "nature": "Firme",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Puya Nociva",
+          "Desarme",
+          "Demolición",
+          "Sorpresa"
+        ]
+      },
+      {
+        "pokemon": "Zoroark",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+        "level": "40",
+        "item": "Baya Pomaro",
+        "ability": "Ilusión",
+        "nature": "Ingenua",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Bomba Lodo",
+          "Rastrillaje",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Absol",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+        "level": "40",
+        "item": "Vidasfera",
+        "ability": "Justified",
+        "nature": "Alegre",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Maldición",
+          "Cuchillada",
+          "Desarme",
+          "Golpe Bajo"
+        ]
+      },
+      {
+        "pokemon": "Morgrem",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/860.png",
+        "level": "41",
+        "item": "Mineral Evolutivo",
+        "ability": "Bromista",
+        "nature": "Plácida",
+        "evs": "100 PS/100 Defensa",
+        "moves": [
+          "Onda Trueno",
+          "Contoneo",
+          "Octopresa",
+          "Reflejo"
+        ]
+      },
+      {
+        "pokemon": "Morpeko",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
+        "level": "42",
+        "item": "Baya Zidra",
+        "ability": "Mutapetito",
+        "nature": "Alegre",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Sorpresa",
+          "Puño Trueno",
+          "Última Palabra",
+          "Demolición"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-013",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Ladera (si elegiste Grookey)",
+    "format": "Combate individual",
+    "note": "Golpe Bajo · Sorpresa · Desarme",
+    "team": [
+      {
+        "pokemon": "Kangaskhan",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        "level": "45",
+        "item": "Vidasfera",
+        "ability": "Parental Bond",
+        "nature": "Firme",
+        "evs": "125 PS/125 Ataque",
+        "moves": [
+          "Sorpresa",
+          "Puño Incremento",
+          "Golpe Bajo",
+          "Golpe Cabeza"
+        ]
+      },
+      {
+        "pokemon": "Maractus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+        "level": "45",
+        "item": "Banda Focus",
+        "ability": "Bailar",
+        "nature": "Firme",
+        "evs": "125 Ataque/125 Vel.",
+        "moves": [
+          "Barrera Espinosa",
+          "Puño Fuego",
+          "Puño Incremento",
+          "Bomba Germen"
+        ]
+      },
+      {
+        "pokemon": "Torkoal",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+        "level": "46",
+        "item": "Roca Calor",
+        "ability": "Sequía",
+        "nature": "Plácida",
+        "evs": "125 PS/125 Defensa",
+        "moves": [
+          "Arenas Ardientes",
+          "Rayo Solar",
+          "Envidia Ardiente",
+          "Maldición"
+        ]
+      },
+      {
+        "pokemon": "Doublade",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
+        "level": "46",
+        "item": "Mineral Evolutivo",
+        "ability": "Indefenso",
+        "nature": "Agitada",
+        "evs": "125 PS/125 Defensa",
+        "moves": [
+          "Represalia",
+          "Demolición",
+          "Cabeza de Hierro",
+          "Sombra Vil"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "46",
+        "item": "Restos",
+        "ability": "Levitación",
+        "nature": "Modesta",
+        "evs": "125 PS/125 Spa",
+        "moves": [
+          "Dragoaliento",
+          "Arenas Ardientes",
+          "Lanzallamas",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Inteleon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+        "level": "47",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Disparo Certero",
+          "Disparo Lodo",
+          "Meteorobola",
+          "Tajo Aéreo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-014",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Ladera (si elegiste Scorbunny)",
+    "format": "Combate individual",
+    "note": "Reflejo · Demolición",
+    "team": [
+      {
+        "pokemon": "Kangaskhan",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        "level": "45",
+        "item": "Vidasfera",
+        "ability": "Parental Bond",
+        "nature": "Firme",
+        "evs": "125 PS/125 Ataque",
+        "moves": [
+          "Sorpresa",
+          "Puño Incremento",
+          "Golpe Bajo",
+          "Golpe Cabeza"
+        ]
+      },
+      {
+        "pokemon": "Cramorant",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+        "level": "45",
+        "item": "Hierba Única",
+        "ability": "Tragamisil",
+        "nature": "Firme",
+        "evs": "125 Ataque/125 Vel.",
+        "moves": [
+          "Buceo",
+          "Enfado",
+          "Despejar",
+          "Picoteo"
+        ]
+      },
+      {
+        "pokemon": "Torkoal",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+        "level": "46",
+        "item": "Roca Calor",
+        "ability": "Sequía",
+        "nature": "Plácida",
+        "evs": "125 PS/125 Defensa",
+        "moves": [
+          "Arenas Ardientes",
+          "Rayo Solar",
+          "Envidia Ardiente",
+          "Maldición"
+        ]
+      },
+      {
+        "pokemon": "Doublade",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
+        "level": "46",
+        "item": "Mineral Evolutivo",
+        "ability": "Indefenso",
+        "nature": "Agitada",
+        "evs": "125 PS/125 Defensa",
+        "moves": [
+          "Represalia",
+          "Demolición",
+          "Cabeza de Hierro",
+          "Sombra Vil"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "46",
+        "item": "Restos",
+        "ability": "Levitación",
+        "nature": "Modesta",
+        "evs": "125 PS/125 Spa",
+        "moves": [
+          "Dragoaliento",
+          "Arenas Ardientes",
+          "Lanzallamas",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "47",
+        "item": "Cubresuelos",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Danza Espada",
+          "Fitoimpulso",
+          "Ida y Vuelta",
+          "Desarme"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-015",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Ladera (si elegiste Sobble)",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Kangaskhan",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/115.png",
+        "level": "45",
+        "item": "Vidasfera",
+        "ability": "Parental Bond",
+        "nature": "Firme",
+        "evs": "125 PS/125 Ataque",
+        "moves": [
+          "Sorpresa",
+          "Puño Incremento",
+          "Golpe Bajo",
+          "Golpe Cabeza"
+        ]
+      },
+      {
+        "pokemon": "Cramorant",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+        "level": "45",
+        "item": "Hierba Única",
+        "ability": "Tragamisil",
+        "nature": "Firme",
+        "evs": "125 Ataque/125 Vel.",
+        "moves": [
+          "Buceo",
+          "Enfado",
+          "Despejar",
+          "Picoteo"
+        ]
+      },
+      {
+        "pokemon": "Maractus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+        "level": "46",
+        "item": "Banda Focus",
+        "ability": "Bailar",
+        "nature": "Firme",
+        "evs": "125 Ataque/125 Vel.",
+        "moves": [
+          "Barrera Espinosa",
+          "Puño Fuego",
+          "Puño Incremento",
+          "Bomba Germen"
+        ]
+      },
+      {
+        "pokemon": "Doublade",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/680.png",
+        "level": "46",
+        "item": "Mineral Evolutivo",
+        "ability": "Indefenso",
+        "nature": "Agitada",
+        "evs": "125 PS/125 Defensa",
+        "moves": [
+          "Represalia",
+          "Demolición",
+          "Cabeza de Hierro",
+          "Sombra Vil"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "46",
+        "item": "Restos",
+        "ability": "Levitación",
+        "nature": "Modesta",
+        "evs": "125 PS/125 Spa",
+        "moves": [
+          "Dragoaliento",
+          "Arenas Ardientes",
+          "Lanzallamas",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Cinderace",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+        "level": "47",
+        "item": "Cinta Experto",
+        "ability": "Líbero",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Balón Ígneo",
+          "Ida y Vuelta",
+          "Golpe Bajo",
+          "Cabeza de Hierro"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-016",
+    "category": "Combates contra el rival",
+    "name": "Berto - Pueblo Ladera",
+    "format": "Combate individual",
+    "note": "Golpe Cabeza · Bomba Germen · Maldición · Sombra Vil",
+    "team": [
+      {
+        "pokemon": "Reuniclus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/579.png",
+        "level": "49",
+        "item": "Refleluz",
+        "ability": "Muro Mágico",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Pantalla de Luz",
+          "Reflejo",
+          "Vasta Fuerza",
+          "Campo Psíquico"
+        ]
+      },
+      {
+        "pokemon": "Gothitelle",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/576.png",
+        "level": "49",
+        "item": "Restos",
+        "ability": "Shadow Tag",
+        "nature": "Osada",
+        "evs": "252 Defensa/252 Def. Esp.",
+        "moves": [
+          "Espacio Raro",
+          "Onda Trueno",
+          "Psíquico",
+          "Energibola"
+        ]
+      },
+      {
+        "pokemon": "Rapidash de Galar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+        "level": "50",
+        "item": "Servicio Raro",
+        "ability": "Piel Feérica",
+        "nature": "Audaz",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Golpe Cuerpo",
+          "Psicocorte",
+          "Taladradora",
+          "Golpe Mordaza"
+        ]
+      },
+      {
+        "pokemon": "Beheeyem",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/606.png",
+        "level": "50",
+        "item": "Baya Petaya",
+        "ability": "Sincronía",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Vínculo Destino",
+          "Recuperación",
+          "Espacio Raro",
+          "Psíquico"
+        ]
+      },
+      {
+        "pokemon": "Copperajah",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
+        "level": "51",
+        "item": "Chaleco Asalto",
+        "ability": "Potencia Bruta",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Golpe Calor",
+          "Latigazo",
+          "Cuerpo Pesado",
+          "Fuerza Equina"
+        ]
+      },
+      {
+        "pokemon": "Hatterene",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
+        "level": "52",
+        "item": "Baya Zidra",
+        "ability": "Espejo Mágico",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Psíquico",
+          "Llama Embrujada",
+          "Brillo Mágico",
+          "Moflete Estático"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-017",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ciudad Artejo (si elegiste Grookey)",
+    "format": "Combate individual",
+    "note": "Campo Psíquico · Energibola · Golpe Mordaza · Psíquico",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "56",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Agitada",
+        "evs": "248 PS/252 Defensa/8 Vel.",
+        "moves": [
+          "Respiro",
+          "Trampa Rocas",
+          "Tóxico",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Clefable",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+        "level": "56",
+        "item": "Restos",
+        "ability": "Ignorante",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa/4 Def. Esp.",
+        "moves": [
+          "Fuerza Lunar",
+          "Deseo",
+          "Teletransporte",
+          "Paz Mental"
+        ]
+      },
+      {
+        "pokemon": "Sceptile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
+        "level": "57",
+        "item": "Banda Focus",
+        "ability": "Liviano",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Energibola",
+          "Drenadoras",
+          "Onda Certera",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+        "level": "57",
+        "item": "Botas Gruesas",
+        "ability": "Intimidación",
+        "nature": "Cauta",
+        "evs": "252PS/124 Defensa/132 Def. Esp.",
+        "moves": [
+          "Última Palabra",
+          "Sorpresa",
+          "Lariat Oscuro",
+          "Envite Ígneo"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "58",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Firme",
+        "evs": "4 PS/252 Ataque/252 Vel.",
+        "moves": [
+          "A Bocajarro",
+          "Puya Nociva",
+          "Danza Espada",
+          "Ráfaga Escamas"
+        ]
+      },
+      {
+        "pokemon": "Inteleon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+        "level": "59",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./4 Def. Esp./252 Vel.",
+        "moves": [
+          "Foco Energía",
+          "Disparo Certero",
+          "Rayo Hielo",
+          "Pulso Umbrío"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-018",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ciudad Artejo (si elegiste Scorbunny)",
+    "format": "Combate individual",
+    "note": "Fuerza Equina · Moflete Estático",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "56",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Agitada",
+        "evs": "248 PS/252 Defensa/8 Vel.",
+        "moves": [
+          "Respiro",
+          "Trampa Rocas",
+          "Tóxico",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Clefable",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+        "level": "56",
+        "item": "Restos",
+        "ability": "Ignorante",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa/4 Def. Esp.",
+        "moves": [
+          "Fuerza Lunar",
+          "Deseo",
+          "Teletransporte",
+          "Paz Mental"
+        ]
+      },
+      {
+        "pokemon": "Swampert",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/260.png",
+        "level": "57",
+        "item": "Chaleco Asalto",
+        "ability": "Humedad",
+        "nature": "Grosera",
+        "evs": "248 PS/8 Defensa/252 Def. Esp.",
+        "moves": [
+          "Viraje",
+          "Terremoto",
+          "Puño Hielo",
+          "Demolición"
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+        "level": "57",
+        "item": "Botas Gruesas",
+        "ability": "Intimidación",
+        "nature": "Cauta",
+        "evs": "252 PS/124 Defensa/132 Def. Esp.",
+        "moves": [
+          "Última Palabra",
+          "Sorpresa",
+          "Lariat Oscuro",
+          "Envite Ígneo"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "58",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Firme",
+        "evs": "4 PS/252 Ataque/252 Vel.",
+        "moves": [
+          "A Bocajarro",
+          "Puya Nociva",
+          "Danza Espada",
+          "Ráfaga Escamas"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "59",
+        "item": "Cubresuelos",
+        "ability": "Chaleco Asalto",
+        "nature": "Firme",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Fitoimpulso",
+          "Desarme",
+          "Ida y Vuelta",
+          "Puño Drenaje"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-019",
+    "category": "Combates contra el rival",
+    "name": "Paul - Ciudad Artejo (si elegiste Sobble)",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "56",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Agitada",
+        "evs": "248 PS/252 Defensa/8 Vel.",
+        "moves": [
+          "Respiro",
+          "Trampa Rocas",
+          "Tóxico",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Clefable",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/36.png",
+        "level": "56",
+        "item": "Restos",
+        "ability": "Ignorante",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa/4 Def. Esp.",
+        "moves": [
+          "Fuerza Lunar",
+          "Deseo",
+          "Teletransporte",
+          "Paz Mental"
+        ]
+      },
+      {
+        "pokemon": "Sceptile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/254.png",
+        "level": "57",
+        "item": "Banda Focus",
+        "ability": "Liviano",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Energibola",
+          "Drenadoras",
+          "Onda Certera",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Primarina",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+        "level": "57",
+        "item": "Gafas Elegidas",
+        "ability": "Torrente",
+        "nature": "Modesta",
+        "evs": "40 PS/252 At. Esp./216 Vel.",
+        "moves": [
+          "Fuerza Lunar",
+          "Psíquico",
+          "Rayo Hielo",
+          "Escaldar"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "58",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Firme",
+        "evs": "4 PS/252 Ataque/252 Vel.",
+        "moves": [
+          "A Bocajarro",
+          "Puya Nociva",
+          "Danza Espada",
+          "Ráfaga Escamas"
+        ]
+      },
+      {
+        "pokemon": "Cinderace",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+        "level": "59",
+        "item": "Botas Gruesas",
+        "ability": "Líbero",
+        "nature": "Alegre",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Balón Ígneo",
+          "Ida y Vuelta",
+          "Golpe Bajo",
+          "Patada Salto Alta"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-020",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Auriga (si elegiste Grookey)",
+    "format": "Combate individual",
+    "note": "Plancha · Paz Mental · Pulso Dragón · Envite Ígneo",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "67",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "67",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Púas",
+          "Respiro",
+          "Plancha",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+        "level": "68",
+        "item": "Botas Gruesas",
+        "ability": "Intimidación",
+        "nature": "Grosera",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Última Palabra",
+          "Desarme",
+          "Sorpresa",
+          "Envite Ígneo"
+        ]
+      },
+      {
+        "pokemon": "Maractus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+        "level": "68",
+        "item": "Vidasfera",
+        "ability": "Bailar",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Barrera Espinosa",
+          "Golpe Bajo",
+          "Taladradora",
+          "Mazazo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "69",
+        "item": "Baya Rimoya",
+        "ability": "Cromolente",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Estruendo",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Inteleon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+        "level": "70",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./4 Def. Esp./252 Vel.",
+        "moves": [
+          "Foco Energía",
+          "Disparo Certero",
+          "Rayo Hielo",
+          "Pulso Umbrío"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-021",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Auriga (si elegiste Scorbunny)",
+    "format": "Combate individual",
+    "note": "Ráfaga Escamas · Pulso Umbrío · Plancha · Paz Mental · Demolición · Envite Ígneo",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "67",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "67",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Púas",
+          "Respiro",
+          "Plancha",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Primarina",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+        "level": "68",
+        "item": "Gafas Elegidas",
+        "ability": "Torrente",
+        "nature": "Modesta",
+        "evs": "40 PS/252 At. Esp./216 Vel.",
+        "moves": [
+          "Fuerza Lunar",
+          "Psíquico",
+          "Rayo Hielo",
+          "Escaldar"
+        ]
+      },
+      {
+        "pokemon": "Arcanine",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+        "level": "68",
+        "item": "Vidasfera",
+        "ability": "Intimidación",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Envite Ígneo",
+          "Colmillo Rayo",
+          "Velocidad Extrema",
+          "Colmillo Hielo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "69",
+        "item": "Baya Rimoya",
+        "ability": "Cromolente",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Estruendo",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "70",
+        "item": "Cubresuelos",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Fitoimpulso",
+          "Desarme",
+          "Ida y Vuelta",
+          "Puño Drenaje"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-022",
+    "category": "Combates contra el rival",
+    "name": "Paul - Pueblo Auriga (si elegiste Sobble)",
+    "format": "Combate individual",
+    "note": "Ráfaga Escamas · Puño Drenaje · Plancha · Paz Mental · Pulso Dragón · Escaldar",
+    "team": [
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "67",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "67",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Púas",
+          "Respiro",
+          "Plancha",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Decidueye",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
+        "level": "68",
+        "item": "Vidasfera",
+        "ability": "Remoto",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Poltergeist",
+          "Pájaro Osado",
+          "Hoja Aguda",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Cramorant",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+        "level": "68",
+        "item": "Hierba Única",
+        "ability": "Tragamisil",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Buceo",
+          "Enfado",
+          "Despejar",
+          "Picoteo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "69",
+        "item": "Baya Rimoya",
+        "ability": "Cromolente",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Estruendo",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Cinderace",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+        "level": "70",
+        "item": "Botas Gruesas",
+        "ability": "Líbero",
+        "nature": "Alegre",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Balón Ígneo",
+          "Ida y Vuelta",
+          "Golpe Bajo",
+          "Patada Salto Alta"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-023",
+    "category": "Combates contra el rival",
+    "name": "Roxy - Ruta 9",
+    "format": "Combate individual",
+    "note": "Plancha · Pájaro Osado · Envite Ígneo · Mazazo",
+    "team": [
+      {
+        "pokemon": "Sableye",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
+        "level": "70",
+        "item": "Casco Dentado",
+        "ability": "Espejo Mágico",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Recuperación",
+          "Fuego Fatuo",
+          "Desarme",
+          "Protección"
+        ]
+      },
+      {
+        "pokemon": "Zoroark",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+        "level": "70",
+        "item": "Vidasfera",
+        "ability": "Ilusión",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Bomba Lodo",
+          "Pulso Umbrío",
+          "Lanzallamas",
+          "Maquinación"
+        ]
+      },
+      {
+        "pokemon": "Scrafty",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+        "level": "71",
+        "item": "Restos",
+        "ability": "Mudar",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Corpulencia",
+          "Descanso",
+          "Puño Drenaje",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Absol",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+        "level": "71",
+        "item": "Banda Focus",
+        "ability": "Espejo Mágico",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Danza Espada",
+          "Desarme",
+          "Carantoña",
+          "Golpe Bajo"
+        ]
+      },
+      {
+        "pokemon": "Grimmsnarl",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
+        "level": "72",
+        "item": "Refleluz",
+        "ability": "Bromista",
+        "nature": "Serena",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Reflejo",
+          "Pantalla de Luz",
+          "Choque Anímico",
+          "Mofa"
+        ]
+      },
+      {
+        "pokemon": "Morpeko",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
+        "level": "73",
+        "item": "Baya Zidra",
+        "ability": "Mutapetito",
+        "nature": "Alegre",
+        "evs": "252Ataque/252 Vel.",
+        "moves": [
+          "Rueda Aural",
+          "Psicocolmillo",
+          "Placaje Eléctrico",
+          "Triturar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-024",
+    "category": "Líderes de gimnasio",
+    "name": "Milo",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Tangela",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/114.png",
+        "level": "24",
+        "item": "Mineral Evolutivo",
+        "ability": "Regeneración",
+        "nature": "Osada",
+        "evs": "100 PS/100 Defensa",
+        "moves": [
+          "Megaagotar",
+          "Campo de Hierba",
+          "Drenadoras",
+          "Poder Pasado"
+        ]
+      },
+      {
+        "pokemon": "Cherrim (Forma Encapotada)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/421.png",
+        "level": "24",
+        "item": "",
+        "ability": "Comatose",
+        "nature": "Modesta",
+        "evs": "100 PS/Def. Esp. 100",
+        "moves": [
+          "Fitoimpulso",
+          "Adaptación",
+          "Campo de Hierba",
+          "Hoja Mágica"
+        ]
+      },
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "25",
+        "item": "",
+        "ability": "Peluche",
+        "nature": "Miedosa",
+        "evs": "PS 100/Vel. 100",
+        "moves": [
+          "Fitoimpulso",
+          "Onda Trueno",
+          "Golpe Cabeza",
+          "Nitrocarga"
+        ]
+      },
+      {
+        "pokemon": "Lombre",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/271.png",
+        "level": "26",
+        "item": "",
+        "ability": "Ritmo Propio",
+        "nature": "Plácida",
+        "evs": "PS 100/Defensa 100",
+        "moves": [
+          "Danza Caos",
+          "Fitoimpulso",
+          "Drenadoras",
+          "Rayo Burbuja"
+        ]
+      },
+      {
+        "pokemon": "Eldegoss (Dinamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/830.png",
+        "level": "27",
+        "item": "Baya Zidra",
+        "ability": "Cotton Down",
+        "nature": "Serena",
+        "evs": "PS 100/Def. Esp. 100",
+        "moves": [
+          "Fitoimpulso",
+          "Ciclón de Hojas",
+          "Canon",
+          "Drenadoras"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-025",
+    "category": "Líderes de gimnasio",
+    "name": "Nessa",
+    "format": "Combate individual",
+    "note": "Poder Pasado · Hoja Mágica · Nitrocarga · Rayo Burbuja",
+    "team": [
+      {
+        "pokemon": "Pelipper",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+        "level": "31",
+        "item": "Roca Lluvia",
+        "ability": "Llovizna",
+        "nature": "Serena",
+        "evs": "100 PS/ Def. Esp. 100",
+        "moves": [
+          "Escaldar",
+          "Respiro",
+          "Tajo Aéreo",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Barraskewda",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
+        "level": "31",
+        "item": "",
+        "ability": "Nado Rápido",
+        "nature": "Firme",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Ráfaga Escamas",
+          "Viraje",
+          "Golpe Mordaza",
+          "Acua Jet"
+        ]
+      },
+      {
+        "pokemon": "Whiscash",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/340.png",
+        "level": "32",
+        "item": "",
+        "ability": "Hidratación",
+        "nature": "Agitada",
+        "evs": "100 PS/100 Ataque",
+        "moves": [
+          "Danza Dragón",
+          "Pataleta",
+          "Acua Cola",
+          "Cabezazo Zen"
+        ]
+      },
+      {
+        "pokemon": "Tentacruel",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/73.png",
+        "level": "32",
+        "item": "",
+        "ability": "Cura Lluvia",
+        "nature": "Miedosa",
+        "evs": "100 PS/100 Def. Esp.",
+        "moves": [
+          "Escaldar",
+          "Danza Lluvia",
+          "Cargatóxica",
+          "Acua Aro"
+        ]
+      },
+      {
+        "pokemon": "Seaking",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+        "level": "33",
+        "item": "",
+        "ability": "Pararrayos",
+        "nature": "Firme",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Acua Jet",
+          "Viraje",
+          "Taladradora",
+          "Bote"
+        ]
+      },
+      {
+        "pokemon": "Drednaw (Dinamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
+        "level": "34",
+        "item": "Baya Zidra",
+        "ability": "Nado Rápido",
+        "nature": "Alegre",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Concha Filo",
+          "Pataleta",
+          "Tumba Rocas",
+          "Rastrillaje"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-026",
+    "category": "Líderes de gimnasio",
+    "name": "Kabu",
+    "format": "Combate individual",
+    "note": "Ida y Vuelta · Acua Jet · Cabezazo Zen · Acua Aro",
+    "team": [
+      {
+        "pokemon": "Ninetales",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/38.png",
+        "level": "40",
+        "item": "Roca Calor",
+        "ability": "Sequía",
+        "nature": "Osada",
+        "evs": "100 PS/100 Defensa",
+        "moves": [
+          "Fuego Fatuo",
+          "Envidia Ardiente",
+          "Arenas Ardientes",
+          "Rayo Solar"
+        ]
+      },
+      {
+        "pokemon": "Arcanine",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+        "level": "40",
+        "item": "Vidasfera",
+        "ability": "Intimidación",
+        "nature": "Alegre",
+        "evs": "100 Ataque/100 Vel.",
+        "moves": [
+          "Fuego Fatuo",
+          "Rueda Fuego",
+          "Enfado",
+          "Velocidad Extrema"
+        ]
+      },
+      {
+        "pokemon": "Heatmor",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/631.png",
+        "level": "41",
+        "item": "Baya Aslac",
+        "ability": "Gula",
+        "nature": "Firme",
+        "evs": "100 PS/100 Ataque",
+        "moves": [
+          "Golpe Bajo",
+          "Afilagarras",
+          "Puño Drenaje",
+          "Látigo Ígneo"
+        ]
+      },
+      {
+        "pokemon": "Blaziken",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/257.png",
+        "level": "41",
+        "item": "Banda Focus",
+        "ability": "Impulso",
+        "nature": "Firme",
+        "evs": "100 PS/100 At. Esp.",
+        "moves": [
+          "Enfado",
+          "Puño Trueno",
+          "Protección",
+          "Patada Ígnea"
+        ]
+      },
+      {
+        "pokemon": "Torkoal",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/324.png",
+        "level": "42",
+        "item": "Restos",
+        "ability": "Sequía",
+        "nature": "Osada",
+        "evs": "100 PS/100 Defensa",
+        "moves": [
+          "Bostezo",
+          "Rayo Solar",
+          "Envidia Ardiente",
+          "Giro Rápido"
+        ]
+      },
+      {
+        "pokemon": "Centiskorch (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/851.png",
+        "level": "43",
+        "item": "Humo Blanco",
+        "ability": "Baya Alcho",
+        "nature": "Agitada",
+        "evs": "Ataque 100/Defensa 100",
+        "moves": [
+          "Rueda Fuego",
+          "Latigazo",
+          "Picadura",
+          "Colmillo Rayo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-027",
+    "category": "Líderes de gimnasio",
+    "name": "Bea - Combate doble (entrenador con Mineral Evolutivo en Pueblo Plié - Escudo Bendito)",
+    "format": "Combate doble",
+    "note": "Rayo Solar · Velocidad Extrema · Látigo Ígneo · Patada Ígnea · Bea - Combate doble",
+    "team": [
+      {
+        "pokemon": "Passimian",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/766.png",
+        "level": "47/54",
+        "item": "Banda Focus",
+        "ability": "Receptor",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Defensa",
+        "moves": [
+          "Corpulencia",
+          "Avalancha",
+          "Puño Drenaje",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Hitmontop",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/237.png",
+        "level": "47/54",
+        "item": "Tarjeta Roja",
+        "ability": "Intimidación",
+        "nature": "Cauta",
+        "evs": "252 Ataque/252 Def. Esp.",
+        "moves": [
+          "Patada Salto Alta",
+          "Anticipo",
+          "Desarme",
+          "Vastaguardia"
+        ]
+      },
+      {
+        "pokemon": "Pangoro",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/675.png",
+        "level": "48/55",
+        "item": "Baya Dillo",
+        "ability": "Rompemoldes",
+        "nature": "Agitada",
+        "evs": "252 Ataque/252 Defensa",
+        "moves": [
+          "Puño Bala",
+          "Última Palabra",
+          "Desarme",
+          "Puño Drenaje"
+        ]
+      },
+      {
+        "pokemon": "Machamp (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+        "level": "50/57",
+        "item": "Vidasfera",
+        "ability": "Indefenso",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Puño Dinámico",
+          "Avalancha",
+          "Puño Bala",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Heracross",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/214.png",
+        "level": "48/55",
+        "item": "Baya Kouba",
+        "ability": "Encadenado",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Pin Misil",
+          "Pedrada",
+          "Demolición",
+          "Recurrente"
+        ]
+      },
+      {
+        "pokemon": "Grapploct",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
+        "level": "49/56",
+        "item": "Restos",
+        "ability": "Experto",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Puño Incremento",
+          "Giro Vil",
+          "Puño Hielo",
+          "Hidroariete"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-028",
+    "category": "Líderes de gimnasio",
+    "name": "Allister - Combate doble (entrenador con Mineral Evolutivo en Pueblo Plié - Espada Divina)",
+    "format": "Combate doble",
+    "note": "Giro Rápido · Colmillo Rayo · Allister - Combate doble",
+    "team": [
+      {
+        "pokemon": "Runerigus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/867.png",
+        "level": "47/54",
+        "item": "Restos",
+        "ability": "Alma Errante",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Cambio de Banda",
+          "Garra Umbría",
+          "Púas Tóxicas",
+          "Terratemblor"
+        ]
+      },
+      {
+        "pokemon": "Rotom de Galarhost",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/479.png",
+        "level": "47/54",
+        "item": "Banda Focus",
+        "ability": "Levitación",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Chispazo",
+          "Bola Sombra",
+          "Fuego Fatuo",
+          "Cambio de Banda"
+        ]
+      },
+      {
+        "pokemon": "Cursola",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+        "level": "48/55",
+        "item": "Seguro Debilidad",
+        "ability": "Cuerpo Mortal",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Bola Sombra",
+          "Absorbefuerza",
+          "Viento Hielo",
+          "Envidia Ardiente"
+        ]
+      },
+      {
+        "pokemon": "Gengar (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+        "level": "50/57",
+        "item": "Vidasfera",
+        "ability": "Cuerpo Maldito",
+        "nature": "Miedosa",
+        "evs": "252 Defensa/252 Vel.",
+        "moves": [
+          "Cambio de Banda",
+          "Pulso Umbrío",
+          "Bola Sombra",
+          "Onda Tóxica"
+        ]
+      },
+      {
+        "pokemon": "Mimikyu",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/778.png",
+        "level": "48/55",
+        "item": "Baya Zidra",
+        "ability": "Disfraz",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Def. Esp.",
+        "moves": [
+          "Sombra Vil",
+          "Danza Espada",
+          "Puño Drenaje",
+          "Carantoña"
+        ]
+      },
+      {
+        "pokemon": "Dusclops",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
+        "level": "49/57",
+        "item": "Mineral Evolutivo",
+        "ability": "Cuerpo Maldito",
+        "nature": "Grosera",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Refuerzo",
+          "Tinieblas",
+          "Fuego Fatuo",
+          "Cambio de Banda"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-029",
+    "category": "Líderes de gimnasio",
+    "name": "Opal",
+    "format": "Combate individual",
+    "note": "Desarme · Vastaguardia · Puño Drenaje",
+    "team": [
+      {
+        "pokemon": "Weezing de Galar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/110.png",
+        "level": "55",
+        "item": "Cubresuelos",
+        "ability": "Nebulogénesis",
+        "nature": "Miedosa",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Cántico Desenlace",
+          "Lanzallamas",
+          "Bomba Lodo",
+          "Púas Tóxicas"
+        ]
+      },
+      {
+        "pokemon": "Mawile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/303.png",
+        "level": "55",
+        "item": "Vidasfera",
+        "ability": "Potencia",
+        "nature": "Firme",
+        "evs": "4 PS/252 Ataque/252 Defensa",
+        "moves": [
+          "Danza Espada",
+          "Puño Hielo",
+          "Carantoña",
+          "Cabeza de Hierro"
+        ]
+      },
+      {
+        "pokemon": "Togekiss",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/468.png",
+        "level": "56",
+        "item": "Roca del Rey",
+        "ability": "Dicha",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Tajo Aéreo",
+          "Esfera Aural",
+          "Paranormal",
+          "Brillo Mágico"
+        ]
+      },
+      {
+        "pokemon": "Altaria",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/334.png",
+        "level": "56",
+        "item": "Botas Gruesas",
+        "ability": "Aclimatación",
+        "nature": "Osada",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Fuerza Lunar",
+          "Respiro",
+          "Terremoto",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Comfey",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/764.png",
+        "level": "57",
+        "item": "Restos",
+        "ability": "Primer Auxilio",
+        "nature": "Serena",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Beso Drenaje",
+          "Gigadrenado",
+          "Paz Mental",
+          "Poder Reserva"
+        ]
+      },
+      {
+        "pokemon": "Alcremie (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/869.png",
+        "level": "58",
+        "item": "Baya Zidra",
+        "ability": "Velo Dulce",
+        "nature": "Osada",
+        "evs": "252 PS/252 Vel.",
+        "moves": [
+          "Brillo Mágico",
+          "Psicocarga",
+          "Llama Embrujada",
+          "Recuperación"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-030",
+    "category": "Líderes de gimnasio",
+    "name": "Gordie - Combate doble",
+    "format": "Combate doble",
+    "note": "Púas Tóxicas · Cabeza de Hierro · Brillo Mágico · Pulso Dragón",
+    "team": [
+      {
+        "pokemon": "Tyranitar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/248.png",
+        "level": "67",
+        "item": "Roca Suave",
+        "ability": "Chorro Arena",
+        "nature": "Audaz",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Avalancha",
+          "Protección",
+          "Puño Hielo",
+          "Desahogo"
+        ]
+      },
+      {
+        "pokemon": "Stonjourner",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/874.png",
+        "level": "67",
+        "item": "Baya Zidra",
+        "ability": "Fuente Energía",
+        "nature": "Grosera",
+        "evs": "252 Defensa/252 Def. Esp.",
+        "moves": [
+          "Patada Tropical",
+          "Plancha",
+          "Espacio Raro",
+          "Roca Afilada"
+        ]
+      },
+      {
+        "pokemon": "Coalossal (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/839.png",
+        "level": "70",
+        "item": "Seguro Debilidad",
+        "ability": "Combustible",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Onda Ígnea",
+          "Rayo Meteórico",
+          "Rayo Solar",
+          "Tierra Viva"
+        ]
+      },
+      {
+        "pokemon": "Relicanth",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/369.png",
+        "level": "68",
+        "item": "Baya Tamar",
+        "ability": "Robustez",
+        "nature": "Plácida",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Hidroariete",
+          "Avalancha",
+          "Cabezazo Zen",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Shuckle",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/213.png",
+        "level": "68",
+        "item": "Restos",
+        "ability": "Respondón",
+        "nature": "Grosera",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Refuerzo",
+          "Tóxico",
+          "Desarme",
+          "Rompecoraza"
+        ]
+      },
+      {
+        "pokemon": "Solrock",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/338.png",
+        "level": "69",
+        "item": "Banda Focus",
+        "ability": "Levitación",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Fotón Geyser",
+          "Meteoimpacto",
+          "Espacio Raro",
+          "Fuego Sagrado"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-031",
+    "category": "Líderes de gimnasio",
+    "name": "Melony - Combate doble",
+    "format": "Combate doble",
+    "note": "Poder Reserva · Recuperación",
+    "team": [
+      {
+        "pokemon": "Vanilluxe",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/584.png",
+        "level": "67",
+        "item": "Roca Helada",
+        "ability": "Nevada",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Mofa",
+          "Ventisca",
+          "Velo Aurora",
+          "Liofilización"
+        ]
+      },
+      {
+        "pokemon": "Mr. Rime",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png",
+        "level": "67",
+        "item": "Restos",
+        "ability": "身",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Psíquico",
+          "Ventisca",
+          "Espacio Raro",
+          "Cambio de Banda"
+        ]
+      },
+      {
+        "pokemon": "Arctovish",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/883.png",
+        "level": "68",
+        "item": "Vidasfera",
+        "ability": "身",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Chuzos",
+          "Cabeza de Hierro",
+          "Branquibocado",
+          "Psicocolmillo"
+        ]
+      },
+      {
+        "pokemon": "Lapras (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/131.png",
+        "level": "70",
+        "item": "Refleluz",
+        "ability": "Caparazón",
+        "nature": "Modesta",
+        "evs": "156 PS/52 Defensa/252 At. Esp./20 Def. Esp./28 Vel.",
+        "moves": [
+          "Hidrobomba",
+          "Canto Mortal",
+          "Ventisca",
+          "Psíquico"
+        ]
+      },
+      {
+        "pokemon": "Jynx",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/124.png",
+        "level": "68",
+        "item": "Banda Focus",
+        "ability": "Despiste",
+        "nature": "Afable",
+        "evs": "4PS/252At. Esp./4Def. Esp./244 Vel.",
+        "moves": [
+          "Sorpresa",
+          "Ventisca",
+          "Espacio Raro",
+          "Vasta Fuerza"
+        ]
+      },
+      {
+        "pokemon": "Walrein",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/365.png",
+        "level": "68",
+        "item": "Baya Zidra",
+        "ability": "身",
+        "nature": "Grosera",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Ventisca",
+          "Granizo",
+          "Surf",
+          "Terremoto"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-032",
+    "category": "Líderes de gimnasio",
+    "name": "Piers",
+    "format": "Combate individual",
+    "note": "Desahogo · Roca Afilada · Tierra Viva · Plancha",
+    "team": [
+      {
+        "pokemon": "Krookodile",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/553.png",
+        "level": "72",
+        "item": "Baya Pomaro",
+        "ability": "Intimidación",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Desarme",
+          "Terremoto",
+          "A Bocajarro",
+          "Trampa Rocas"
+        ]
+      },
+      {
+        "pokemon": "Malamar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/687.png",
+        "level": "72",
+        "item": "Restos",
+        "ability": "Respondón",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Desarme",
+          "Fuerza Bruta",
+          "Hidroariete",
+          "Psicocorte"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "73",
+        "item": "Vidasfera",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Batería Asalto",
+          "Fitoimpulso",
+          "Desarme",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Noivern",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/715.png",
+        "level": "73",
+        "item": "Botas Gruesas",
+        "ability": "Allanamiento",
+        "nature": "Miedosa",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Vendaval",
+          "Estruendo",
+          "Cometa Draco",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Toxtricity (Forma Grave)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/849.png",
+        "level": "74",
+        "item": "Throat Spray",
+        "ability": "punk rock",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Amplificador",
+          "Estruendo",
+          "Voltiocambio",
+          "Onda Tóxica"
+        ]
+      },
+      {
+        "pokemon": "Obstagoon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/862.png",
+        "level": "75",
+        "item": "Llamasfera",
+        "ability": "Agallas",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Desarme",
+          "Imagen",
+          "A Bocajarro",
+          "Obstrucción"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-033",
+    "category": "Líderes de gimnasio",
+    "name": "Raihan - Combate doble",
+    "format": "Combate doble",
+    "note": "Trampa Rocas · Psicocorte · Ida y Vuelta",
+    "team": [
+      {
+        "pokemon": "Hippowdon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+        "level": "76",
+        "item": "Roca Suave",
+        "ability": "Chorro Arena",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Bostezo",
+          "Fuerza Equina",
+          "Relajo",
+          "Cuerpo Pesado"
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+        "level": "76",
+        "item": "Vidasfera",
+        "ability": "Poder Arena",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Avalancha",
+          "Pataleta",
+          "Cabeza de Hierro",
+          "Vasto Impacto"
+        ]
+      },
+      {
+        "pokemon": "Zygarde (Forma 10 %)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
+        "level": "77",
+        "item": "Banda Focus",
+        "ability": "Rompeaura",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Vasto Impacto",
+          "Mil Flechas",
+          "Mil Temblores",
+          "Inversión"
+        ]
+      },
+      {
+        "pokemon": "Duraludon de Galar (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
+        "level": "79",
+        "item": "Chaleco Asalto",
+        "ability": "Reacción Química",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Metaláser",
+          "Cometa Draco",
+          "Protección",
+          "Rayo"
+        ]
+      },
+      {
+        "pokemon": "Onix",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+        "level": "77",
+        "item": "Mineral Evolutivo",
+        "ability": "Cabeza Roca",
+        "nature": "Alegre",
+        "evs": "124 PS/252 Ataque/126 Vel.",
+        "moves": [
+          "Martillo Dragón",
+          "Testarazo",
+          "Danza Dragón",
+          "Fuerza Equina"
+        ]
+      },
+      {
+        "pokemon": "Dragonite",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+        "level": "78",
+        "item": "Gafas Protectoras",
+        "ability": "Compensación",
+        "nature": "Firme",
+        "evs": "140 PS/252 Ataque/108 Vel.",
+        "moves": [
+          "Tormenta Arena",
+          "Puño Fuego",
+          "Velocidad Extrema",
+          "Garra Dragón"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-034",
+    "category": "Copa de Campeones",
+    "name": "Marnie",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Sableye",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/302.png",
+        "level": "81",
+        "item": "Casco Dentado",
+        "ability": "Espejo Mágico",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Recuperación",
+          "Fuego Fatuo",
+          "Desarme",
+          "Protección"
+        ]
+      },
+      {
+        "pokemon": "Zoroark",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/571.png",
+        "level": "81",
+        "item": "Vidasfera",
+        "ability": "Ilusión",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Bomba Lodo",
+          "Pulso Umbrío",
+          "Lanzallamas",
+          "Maquinación"
+        ]
+      },
+      {
+        "pokemon": "Grimmsnarl (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/861.png",
+        "level": "83",
+        "item": "Refleluz",
+        "ability": "Bromista",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Choque Anímico",
+          "Lariat Oscuro",
+          "Reflejo",
+          "Pantalla de Luz"
+        ]
+      },
+      {
+        "pokemon": "Scrafty",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/560.png",
+        "level": "82",
+        "item": "Restos",
+        "ability": "Mudar",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Corpulencia",
+          "Descanso",
+          "Puño Drenaje",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Absol",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/359.png",
+        "level": "82",
+        "item": "Banda Focus",
+        "ability": "Espejo Mágico",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Danza Espada",
+          "Desarme",
+          "Carantoña",
+          "Golpe Bajo"
+        ]
+      },
+      {
+        "pokemon": "Morpeko",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/877.png",
+        "level": "84",
+        "item": "Baya Zidra",
+        "ability": "Mutapetito",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Rueda Aural",
+          "Psicocolmillo",
+          "Placaje Eléctrico",
+          "Triturar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-035",
+    "category": "Copa de Campeones",
+    "name": "Paul - If you choose Grookey",
+    "format": "Combate individual",
+    "note": "Protección · Maquinación · Pantalla de Luz · Desarme",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "81",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Trampa Rocas",
+          "Respiro",
+          "Cabeza de Hierro",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "81",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Inteleon (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+        "level": "84",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./4 Def. Esp./252 Vel.",
+        "moves": [
+          "Foco Energía",
+          "Disparo Certero",
+          "Rayo Hielo",
+          "Pulso Umbrío"
+        ]
+      },
+      {
+        "pokemon": "Maractus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/556.png",
+        "level": "82",
+        "item": "Vidasfera",
+        "ability": "Bailar",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Barrera Espinosa",
+          "Golpe Bajo",
+          "Taladradora",
+          "Mazazo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "82",
+        "item": "Baya Rimoya",
+        "ability": "Ojo Compuesto",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Incineroar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/727.png",
+        "level": "83",
+        "item": "Botas Gruesas",
+        "ability": "Intimidación",
+        "nature": "Grosera",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Última Palabra",
+          "Desarme",
+          "Sorpresa",
+          "Envite Ígneo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-036",
+    "category": "Copa de Campeones",
+    "name": "Paul - If you choose Scorbunny",
+    "format": "Combate individual",
+    "note": "Golpe Bajo · Triturar",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "81",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Trampa Rocas",
+          "Respiro",
+          "Cabeza de Hierro",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "81",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "84",
+        "item": "Cubresuelos",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Fitoimpulso",
+          "Desarme",
+          "Ida y Vuelta",
+          "Puño Drenaje"
+        ]
+      },
+      {
+        "pokemon": "Arcanine",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/59.png",
+        "level": "82",
+        "item": "Vidasfera",
+        "ability": "Intimidación",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Envite Ígneo",
+          "Colmillo Rayo",
+          "Velocidad Extrema",
+          "Colmillo Hielo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "82",
+        "item": "Baya Rimoya",
+        "ability": "Ojo Compuesto",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Primarina",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/730.png",
+        "level": "83",
+        "item": "Botas Gruesas",
+        "ability": "Torrente",
+        "nature": "Osada",
+        "evs": "248 PS/252 At. Esp./8 Vel.",
+        "moves": [
+          "Fuerza Lunar",
+          "Psíquico",
+          "Rayo Hielo",
+          "Escaldar"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-037",
+    "category": "Copa de Campeones",
+    "name": "Paul - If you choose Sobble",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Skarmory",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/227.png",
+        "level": "81",
+        "item": "Casco Dentado",
+        "ability": "Robustez",
+        "nature": "Alegre",
+        "evs": "252 PS/252 Defensa/4 Vel.",
+        "moves": [
+          "Trampa Rocas",
+          "Respiro",
+          "Cabeza de Hierro",
+          "Pájaro Osado"
+        ]
+      },
+      {
+        "pokemon": "Dubwool",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/832.png",
+        "level": "81",
+        "item": "Restos",
+        "ability": "Peluche",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Doble Filo",
+          "Nitrocarga",
+          "Rizo Algodón",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Cinderace (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+        "level": "84",
+        "item": "Botas Gruesas",
+        "ability": "Líbero",
+        "nature": "Alegre",
+        "evs": "252 Ataque/4 Def. Esp./252 Vel.",
+        "moves": [
+          "Balón Ígneo",
+          "Ida y Vuelta",
+          "Golpe Bajo",
+          "Patada Salto Alta"
+        ]
+      },
+      {
+        "pokemon": "Cramorant",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/845.png",
+        "level": "82",
+        "item": "Hierba Única",
+        "ability": "Tragamisil",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Buceo",
+          "Enfado",
+          "Viraje",
+          "Picoteo"
+        ]
+      },
+      {
+        "pokemon": "Flygon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/330.png",
+        "level": "82",
+        "item": "Baya Rimoya",
+        "ability": "Ojo Compuesto",
+        "nature": "Modesta",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Arenas Ardientes",
+          "Onda Ígnea",
+          "Pulso Dragón"
+        ]
+      },
+      {
+        "pokemon": "Decidueye",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/724.png",
+        "level": "83",
+        "item": "Vidasfera",
+        "ability": "Remoto",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Poltergeist",
+          "Pájaro Osado",
+          "Hoja Aguda",
+          "Ida y Vuelta"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-038",
+    "category": "Copa de Campeones",
+    "name": "Bede",
+    "format": "Combate individual",
+    "note": "Pájaro Osado · Plancha · Pulso Umbrío · Mazazo",
+    "team": [
+      {
+        "pokemon": "Wigglytuff",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/40.png",
+        "level": "83",
+        "item": "Semilla Bruma",
+        "ability": "Nebulogénesis",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Deseo",
+          "Protección",
+          "Vozarrón",
+          "Fuerza Lunar"
+        ]
+      },
+      {
+        "pokemon": "Gardevoir",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/282.png",
+        "level": "83",
+        "item": "Pañuelo Elegido",
+        "ability": "Trace",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Truco",
+          "Psíquico",
+          "Llama Embrujada",
+          "Fuerza Lunar"
+        ]
+      },
+      {
+        "pokemon": "Hatterene (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/858.png",
+        "level": "86",
+        "item": "Restos",
+        "ability": "Espejo Mágico",
+        "nature": "Mansa",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Llama Embrujada",
+          "Beso Drenaje",
+          "Moflete Estático",
+          "Psicocarga"
+        ]
+      },
+      {
+        "pokemon": "Mr. Mime",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/122.png",
+        "level": "84",
+        "item": "Refleluz",
+        "ability": "Filtro",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Pantalla de Luz",
+          "Reflejo",
+          "Psíquico",
+          "Brillo Mágico"
+        ]
+      },
+      {
+        "pokemon": "Rapidash de Galar",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/78.png",
+        "level": "84",
+        "item": "Vidasfera",
+        "ability": "Piel Feérica",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Psicocorte",
+          "Megacuerno",
+          "Patada Baja",
+          "Doble Filo"
+        ]
+      },
+      {
+        "pokemon": "Diancie",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/719.png",
+        "level": "85",
+        "item": "Hierba Única",
+        "ability": "Cuerpo Puro",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Vel.",
+        "moves": [
+          "Fuerza Lunar",
+          "Rayo Meteórico",
+          "Llama Embrujada",
+          "Trampa Rocas"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-039",
+    "category": "Copa de Campeones",
+    "name": "Nessa",
+    "format": "Combate individual",
+    "note": "Fuerza Lunar · Psicocarga · Brillo Mágico",
+    "team": [
+      {
+        "pokemon": "Pelipper",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/279.png",
+        "level": "85",
+        "item": "Roca Lluvia",
+        "ability": "Llovizna",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Ida y Vuelta",
+          "Respiro",
+          "Vendaval",
+          "Meteorobola"
+        ]
+      },
+      {
+        "pokemon": "Barraskewda",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/847.png",
+        "level": "85",
+        "item": "Vidasfera",
+        "ability": "Nado Rápido",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "A Bocajarro",
+          "Hidroariete",
+          "Psicocolmillo",
+          "Viraje"
+        ]
+      },
+      {
+        "pokemon": "Drednaw (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/834.png",
+        "level": "88",
+        "item": "Baya Tamar",
+        "ability": "Nado Rápido",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Hidroariete",
+          "Terremoto",
+          "Colmillo Hielo",
+          "Roca Afilada"
+        ]
+      },
+      {
+        "pokemon": "Seaking",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/119.png",
+        "level": "86",
+        "item": "Banda Focus",
+        "ability": "Nado Rápido",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Megacuerno",
+          "Branquibocado",
+          "Ráfaga Escamas",
+          "Taladradora"
+        ]
+      },
+      {
+        "pokemon": "Jellicent",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/593.png",
+        "level": "86",
+        "item": "Restos",
+        "ability": "Cuerpo Maldito",
+        "nature": "Osada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Infortunio",
+          "Salpicar",
+          "Absorbefuerza",
+          "Fuego Fatuo"
+        ]
+      },
+      {
+        "pokemon": "Quagsire",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/195.png",
+        "level": "87",
+        "item": "Casco Dentado",
+        "ability": "Ignorante",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Recuperación",
+          "Escaldar",
+          "Tóxico",
+          "Terremoto"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-040",
+    "category": "Copa de Campeones",
+    "name": "Bea",
+    "format": "Combate individual",
+    "note": "Meteorobola · Viraje · Roca Afilada · Taladradora",
+    "team": [
+      {
+        "pokemon": "Kommo-o",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/784.png",
+        "level": "85",
+        "item": "Restos",
+        "ability": "Antibalas",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Trampa Rocas",
+          "Estruendo Escama",
+          "Plancha",
+          "Fragor Escamas"
+        ]
+      },
+      {
+        "pokemon": "Grapploct",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/853.png",
+        "level": "85",
+        "item": "Chaleco Asalto",
+        "ability": "Experto",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Defensa",
+        "moves": [
+          "Giro Vil",
+          "Puño Incremento",
+          "Puño Hielo",
+          "Vendetta"
+        ]
+      },
+      {
+        "pokemon": "Machamp (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/68.png",
+        "level": "88",
+        "item": "Llamasfera",
+        "ability": "Agallas",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Desarme",
+          "Puño Bala",
+          "Imagen",
+          "A Bocajarro"
+        ]
+      },
+      {
+        "pokemon": "Lucario",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/448.png",
+        "level": "86",
+        "item": "Banda Focus",
+        "ability": "Justified",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Palmeo",
+          "Metaláser",
+          "Pulso Umbrío",
+          "Esfera Aural"
+        ]
+      },
+      {
+        "pokemon": "Mienshao",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/620.png",
+        "level": "86",
+        "item": "Vidasfera",
+        "ability": "Regeneración",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Desarme",
+          "A Bocajarro",
+          "Sorpresa",
+          "Ida y Vuelta"
+        ]
+      },
+      {
+        "pokemon": "Sirfetch'd",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/865.png",
+        "level": "87",
+        "item": "Puerro",
+        "ability": "Intrépido",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Espada Santa",
+          "Escudo Real",
+          "Puya Nociva",
+          "Desarme"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-041",
+    "category": "Copa de Campeones",
+    "name": "Allister",
+    "format": "Combate individual",
+    "note": "Fuego Fatuo · Terremoto",
+    "team": [
+      {
+        "pokemon": "Dusclops",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/356.png",
+        "level": "85",
+        "item": "Mineral Evolutivo",
+        "ability": "Cuerpo Maldito",
+        "nature": "Osada",
+        "evs": "252 PS/132 Defensa/124 Def. Esp.",
+        "moves": [
+          "Fuego Fatuo",
+          "Tinieblas",
+          "Demolición",
+          "Espacio Raro"
+        ]
+      },
+      {
+        "pokemon": "Gourgeist",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/711.png",
+        "level": "85",
+        "item": "Llamasfera",
+        "ability": "Ímpetu Ardiente",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Bola Sombra",
+          "Lanzallamas",
+          "Fuego Fatuo",
+          "Energibola"
+        ]
+      },
+      {
+        "pokemon": "Gengar (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/94.png",
+        "level": "88",
+        "item": "Banda Focus",
+        "ability": "Cuerpo Maldito",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Rayo",
+          "Onda Tóxica",
+          "Bola Sombra",
+          "Mofa"
+        ]
+      },
+      {
+        "pokemon": "Golurk",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/623.png",
+        "level": "86",
+        "item": "Chaleco Asalto",
+        "ability": "Indefenso",
+        "nature": "Firme",
+        "evs": "252 PS/252 Ataque",
+        "moves": [
+          "Terremoto",
+          "Poltergeist",
+          "Puño Dinámico",
+          "Trampa Rocas"
+        ]
+      },
+      {
+        "pokemon": "Chandelure",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/609.png",
+        "level": "86",
+        "item": "Gafas Elegidas",
+        "ability": "Allanamiento",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Bola Sombra",
+          "Lanzallamas",
+          "Truco",
+          "Energibola"
+        ]
+      },
+      {
+        "pokemon": "Cursola",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/864.png",
+        "level": "87",
+        "item": "Hierba Única",
+        "ability": "Cuerpo Mortal",
+        "nature": "Osada",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Bola Sombra",
+          "Tierra Viva",
+          "Rayo Meteórico",
+          "Absorbefuerza"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-042",
+    "category": "Copa de Campeones",
+    "name": "Raihan",
+    "format": "Combate individual",
+    "note": "Fragor Escamas · Vendetta · A Bocajarro · Esfera Aural",
+    "team": [
+      {
+        "pokemon": "Hippowdon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/450.png",
+        "level": "85",
+        "item": "Roca Suave",
+        "ability": "Chorro Arena",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Bostezo",
+          "Fuerza Equina",
+          "Relajo",
+          "Cuerpo Pesado"
+        ]
+      },
+      {
+        "pokemon": "Garchomp",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/445.png",
+        "level": "85",
+        "item": "Vidasfera",
+        "ability": "Poder Arena",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Avalancha",
+          "Pataleta",
+          "Cabeza de Hierro",
+          "Vasto Impacto"
+        ]
+      },
+      {
+        "pokemon": "Zygarde (Forma 10 %)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
+        "level": "86",
+        "item": "Banda Focus",
+        "ability": "Rompeaura",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Ráfaga Escamas",
+          "Mil Flechas",
+          "Mil Temblores",
+          "Enfado"
+        ]
+      },
+      {
+        "pokemon": "Duraludon de Galar (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/884.png",
+        "level": "88",
+        "item": "Chaleco Asalto",
+        "ability": "Reacción Química",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Metaláser",
+          "Cometa Draco",
+          "Protección",
+          "Rayo"
+        ]
+      },
+      {
+        "pokemon": "Onix",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/95.png",
+        "level": "86",
+        "item": "Mineral Evolutivo",
+        "ability": "Cabeza Roca",
+        "nature": "Alegre",
+        "evs": "124 PS/252 Ataque/126 Vel.",
+        "moves": [
+          "Martillo Dragón",
+          "Testarazo",
+          "Danza Dragón",
+          "Fuerza Equina"
+        ]
+      },
+      {
+        "pokemon": "Dragonite",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/149.png",
+        "level": "87",
+        "item": "Gafas Protectoras",
+        "ability": "Compensación",
+        "nature": "Firme",
+        "evs": "140 PS/252 Ataque/108 Vel.",
+        "moves": [
+          "Tormenta Arena",
+          "Puño Fuego",
+          "Velocidad Extrema",
+          "Garra Dragón"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-043",
+    "category": "Copa de Campeones",
+    "name": "Campeón Lionel - Si eliges Grookey",
+    "format": "Combate individual",
+    "note": "Cuerpo Pesado · Vasto Impacto · Enfado · Rayo",
+    "team": [
+      {
+        "pokemon": "Aegislash",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+        "level": "89",
+        "item": "Restos",
+        "ability": "Cambio Táctico",
+        "nature": "Modesta",
+        "evs": "140 PS/252 Ataque/108 Vel.",
+        "moves": [
+          "Escudo Real",
+          "Bola Sombra",
+          "Sustituto",
+          "Foco Resplandor"
+        ]
+      },
+      {
+        "pokemon": "Dragapult",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+        "level": "89",
+        "item": "Banda Focus",
+        "ability": "Allanamiento",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Cometa Draco",
+          "Lanzallamas",
+          "Bola Sombra"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "90",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Puya Nociva",
+          "A Bocajarro",
+          "Enfado",
+          "Terremoto"
+        ]
+      },
+      {
+        "pokemon": "Seismitoad",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/537.png",
+        "level": "90",
+        "item": "Chaleco Asalto",
+        "ability": "Absorbe Agua",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Trampa Rocas",
+          "Hidroariete",
+          "Terremoto",
+          "Desarme"
+        ]
+      },
+      {
+        "pokemon": "Cinderace",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/815.png",
+        "level": "91",
+        "item": "Cinta Experto",
+        "ability": "Líbero",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Balón Ígneo",
+          "Ida y Vuelta",
+          "Cambiazo",
+          "Golpe Bajo"
+        ]
+      },
+      {
+        "pokemon": "Charizard (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "level": "92",
+        "item": "Botas Gruesas",
+        "ability": "Garra Dura",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Ala Bis",
+          "Garra Dragón",
+          "Terremoto",
+          "Envite Ígneo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-044",
+    "category": "Copa de Campeones",
+    "name": "Campeón Lionel - Si eliges Scorbunny",
+    "format": "Combate individual",
+    "note": "Fuerza Equina · Garra Dragón",
+    "team": [
+      {
+        "pokemon": "Aegislash",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+        "level": "89",
+        "item": "Restos",
+        "ability": "Cambio Táctico",
+        "nature": "Modesta",
+        "evs": "140 PS/252 Ataque/108 Vel.",
+        "moves": [
+          "Escudo Real",
+          "Bola Sombra",
+          "Sustituto",
+          "Foco Resplandor"
+        ]
+      },
+      {
+        "pokemon": "Dragapult",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+        "level": "89",
+        "item": "Banda Focus",
+        "ability": "Allanamiento",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Cometa Draco",
+          "Lanzallamas",
+          "Bola Sombra"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "90",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Puya Nociva",
+          "A Bocajarro",
+          "Enfado",
+          "Terremoto"
+        ]
+      },
+      {
+        "pokemon": "Mr. Rime",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/866.png",
+        "level": "90",
+        "item": "Baya Ziuela",
+        "ability": "Antibarrera",
+        "nature": "Modesta",
+        "evs": "252 PS/252 At. Esp.",
+        "moves": [
+          "Psíquico",
+          "Relajo",
+          "Brillo Mágico",
+          "Liofilización"
+        ]
+      },
+      {
+        "pokemon": "Inteleon",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/818.png",
+        "level": "91",
+        "item": "Periscopio",
+        "ability": "Francotirador",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Rayo Hielo",
+          "Disparo Certero",
+          "Ida y Vuelta",
+          "Pulso Umbrío"
+        ]
+      },
+      {
+        "pokemon": "Charizard (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "level": "92",
+        "item": "Botas Gruesas",
+        "ability": "Garra Dura",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Ala Bis",
+          "Garra Dragón",
+          "Terremoto",
+          "Envite Ígneo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-045",
+    "category": "Copa de Campeones",
+    "name": "Campeón Lionel - Si eliges Sobble",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Aegislash",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/681.png",
+        "level": "89",
+        "item": "Restos",
+        "ability": "Cambio Táctico",
+        "nature": "Modesta",
+        "evs": "140 PS/252 Ataque/108 Vel.",
+        "moves": [
+          "Escudo Real",
+          "Bola Sombra",
+          "Sustituto",
+          "Foco Resplandor"
+        ]
+      },
+      {
+        "pokemon": "Dragapult",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/887.png",
+        "level": "89",
+        "item": "Banda Focus",
+        "ability": "Allanamiento",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Ida y Vuelta",
+          "Cometa Draco",
+          "Lanzallamas",
+          "Bola Sombra"
+        ]
+      },
+      {
+        "pokemon": "Haxorus",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/612.png",
+        "level": "90",
+        "item": "Vidasfera",
+        "ability": "Rompemoldes",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Puya Nociva",
+          "A Bocajarro",
+          "Enfado",
+          "Terremoto"
+        ]
+      },
+      {
+        "pokemon": "Rhyperior",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/464.png",
+        "level": "90",
+        "item": "Baya Ziuela",
+        "ability": "Roca Sólida",
+        "nature": "Cauta",
+        "evs": "252 PS/252 Def. Esp.",
+        "moves": [
+          "Trampa Rocas",
+          "Terremoto",
+          "Megacuerno",
+          "Roca Afilada"
+        ]
+      },
+      {
+        "pokemon": "Rillaboom",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/812.png",
+        "level": "91",
+        "item": "Cubresuelos",
+        "ability": "Herbogénesis",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Fitoimpulso",
+          "Desarme",
+          "Ida y Vuelta",
+          "Fuerza Bruta"
+        ]
+      },
+      {
+        "pokemon": "Charizard (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/6.png",
+        "level": "92",
+        "item": "Botas Gruesas",
+        "ability": "Garra Dura",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Ala Bis",
+          "Garra Dragón",
+          "Terremoto",
+          "Envite Ígneo"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-046",
+    "category": "Otros combates importantes",
+    "name": "Oleana",
+    "format": "Combate individual",
+    "note": "",
+    "team": [
+      {
+        "pokemon": "Froslass",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/478.png",
+        "level": "82",
+        "item": "Banda Focus",
+        "ability": "Cuerpo Maldito",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Bola Sombra",
+          "Púas",
+          "Mofa",
+          "Rayo Hielo"
+        ]
+      },
+      {
+        "pokemon": "Tsareena",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/763.png",
+        "level": "82",
+        "item": "Chaleco Asalto",
+        "ability": "Regia Presencia",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Latigazo",
+          "Ida y Vuelta",
+          "Triple Axel",
+          "Giro Rápido"
+        ]
+      },
+      {
+        "pokemon": "Garbador (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/569.png",
+        "level": "85",
+        "item": "Casco Dentado",
+        "ability": "Armadura Frágil",
+        "nature": "Agitada",
+        "evs": "252 PS/200 Defensa/56 Vel.",
+        "moves": [
+          "Pataleta",
+          "Lanza Mugre",
+          "Plancha",
+          "Púas Tóxicas"
+        ]
+      },
+      {
+        "pokemon": "Milotic",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/350.png",
+        "level": "83",
+        "item": "Restos",
+        "ability": "Escama Especial",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Recuperación",
+          "Escaldar",
+          "Viraje",
+          "Tóxico"
+        ]
+      },
+      {
+        "pokemon": "Lopunny",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/428.png",
+        "level": "83",
+        "item": "Vidasfera",
+        "ability": "Intrépido",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Sorpresa",
+          "Patada Salto Alta",
+          "Carantoña",
+          "Puño Hielo"
+        ]
+      },
+      {
+        "pokemon": "Salazzle",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/758.png",
+        "level": "84",
+        "item": "Lodo Negro",
+        "ability": "Corrosión",
+        "nature": "Miedosa",
+        "evs": "252 At. Esp./252 Vel.",
+        "moves": [
+          "Maquinación",
+          "Lanzallamas",
+          "Pulso Dragón",
+          "Onda Tóxica"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "enc-047",
+    "category": "Otros combates importantes",
+    "name": "Rose",
+    "format": "Combate individual",
+    "note": "Rayo Hielo · Giro Rápido · Púas Tóxicas · Tóxico",
+    "team": [
+      {
+        "pokemon": "Copperajah (Gigamax)",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/879.png",
+        "level": "89",
+        "item": "Restos",
+        "ability": "Metal Pesado",
+        "nature": "Firme",
+        "evs": "156 PS/252 Def. Esp./84 Vel.",
+        "moves": [
+          "Cuerpo Pesado",
+          "Latigazo",
+          "Roca Afilada",
+          "Golpe Calor"
+        ]
+      },
+      {
+        "pokemon": "Ferrothorn",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/598.png",
+        "level": "86",
+        "item": "Casco Dentado",
+        "ability": "Punta Acero",
+        "nature": "Agitada",
+        "evs": "252 PS/252 Defensa",
+        "moves": [
+          "Drenadoras",
+          "Púas",
+          "Trampa Rocas",
+          "Plancha"
+        ]
+      },
+      {
+        "pokemon": "Excadrill",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/530.png",
+        "level": "86",
+        "item": "Banda Focus",
+        "ability": "Poder Arena",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Terremoto",
+          "Cabeza de Hierro",
+          "Tijera X",
+          "Giro Rápido"
+        ]
+      },
+      {
+        "pokemon": "Silvally-Steel",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/773.png",
+        "level": "87",
+        "item": "Disco Acero",
+        "ability": "Sistema Alfa",
+        "nature": "Alegre",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Multiataque",
+          "Nitrocarga",
+          "Ida y Vuelta",
+          "Avalancha"
+        ]
+      },
+      {
+        "pokemon": "Metagross",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/376.png",
+        "level": "87",
+        "item": "Cinta Elegida",
+        "ability": "Garra Dura",
+        "nature": "Firme",
+        "evs": "252 Ataque/252 Vel.",
+        "moves": [
+          "Puño Meteoro",
+          "Terremoto",
+          "Cabezazo Zen",
+          "Puño Bala"
+        ]
+      },
+      {
+        "pokemon": "Melmetal",
+        "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/809.png",
+        "level": "88",
+        "item": "Chaleco Asalto",
+        "ability": "Puño Férreo",
+        "nature": "Firme",
+        "evs": "216 PS/252 Ataque/40 Vel.",
+        "moves": [
+          "Ferropuño Doble",
+          "Puño Trueno",
+          "Fuerza Bruta",
+          "Terremoto"
+        ]
+      }
+    ]
+  }
+]

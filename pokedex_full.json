@@ -3396,7 +3396,7 @@
   {
     "id": "901",
     "name": "Pikachu 1",
-    "nameEs": "Pikachu (Gorra Original)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -3681,7 +3681,7 @@
   {
     "id": "902",
     "name": "Pikachu 2",
-    "nameEs": "Pikachu (Gorra Hoenn)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -3966,7 +3966,7 @@
   {
     "id": "903",
     "name": "Pikachu 3",
-    "nameEs": "Pikachu (Gorra Sinnoh)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -4251,7 +4251,7 @@
   {
     "id": "904",
     "name": "Pikachu 4",
-    "nameEs": "Pikachu (Gorra Unova)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -4536,7 +4536,7 @@
   {
     "id": "905",
     "name": "Pikachu 5",
-    "nameEs": "Pikachu (Gorra Kalos)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -4821,7 +4821,7 @@
   {
     "id": "906",
     "name": "Pikachu 6",
-    "nameEs": "Pikachu (Gorra Alola)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -5106,7 +5106,7 @@
   {
     "id": "907",
     "name": "Pikachu 7",
-    "nameEs": "Pikachu (Gorra Compañero)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -5391,7 +5391,7 @@
   {
     "id": "909",
     "name": "Pikachu 9",
-    "nameEs": "Pikachu (Gorra Trotamundos)",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -6021,7 +6021,7 @@
   {
     "id": "910",
     "name": "Raichu 1",
-    "nameEs": "Raichu de Alola",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Psíquico"
@@ -6694,7 +6694,7 @@
   {
     "id": "911",
     "name": "Sandshrew 1",
-    "nameEs": "Sandshrew de Alola",
+    "nameEs": null,
     "types": [
       "Hielo",
       "Acero"
@@ -7327,7 +7327,7 @@
   {
     "id": "912",
     "name": "Sandslash 1",
-    "nameEs": "Sandslash de Alola",
+    "nameEs": null,
     "types": [
       "Hielo",
       "Acero"
@@ -10596,7 +10596,7 @@
   {
     "id": "913",
     "name": "Vulpix 1",
-    "nameEs": "Vulpix de Alola",
+    "nameEs": null,
     "types": [
       "Hielo",
       "—"
@@ -11165,7 +11165,7 @@
   {
     "id": "914",
     "name": "Ninetales 1",
-    "nameEs": "Ninetales de Alola",
+    "nameEs": null,
     "types": [
       "Hielo",
       "Hada"
@@ -13730,7 +13730,7 @@
   {
     "id": "915",
     "name": "Diglett 1",
-    "nameEs": "Diglett de Alola",
+    "nameEs": null,
     "types": [
       "Tierra",
       "Acero"
@@ -14243,7 +14243,7 @@
   {
     "id": "916",
     "name": "Dugtrio 1",
-    "nameEs": "Dugtrio de Alola",
+    "nameEs": null,
     "types": [
       "Tierra",
       "Acero"
@@ -14788,7 +14788,7 @@
   {
     "id": "917",
     "name": "Meowth 1",
-    "nameEs": "Meowth de Alola",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "—"
@@ -15068,7 +15068,7 @@
   {
     "id": "918",
     "name": "Meowth 2",
-    "nameEs": "Meowth de Galar",
+    "nameEs": null,
     "types": [
       "Acero",
       "—"
@@ -15653,7 +15653,7 @@
   {
     "id": "919",
     "name": "Persian 1",
-    "nameEs": "Persian de Alola",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "—"
@@ -20679,7 +20679,7 @@
   {
     "id": "923",
     "name": "Ponyta 1",
-    "nameEs": "Ponyta de Galar",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "—"
@@ -21192,7 +21192,7 @@
   {
     "id": "924",
     "name": "Rapidash 1",
-    "nameEs": "Rapidash de Galar",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Hada"
@@ -21818,7 +21818,7 @@
   {
     "id": "925",
     "name": "Slowpoke 1",
-    "nameEs": "Slowpoke de Galar",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "—"
@@ -22552,7 +22552,7 @@
   {
     "id": "927",
     "name": "Slowbro 2",
-    "nameEs": "Slowbro de Galar",
+    "nameEs": null,
     "types": [
       "Veneno",
       "Psíquico"
@@ -23713,7 +23713,7 @@
   {
     "id": "928",
     "name": "Farfetch’d 1",
-    "nameEs": "Farfetch’d de Galar",
+    "nameEs": null,
     "types": [
       "Lucha",
       "—"
@@ -26902,7 +26902,7 @@
   {
     "id": "931",
     "name": "Exeggutor 1",
-    "nameEs": "Exeggutor de Alola",
+    "nameEs": null,
     "types": [
       "Planta",
       "Dragón"
@@ -27904,7 +27904,7 @@
   {
     "id": "932",
     "name": "Marowak 1",
-    "nameEs": "Marowak de Alola",
+    "nameEs": null,
     "types": [
       "Fuego",
       "Fantasma"
@@ -29785,7 +29785,7 @@
   {
     "id": "933",
     "name": "Weezing 1",
-    "nameEs": "Weezing de Galar",
+    "nameEs": null,
     "types": [
       "Veneno",
       "Hada"
@@ -33874,7 +33874,7 @@
   {
     "id": "934",
     "name": "Mr. Mime 1",
-    "nameEs": "Mr. Mime de Galar",
+    "nameEs": null,
     "types": [
       "Hielo",
       "Psíquico"
@@ -40531,7 +40531,7 @@
   {
     "id": "935",
     "name": "Articuno 1",
-    "nameEs": "Articuno de Galar",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Volador"
@@ -41005,7 +41005,7 @@
   {
     "id": "936",
     "name": "Zapdos 1",
-    "nameEs": "Zapdos de Galar",
+    "nameEs": null,
     "types": [
       "Lucha",
       "Volador"
@@ -41503,7 +41503,7 @@
   {
     "id": "937",
     "name": "Moltres 1",
-    "nameEs": "Moltres de Galar",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "Volador"
@@ -50642,7 +50642,7 @@
   {
     "id": "938",
     "name": "Slowking 1",
-    "nameEs": "Slowking de Galar",
+    "nameEs": null,
     "types": [
       "Veneno",
       "Psíquico"
@@ -54323,7 +54323,7 @@
   {
     "id": "966",
     "name": "Corsola 1",
-    "nameEs": "Corsola de Galar",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "—"
@@ -64614,7 +64614,7 @@
   {
     "id": "967",
     "name": "Zigzagoon 1",
-    "nameEs": "Zigzagoon de Galar",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "Normal"
@@ -65191,7 +65191,7 @@
   {
     "id": "968",
     "name": "Linoone 1",
-    "nameEs": "Linoone de Galar",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "Normal"
@@ -88745,7 +88745,7 @@
   {
     "id": "982",
     "name": "Cherrim 1",
-    "nameEs": "Cherrim Soleado",
+    "nameEs": null,
     "types": [
       "Planta",
       "—"
@@ -89190,7 +89190,7 @@
   {
     "id": "983",
     "name": "Shellos 1",
-    "nameEs": "Shellos Mar Este",
+    "nameEs": null,
     "types": [
       "Agua",
       "—"
@@ -89663,7 +89663,7 @@
   {
     "id": "984",
     "name": "Gastrodon 1",
-    "nameEs": "Gastrodon Mar Este",
+    "nameEs": null,
     "types": [
       "Agua",
       "Tierra"
@@ -103059,7 +103059,7 @@
   {
     "id": "985",
     "name": "Rotom 1",
-    "nameEs": "Rotom Calor",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Fuego"
@@ -103296,7 +103296,7 @@
   {
     "id": "986",
     "name": "Rotom 2",
-    "nameEs": "Rotom Lavado",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Agua"
@@ -103533,7 +103533,7 @@
   {
     "id": "987",
     "name": "Rotom 3",
-    "nameEs": "Rotom Frío",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Hielo"
@@ -103770,7 +103770,7 @@
   {
     "id": "988",
     "name": "Rotom 4",
-    "nameEs": "Rotom Ventilador",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Volador"
@@ -104007,7 +104007,7 @@
   {
     "id": "989",
     "name": "Rotom 5",
-    "nameEs": "Rotom Corte",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Planta"
@@ -106660,7 +106660,7 @@
   {
     "id": "990",
     "name": "Giratina 1",
-    "nameEs": "Giratina Origen",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Dragón"
@@ -116247,7 +116247,7 @@
   {
     "id": "1009",
     "name": "Basculin 1",
-    "nameEs": "Basculin Raya Azul",
+    "nameEs": null,
     "types": [
       "Agua",
       "—"
@@ -117761,7 +117761,7 @@
   {
     "id": "1010",
     "name": "Darumaka 1",
-    "nameEs": "Darumaka de Galar",
+    "nameEs": null,
     "types": [
       "Hielo",
       "—"
@@ -118434,7 +118434,7 @@
   {
     "id": "1011",
     "name": "Darmanitan 1",
-    "nameEs": "Darmanitan Modo Daruma",
+    "nameEs": null,
     "types": [
       "Fuego",
       "Psíquico"
@@ -118799,7 +118799,7 @@
   {
     "id": "1012",
     "name": "Darmanitan 2",
-    "nameEs": "Darmanitan de Galar",
+    "nameEs": null,
     "types": [
       "Hielo",
       "—"
@@ -119160,7 +119160,7 @@
   {
     "id": "1013",
     "name": "Darmanitan 3",
-    "nameEs": "Darmanitan de Galar (Daruma)",
+    "nameEs": null,
     "types": [
       "Hielo",
       "Fuego"
@@ -121559,7 +121559,7 @@
   {
     "id": "1014",
     "name": "Yamask 1",
-    "nameEs": "Yamask de Galar",
+    "nameEs": null,
     "types": [
       "Tierra",
       "Fantasma"
@@ -134497,7 +134497,7 @@
   {
     "id": "1021",
     "name": "Stunfisk 1",
-    "nameEs": "Stunfisk de Galar",
+    "nameEs": null,
     "types": [
       "Tierra",
       "Acero"
@@ -141315,7 +141315,7 @@
   {
     "id": "1022",
     "name": "Tornadus 1",
-    "nameEs": "Tornadus Tótem",
+    "nameEs": null,
     "types": [
       "Volador",
       "—"
@@ -141897,7 +141897,7 @@
   {
     "id": "1023",
     "name": "Thundurus 1",
-    "nameEs": "Thundurus Tótem",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Volador"
@@ -143093,7 +143093,7 @@
   {
     "id": "1024",
     "name": "Landorus 1",
-    "nameEs": "Landorus Tótem",
+    "nameEs": null,
     "types": [
       "Tierra",
       "Volador"
@@ -143667,7 +143667,7 @@
   {
     "id": "1025",
     "name": "Kyurem 1",
-    "nameEs": "Kyurem Blanco",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Hielo"
@@ -143960,7 +143960,7 @@
   {
     "id": "1026",
     "name": "Kyurem 2",
-    "nameEs": "Kyurem Negro",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Hielo"
@@ -144530,7 +144530,7 @@
   {
     "id": "1027",
     "name": "Keldeo 1",
-    "nameEs": "Keldeo Brío",
+    "nameEs": null,
     "types": [
       "Agua",
       "Lucha"
@@ -145072,7 +145072,7 @@
   {
     "id": "1029",
     "name": "Genesect 1",
-    "nameEs": "Genesect HidroROM",
+    "nameEs": null,
     "types": [
       "Bicho",
       "Acero"
@@ -145337,7 +145337,7 @@
   {
     "id": "1030",
     "name": "Genesect 2",
-    "nameEs": "Genesect PiroROM",
+    "nameEs": null,
     "types": [
       "Bicho",
       "Acero"
@@ -145602,7 +145602,7 @@
   {
     "id": "1031",
     "name": "Genesect 3",
-    "nameEs": "Genesect CrioROM",
+    "nameEs": null,
     "types": [
       "Bicho",
       "Acero"
@@ -145867,7 +145867,7 @@
   {
     "id": "1032",
     "name": "Genesect 4",
-    "nameEs": "Genesect FulgoROM",
+    "nameEs": null,
     "types": [
       "Bicho",
       "Acero"
@@ -148588,7 +148588,7 @@
   {
     "id": "1114",
     "name": "Meowstic 1",
-    "nameEs": "Meowstic Hembra",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "—"
@@ -149561,7 +149561,7 @@
   {
     "id": "1115",
     "name": "Aegislash 1",
-    "nameEs": "Aegislash Filo",
+    "nameEs": null,
     "types": [
       "Acero",
       "Fantasma"
@@ -157706,7 +157706,7 @@
   {
     "id": "1116",
     "name": "Pumpkaboo 1",
-    "nameEs": "Pumpkaboo Tamaño Mediano",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -157982,7 +157982,7 @@
   {
     "id": "1117",
     "name": "Pumpkaboo 2",
-    "nameEs": "Pumpkaboo Tamaño Grande",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -158258,7 +158258,7 @@
   {
     "id": "1118",
     "name": "Pumpkaboo 3",
-    "nameEs": "Pumpkaboo Tamaño Extragrande",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -158831,7 +158831,7 @@
   {
     "id": "1119",
     "name": "Gourgeist 1",
-    "nameEs": "Gourgeist Tamaño Mediano",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -159128,7 +159128,7 @@
   {
     "id": "1120",
     "name": "Gourgeist 2",
-    "nameEs": "Gourgeist Tamaño Grande",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -159425,7 +159425,7 @@
   {
     "id": "1121",
     "name": "Gourgeist 3",
-    "nameEs": "Gourgeist Tamaño Extragrande",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Planta"
@@ -161025,7 +161025,7 @@
   {
     "id": "1122",
     "name": "Xerneas 1",
-    "nameEs": "Xerneas Modo Activo",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -161828,7 +161828,7 @@
   {
     "id": "1123",
     "name": "Zygarde 1",
-    "nameEs": "Zygarde 10%",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Tierra"
@@ -162101,7 +162101,7 @@
   {
     "id": "1124",
     "name": "Zygarde 2",
-    "nameEs": "Zygarde 10% (Poder Afín)",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Tierra"
@@ -162374,7 +162374,7 @@
   {
     "id": "1125",
     "name": "Zygarde 3",
-    "nameEs": "Zygarde 50% (Poder Afín)",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Tierra"
@@ -162647,7 +162647,7 @@
   {
     "id": "1126",
     "name": "Zygarde 4",
-    "nameEs": "Zygarde Completo",
+    "nameEs": null,
     "types": [
       "Dragón",
       "Tierra"
@@ -167385,7 +167385,7 @@
   {
     "id": "1131",
     "name": "Rockruff 1",
-    "nameEs": "Rockruff Ritmo Propio",
+    "nameEs": null,
     "types": [
       "Roca",
       "—"
@@ -167882,7 +167882,7 @@
   {
     "id": "1132",
     "name": "Lycanroc 1",
-    "nameEs": "Lycanroc Noche",
+    "nameEs": null,
     "types": [
       "Roca",
       "—"
@@ -168187,7 +168187,7 @@
   {
     "id": "1133",
     "name": "Lycanroc 2",
-    "nameEs": "Lycanroc Crepúsculo",
+    "nameEs": null,
     "types": [
       "Roca",
       "—"
@@ -168718,7 +168718,7 @@
   {
     "id": "1134",
     "name": "Wishiwashi 1",
-    "nameEs": "Wishiwashi Banco",
+    "nameEs": null,
     "types": [
       "Agua",
       "—"
@@ -175773,7 +175773,7 @@
   {
     "id": "1135",
     "name": "Silvally 1",
-    "nameEs": "Silvally Lucha",
+    "nameEs": null,
     "types": [
       "Lucha",
       "—"
@@ -176102,7 +176102,7 @@
   {
     "id": "1136",
     "name": "Silvally 2",
-    "nameEs": "Silvally Volador",
+    "nameEs": null,
     "types": [
       "Volador",
       "—"
@@ -176431,7 +176431,7 @@
   {
     "id": "1137",
     "name": "Silvally 3",
-    "nameEs": "Silvally Veneno",
+    "nameEs": null,
     "types": [
       "Veneno",
       "—"
@@ -176760,7 +176760,7 @@
   {
     "id": "1138",
     "name": "Silvally 4",
-    "nameEs": "Silvally Tierra",
+    "nameEs": null,
     "types": [
       "Tierra",
       "—"
@@ -177089,7 +177089,7 @@
   {
     "id": "1139",
     "name": "Silvally 5",
-    "nameEs": "Silvally Roca",
+    "nameEs": null,
     "types": [
       "Roca",
       "—"
@@ -177418,7 +177418,7 @@
   {
     "id": "1140",
     "name": "Silvally 6",
-    "nameEs": "Silvally Bicho",
+    "nameEs": null,
     "types": [
       "Bicho",
       "—"
@@ -177747,7 +177747,7 @@
   {
     "id": "1141",
     "name": "Silvally 7",
-    "nameEs": "Silvally Fantasma",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "—"
@@ -178076,7 +178076,7 @@
   {
     "id": "1142",
     "name": "Silvally 8",
-    "nameEs": "Silvally Acero",
+    "nameEs": null,
     "types": [
       "Acero",
       "—"
@@ -178405,7 +178405,7 @@
   {
     "id": "1143",
     "name": "Silvally 9",
-    "nameEs": "Silvally Fuego",
+    "nameEs": null,
     "types": [
       "Fuego",
       "—"
@@ -178734,7 +178734,7 @@
   {
     "id": "1144",
     "name": "Silvally 10",
-    "nameEs": "Silvally Agua",
+    "nameEs": null,
     "types": [
       "Agua",
       "—"
@@ -179063,7 +179063,7 @@
   {
     "id": "1145",
     "name": "Silvally 11",
-    "nameEs": "Silvally Planta",
+    "nameEs": null,
     "types": [
       "Planta",
       "—"
@@ -179392,7 +179392,7 @@
   {
     "id": "1146",
     "name": "Silvally 12",
-    "nameEs": "Silvally Eléctrico",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "—"
@@ -179721,7 +179721,7 @@
   {
     "id": "1147",
     "name": "Silvally 13",
-    "nameEs": "Silvally Psíquico",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "—"
@@ -180050,7 +180050,7 @@
   {
     "id": "1148",
     "name": "Silvally 14",
-    "nameEs": "Silvally Hielo",
+    "nameEs": null,
     "types": [
       "Hielo",
       "—"
@@ -180379,7 +180379,7 @@
   {
     "id": "1149",
     "name": "Silvally 15",
-    "nameEs": "Silvally Dragón",
+    "nameEs": null,
     "types": [
       "Dragón",
       "—"
@@ -180708,7 +180708,7 @@
   {
     "id": "1150",
     "name": "Silvally 16",
-    "nameEs": "Silvally Siniestro",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "—"
@@ -181037,7 +181037,7 @@
   {
     "id": "1151",
     "name": "Silvally 17",
-    "nameEs": "Silvally Hada",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -182296,7 +182296,7 @@
   {
     "id": "1165",
     "name": "Mimikyu 1",
-    "nameEs": "Mimikyu Descubierto",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "Hada"
@@ -188126,7 +188126,7 @@
   {
     "id": "1166",
     "name": "Necrozma 1",
-    "nameEs": "Necrozma Melena Crepuscular",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Acero"
@@ -188451,7 +188451,7 @@
   {
     "id": "1167",
     "name": "Necrozma 2",
-    "nameEs": "Necrozma Alas del Alba",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Fantasma"
@@ -189069,7 +189069,7 @@
   {
     "id": "1168",
     "name": "Magearna 1",
-    "nameEs": "Magearna Color Original",
+    "nameEs": null,
     "types": [
       "Acero",
       "Hada"
@@ -199852,7 +199852,7 @@
   {
     "id": "1169",
     "name": "Cramorant 1",
-    "nameEs": "Cramorant Tragamisil",
+    "nameEs": null,
     "types": [
       "Volador",
       "Agua"
@@ -200106,7 +200106,7 @@
   {
     "id": "1170",
     "name": "Cramorant 2",
-    "nameEs": "Cramorant Tragapikachu",
+    "nameEs": null,
     "types": [
       "Volador",
       "Agua"
@@ -201247,7 +201247,7 @@
   {
     "id": "1171",
     "name": "Toxtricity 1",
-    "nameEs": "Toxtricity Grave",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Veneno"
@@ -202693,7 +202693,7 @@
   {
     "id": "1172",
     "name": "Sinistea 1",
-    "nameEs": "Sinistea Genuino",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "—"
@@ -203113,7 +203113,7 @@
   {
     "id": "1173",
     "name": "Polteageist 1",
-    "nameEs": "Polteageist Genuino",
+    "nameEs": null,
     "types": [
       "Fantasma",
       "—"
@@ -207368,7 +207368,7 @@
   {
     "id": "1174",
     "name": "Alcremie 1",
-    "nameEs": "Alcremie Rubí Cremoso",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -207609,7 +207609,7 @@
   {
     "id": "1175",
     "name": "Alcremie 2",
-    "nameEs": "Alcremie Caramelo Mixto",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -207850,7 +207850,7 @@
   {
     "id": "1176",
     "name": "Alcremie 3",
-    "nameEs": "Alcremie Menta",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -208091,7 +208091,7 @@
   {
     "id": "1177",
     "name": "Alcremie 4",
-    "nameEs": "Alcremie Limón",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -208332,7 +208332,7 @@
   {
     "id": "1178",
     "name": "Alcremie 5",
-    "nameEs": "Alcremie Salado",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -208573,7 +208573,7 @@
   {
     "id": "1179",
     "name": "Alcremie 6",
-    "nameEs": "Alcremie Triplesabor",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -208814,7 +208814,7 @@
   {
     "id": "1180",
     "name": "Alcremie 7",
-    "nameEs": "Alcremie Caramelo Mixto (Lazo)",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -209055,7 +209055,7 @@
   {
     "id": "1181",
     "name": "Alcremie 8",
-    "nameEs": "Alcremie Caramelo Mixto (Estrella)",
+    "nameEs": null,
     "types": [
       "Hada",
       "—"
@@ -210664,7 +210664,7 @@
   {
     "id": "1182",
     "name": "Eiscue 1",
-    "nameEs": "Eiscue Cara Deshielo",
+    "nameEs": null,
     "types": [
       "Hielo",
       "—"
@@ -211192,7 +211192,7 @@
   {
     "id": "1183",
     "name": "Indeedee 1",
-    "nameEs": "Indeedee Hembra",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Normal"
@@ -211804,7 +211804,7 @@
   {
     "id": "1184",
     "name": "Morpeko 1",
-    "nameEs": "Morpeko Voraz",
+    "nameEs": null,
     "types": [
       "Eléctrico",
       "Siniestro"
@@ -214994,7 +214994,7 @@
   {
     "id": "1185",
     "name": "Zacian 1",
-    "nameEs": "Zacian Espada Suprema",
+    "nameEs": null,
     "types": [
       "Hada",
       "Acero"
@@ -215532,7 +215532,7 @@
   {
     "id": "1186",
     "name": "Zamazenta 1",
-    "nameEs": "Zamazenta Escudo Supremo",
+    "nameEs": null,
     "types": [
       "Lucha",
       "Acero"
@@ -216038,7 +216038,7 @@
   {
     "id": "1187",
     "name": "Eternatus 1",
-    "nameEs": "Eternatus Dinamax Infinito",
+    "nameEs": null,
     "types": [
       "Veneno",
       "Dragón"
@@ -216848,7 +216848,7 @@
   {
     "id": "1188",
     "name": "Urshifu 1",
-    "nameEs": "Urshifu Estilo Brusco",
+    "nameEs": null,
     "types": [
       "Lucha",
       "Agua"
@@ -217498,7 +217498,7 @@
   {
     "id": "1189",
     "name": "Zarude 1",
-    "nameEs": "Zarude Papá",
+    "nameEs": null,
     "types": [
       "Siniestro",
       "Planta"
@@ -219004,7 +219004,7 @@
   {
     "id": "1190",
     "name": "Calyrex 1",
-    "nameEs": "Calyrex Jinete Glacial",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Hielo"
@@ -219481,7 +219481,7 @@
   {
     "id": "1191",
     "name": "Calyrex 2",
-    "nameEs": "Calyrex Jinete Espectral",
+    "nameEs": null,
     "types": [
       "Psíquico",
       "Fantasma"

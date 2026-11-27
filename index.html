@@ -129,17 +129,26 @@
     .info-cell { background: var(--bg-card-alt); padding: 10px; border-radius: 8px; border: 1px solid var(--border); }
     .info-cell span { display: block; font-size: 0.72rem; color: var(--text-muted); }
 
-    /* EVOLUCIONES CLICABLES */
-    .evo-list { display: flex; flex-direction: column; gap: 8px; margin-top: 8px; }
+    /* EVOLUCIONES Y PREEVOLUCIONES CLICABLES */
+    .evo-group-label {
+      font-size: 0.74rem; text-transform: uppercase; letter-spacing: 0.04em;
+      color: var(--text-muted); margin-top: 10px; margin-bottom: 4px; font-weight: 700;
+    }
+    .evo-list { display: flex; flex-direction: column; gap: 8px; margin-top: 4px; }
     .evo-card-btn {
-      display: flex; align-items: center; justify-content: space-between;
+      display: flex; align-items: center; justify-content: space-between; gap: 10px;
       background: var(--bg-card-alt); padding: 10px 14px; border-radius: 10px;
       border: 1px solid var(--border); color: var(--text-main); cursor: pointer;
       text-align: left; transition: 0.15s;
     }
     .evo-card-btn:hover { border-color: var(--accent); background: var(--accent-soft); }
     .evo-target-name { font-weight: 700; color: var(--accent); font-size: 0.95rem; }
-    .evo-cond { font-size: 0.8rem; color: var(--text-muted); }
+    .evo-cond { font-size: 0.8rem; color: var(--text-muted); margin-top: 2px; }
+    .evo-badge {
+      font-size: 0.7rem; padding: 2px 7px; border-radius: 999px;
+      background: rgba(148, 163, 184, 0.15); color: var(--text-main); font-weight: 600;
+      white-space: nowrap;
+    }
 
     /* SECCIONES DE MOVIMIENTOS */
     .tabs-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 14px; }
@@ -166,6 +175,7 @@
     .cat-physical { background: #c2410c; }
     .cat-special { background: #1d4ed8; }
     .cat-status { background: #475569; }
+    .move-sub-en { display: block; font-size: 0.72rem; color: var(--text-muted); font-weight: 400; }
     .move-desc-cell { color: var(--text-muted); font-size: 0.8rem; max-width: 360px; line-height: 1.35; }
   </style>
 </head>
@@ -176,7 +186,7 @@
         <h1>Divine Sword Pokédex</h1>
         <span id="totalBadge">0</span>
       </div>
-      <input id="searchInput" class="search-box" type="text" placeholder="Buscar Pokémon, #ID o habilidad..." />
+      <input id="searchInput" class="search-box" type="text" placeholder="Buscar Pokémon, #ID, habilidad o movimiento..." />
       <div class="filters-grid">
         <select id="typeFilter" class="filter-select">
           <option value="">Todos los tipos</option>
@@ -209,7 +219,12 @@
       'Electric': 'Eléctrico', 'Normal': 'Normal', 'Ice': 'Hielo', 'Fighting': 'Lucha',
       'Ground': 'Tierra', 'Flying': 'Volador', 'Psychic': 'Psíquico', 'Bug': 'Bicho',
       'Rock': 'Roca', 'Ghost': 'Fantasma', 'Dragon': 'Dragón', 'Dark': 'Siniestro',
-      'Steel': 'Acero', 'Fairy': 'Hada'
+      'Steel': 'Acero', 'Fairy': 'Hada',
+      'grass': 'Planta', 'poison': 'Veneno', 'fire': 'Fuego', 'water': 'Agua',
+      'electric': 'Eléctrico', 'normal': 'Normal', 'ice': 'Hielo', 'fighting': 'Lucha',
+      'ground': 'Tierra', 'flying': 'Volador', 'psychic': 'Psíquico', 'bug': 'Bicho',
+      'rock': 'Roca', 'ghost': 'Fantasma', 'dragon': 'Dragón', 'dark': 'Siniestro',
+      'steel': 'Acero', 'fairy': 'Hada'
     };
 
     const TYPE_COLORS = {
@@ -220,19 +235,95 @@
       'Acero': '#60A1B8', 'Hada': '#EF70EF'
     };
 
+    // Traducciones frecuentes y de respaldo para movimientos en español
+    const MOVE_NAME_ES_FALLBACK = {
+      'tackle': 'Placaje', 'scratch': 'Arañazo', 'pound': 'Destructor', 'growl': 'Gruñido',
+      'leer': 'Malicioso', 'tail whip': 'Látigo', 'vine whip': 'Látigo Cepa', 'razor leaf': 'Hoja Afilada',
+      'solar beam': 'Rayo Solar', 'ember': 'Ascuas', 'flamethrower': 'Lanzallamas', 'fire blast': 'Llamarada',
+      'water gun': 'Pistola Agua', 'hydro pump': 'Hidrobomba', 'surf': 'Surf', 'bubble beam': 'Rayo Burbuja',
+      'thunder shock': 'Impactrueno', 'thunderbolt': 'Rayo', 'thunder': 'Trueno', 'quick attack': 'Ataque Rápido',
+      'hyper beam': 'Hiperrayo', 'earthquake': 'Terremoto', 'dig': 'Excavar', 'toxic': 'Tóxico',
+      'confusion': 'Confusión', 'psychic': 'Psíquico', 'shadow ball': 'Bola Sombra', 'night shade': 'Tinieblas',
+      'ice beam': 'Rayo Hielo', 'blizzard': 'Ventisca', 'dragon rage': 'Furia Dragón', 'dragon claw': 'Garra Dragón',
+      'iron tail': 'Cola Férrea', 'crunch': 'Triturar', 'bite': 'Mordisco', 'body slam': 'Golpe Cuerpo',
+      'double-edge': 'Doble Filo', 'double edge': 'Doble Filo', 'sleeptalk': 'Sonámbulo', 'sleep talk': 'Sonámbulo',
+      'rest': 'Descanso', 'protect': 'Protección', 'substitute': 'Sustituto', 'swords dance': 'Danza Espada',
+      'agility': 'Agilidad', 'recover': 'Recuperación', 'synthesis': 'Síntesis', 'roost': 'Respiro',
+      'close combat': 'A Bocajarro', 'aura sphere': 'Esfera Aural', 'flash cannon': 'Foco Resplandor',
+      'play rough': 'Carantoña', 'dazzling gleam': 'Brillo Mágico', 'moonblast': 'Fuerza Lunar',
+      'uturn': 'Ida y Vuelta', 'u-turn': 'Ida y Vuelta', 'volt switch': 'Voltiocambio', 'stealth rock': 'Trampa Rocas'
+    };
+
+    // Objetos evolutivos habituales por ID numérico o nombre
+    const EVO_ITEMS_ES = {
+      '80': 'Piedra Solar',
+      '81': 'Piedra Luna',
+      '82': 'Piedra Fuego',
+      '83': 'Piedra Trueno',
+      '84': 'Piedra Agua',
+      '85': 'Piedra Hoja',
+      '86': 'Piedra Brillante',
+      '87': 'Piedra Alba',
+      '88': 'Piedra Noche',
+      'sun stone': 'Piedra Solar',
+      'moon stone': 'Piedra Luna',
+      'fire stone': 'Piedra Fuego',
+      'thunder stone': 'Piedra Trueno',
+      'water stone': 'Piedra Agua',
+      'leaf stone': 'Piedra Hoja',
+      'shiny stone': 'Piedra Brillante',
+      'dawn stone': 'Piedra Alba',
+      'dusk stone': 'Piedra Noche'
+    };
+
     const moveDetailsCache = {};
     const abilityDetailsCache = {};
 
     let allPokemon = [];
+    let pokemonById = new Map();
+    let pokemonByName = new Map();
+    let preEvoMap = new Map(); // targetId -> array de { sourcePoke, conditionText, raw }
     let filteredPokemon = [];
     let selectedId = '001';
     let activeMoveTab = 'level';
 
     function slugifyApi(name) {
-      return name.toLowerCase()
+      return String(name || '')
+        .toLowerCase()
         .replace(/['’]/g, '')
         .replace(/[^a-z0-9]+/g, '-')
         .replace(/^-|-$/g, '');
+    }
+
+    function translateEnglishEffectSnippet(text) {
+      if (!text) return '—';
+      let out = text.replace(/\$effect_chance/g, '').trim();
+      const replacements = [
+        [/Inflicts regular damage\.?/gi, 'Inflige daño normal.'],
+        [/Inflicts regular damage with no additional effect\.?/gi, 'Inflige daño normal sin efectos secundarios.'],
+        [/Has a (\d+)% chance to (.+?)\./gi, (_, pct, rest) => `Tiene un ${pct}% de probabilidad de ${rest.toLowerCase()}.`],
+        [/paralyze the target/gi, 'paralizar al objetivo'],
+        [/burn the target/gi, 'quemar al objetivo'],
+        [/poison the target/gi, 'envenenar al objetivo'],
+        [/badly poison the target/gi, 'envenenar gravemente al objetivo'],
+        [/freeze the target/gi, 'congelar al objetivo'],
+        [/confuse the target/gi, 'confundir al objetivo'],
+        [/flinch the target/gi, 'hacer retroceder al objetivo'],
+        [/lower the target's Attack/gi, 'bajar el Ataque del objetivo'],
+        [/lower the target's Defense/gi, 'bajar la Defensa del objetivo'],
+        [/lower the target's Speed/gi, 'bajar la Velocidad del objetivo'],
+        [/raise the user's Attack/gi, 'subir el Ataque del usuario'],
+        [/raise the user's Defense/gi, 'subir la Defensa del usuario'],
+        [/raise the user's Speed/gi, 'subir la Velocidad del usuario'],
+        [/raise the user's Special Attack/gi, 'subir el Ataque Especial del usuario'],
+        [/raise the user's Special Defense/gi, 'subir la Defensa Especial del usuario'],
+        [/User recovers half its max HP\.?/gi, 'El usuario recupera la mitad de sus PS máximos.'],
+        [/User is immune to damage this turn\.?/gi, 'Protege al usuario de ataques durante este turno.']
+      ];
+      for (const [rx, rep] of replacements) {
+        out = out.replace(rx, rep);
+      }
+      return out.replace(/\s+/g, ' ').trim();
     }
 
     async function fetchAbilityDescription(abilityRaw) {
@@ -251,7 +342,7 @@
 
         const desc = esEntry
           ? esEntry.flavor_text.replace(/\s+/g, ' ')
-          : (enEffect ? enEffect.short_effect : 'Sin descripción disponible.');
+          : (enEffect ? translateEnglishEffectSnippet(enEffect.short_effect) : 'Sin descripción disponible.');
 
         const result = { name: `${esName} (${cleanName})`, desc };
         abilityDetailsCache[cleanName] = result;
@@ -262,7 +353,10 @@
     }
 
     async function fetchMoveDetails(moveName) {
-      if (moveDetailsCache[moveName]) return moveDetailsCache[moveName];
+      const cacheKey = String(moveName || '').trim().toLowerCase();
+      if (moveDetailsCache[cacheKey]) return moveDetailsCache[cacheKey];
+
+      const fallbackEsName = MOVE_NAME_ES_FALLBACK[cacheKey] || moveName;
 
       try {
         const slug = slugifyApi(moveName);
@@ -270,16 +364,25 @@
         if (!res.ok) throw new Error('No encontrado');
         const data = await res.json();
 
-        const typeEs = TYPE_MAP_ES[data.type.name.charAt(0).toUpperCase() + data.type.name.slice(1)] || 'Normal';
+        const typeEs = TYPE_MAP_ES[data.type.name] || TYPE_MAP_ES[data.type.name.charAt(0).toUpperCase() + data.type.name.slice(1)] || 'Normal';
         const dmgClass = data.damage_class ? data.damage_class.name : 'status';
-        const esFlavor = data.flavor_text_entries.find(e => e.language.name === 'es');
-        const enEffect = data.effect_entries.find(e => e.language.name === 'en');
+        const esNameObj = (data.names || []).find(n => n.language.name === 'es');
+        const nameEs = (esNameObj && esNameObj.name) ? esNameObj.name : fallbackEsName;
 
-        let desc = esFlavor
-          ? esFlavor.flavor_text.replace(/\s+/g, ' ')
-          : (enEffect ? enEffect.short_effect.replace(/\$effect_chance/g, data.effect_chance ?? '') : '—');
+        const esFlavor = (data.flavor_text_entries || []).find(e => e.language.name === 'es');
+        const enEffect = (data.effect_entries || []).find(e => e.language.name === 'en');
+
+        let desc = '—';
+        if (esFlavor) {
+          desc = esFlavor.flavor_text.replace(/\s+/g, ' ');
+        } else if (enEffect) {
+          const rawEffect = enEffect.short_effect.replace(/\$effect_chance/g, data.effect_chance ?? '');
+          desc = translateEnglishEffectSnippet(rawEffect);
+        }
 
         const info = {
+          nameEs,
+          nameEn: moveName,
           type: typeEs,
           category: dmgClass,
           power: data.power ?? '—',
@@ -287,12 +390,141 @@
           pp: data.pp ?? '—',
           desc
         };
-        moveDetailsCache[moveName] = info;
+        moveDetailsCache[cacheKey] = info;
         return info;
       } catch {
-        const fallback = { type: 'Normal', category: 'status', power: '—', accuracy: '—', pp: '—', desc: 'Sin datos adicionales.' };
-        moveDetailsCache[moveName] = fallback;
+        const fallback = {
+          nameEs: fallbackEsName,
+          nameEn: moveName,
+          type: 'Normal',
+          category: 'status',
+          power: '—',
+          accuracy: '—',
+          pp: '—',
+          desc: 'Sin datos adicionales.'
+        };
+        moveDetailsCache[cacheKey] = fallback;
         return fallback;
+      }
+    }
+
+    function formatEvolutionMethod(methodRaw, paramRaw, fullRawStr) {
+      const m = String(methodRaw || '').trim().toLowerCase();
+      const p = String(paramRaw || '').trim();
+      const pLower = p.toLowerCase();
+
+      if (!m && !p) {
+        return fullRawStr ? `Método: ${fullRawStr}` : 'Evolución disponible';
+      }
+
+      if (m === 'level' || m === 'nivel') {
+        return p ? `Nivel ${p}` : 'Por nivel';
+      }
+      if (m === 'item' || m === 'objeto' || m === 'stone') {
+        const itemEs = EVO_ITEMS_ES[pLower] || EVO_ITEMS_ES[p] || null;
+        if (itemEs && /^\d+$/.test(p)) {
+          return `Objeto: ${itemEs} [${p}]`;
+        }
+        if (itemEs) {
+          return `Objeto: ${itemEs}`;
+        }
+        return p ? `Objeto [${p}]` : 'Con objeto';
+      }
+      if (m === 'happiness' || m === 'friendship' || m === 'amistad') {
+        return p ? `Amistad (${p})` : 'Por amistad';
+      }
+      if (m === 'trade' || m === 'intercambio') {
+        return p ? `Intercambio (${p})` : 'Por intercambio';
+      }
+      if (m === 'level_day' || m === 'day') {
+        return p ? `Nivel ${p} (Día)` : 'De día';
+      }
+      if (m === 'level_night' || m === 'night') {
+        return p ? `Nivel ${p} (Noche)` : 'De noche';
+      }
+
+      const capMethod = methodRaw ? String(methodRaw).trim() : '';
+      if (capMethod && p) return `${capMethod}: ${p}`;
+      return capMethod || p || 'Evolución';
+    }
+
+    function parseEvolutionEntry(ev) {
+      if (typeof ev === 'object' && ev !== null) {
+        const targetId = ev.targetId ? String(ev.targetId).padStart(3, '0') : null;
+        const targetPoke = targetId ? pokemonById.get(targetId) : null;
+        const targetName = ev.targetName || (targetPoke ? (targetPoke.nameEs || targetPoke.name) : (ev.raw || 'Evolución'));
+        const rawStr = ev.raw || [targetName, ev.method, ev.param].filter(Boolean).join(', ');
+        const conditionText = ev.condition || formatEvolutionMethod(ev.method, ev.param, rawStr);
+        return { targetId, targetName, conditionText, rawStr };
+      }
+
+      const rawStr = String(ev || '').trim();
+      if (!rawStr) {
+        return { targetId: null, targetName: 'Evolución', conditionText: 'Sin detalles', rawStr: '' };
+      }
+
+      // Soporta formatos tipo "RAICHU, Item, 83" o "IVYSAUR, Level, 16" o "RAICHU (Nivel 25)"
+      const commaParts = rawStr.split(',').map(s => s.trim()).filter(Boolean);
+      let candidateName = commaParts[0] || rawStr;
+      let method = commaParts[1] || '';
+      let param = commaParts[2] || '';
+
+      // Si no hay comas, intentar extraer paréntesis como condición
+      if (commaParts.length === 1) {
+        const parenMatch = rawStr.match(/^(.+?)\s*\((.+)\)$/);
+        if (parenMatch) {
+          candidateName = parenMatch[1].trim();
+          const inside = parenMatch[2].trim();
+          const lvlMatch = inside.match(/^(?:level|lvl|nivel)\s*[:#]?\s*(.+)$/i);
+          const itemMatch = inside.match(/^(?:item|objeto|stone)\s*[:#]?\s*(.+)$/i);
+          if (lvlMatch) {
+            method = 'level';
+            param = lvlMatch[1].trim();
+          } else if (itemMatch) {
+            method = 'item';
+            param = itemMatch[1].trim();
+          } else {
+            method = inside;
+          }
+        }
+      }
+
+      const matchedPoke = pokemonByName.get(candidateName.toLowerCase());
+      const targetId = matchedPoke ? matchedPoke.id : null;
+      const targetName = matchedPoke ? (matchedPoke.nameEs || matchedPoke.name) : candidateName;
+      const conditionText = formatEvolutionMethod(method, param, commaParts.length > 1 ? rawStr : '');
+
+      return { targetId, targetName, conditionText, rawStr };
+    }
+
+    function rebuildEvolutionGraph() {
+      pokemonById = new Map();
+      pokemonByName = new Map();
+      preEvoMap = new Map();
+
+      for (const p of allPokemon) {
+        pokemonById.set(p.id, p);
+        pokemonByName.set(p.name.toLowerCase(), p);
+        if (p.nameEs) {
+          pokemonByName.set(p.nameEs.toLowerCase(), p);
+        }
+      }
+
+      for (const p of allPokemon) {
+        p.parsedEvos = (p.evos || []).map(parseEvolutionEntry);
+        for (const evo of p.parsedEvos) {
+          if (evo.targetId && evo.targetId !== p.id) {
+            if (!preEvoMap.has(evo.targetId)) {
+              preEvoMap.set(evo.targetId, []);
+            }
+            preEvoMap.get(evo.targetId).push({
+              sourceId: p.id,
+              sourceName: p.nameEs || p.name,
+              conditionText: evo.conditionText,
+              rawStr: evo.rawStr
+            });
+          }
+        }
       }
     }
 
@@ -317,6 +549,7 @@
         weight: raw.weight || '—',
         color: raw.color || '—',
         evos: Array.isArray(raw.evos) ? raw.evos : [],
+        parsedEvos: [],
         moves: raw.moves || { level: [], egg: [], tm: [], tr: [], tutor: [] }
       };
     }
@@ -348,6 +581,22 @@
       });
     }
 
+    function matchesMoveQuery(p, q) {
+      const buckets = Object.values(p.moves || {});
+      for (const list of buckets) {
+        if (!Array.isArray(list)) continue;
+        for (const mv of list) {
+          const mName = String(mv.name || '').toLowerCase();
+          if (mName.includes(q)) return true;
+          const esFallback = (MOVE_NAME_ES_FALLBACK[mName] || '').toLowerCase();
+          if (esFallback.includes(q)) return true;
+          const cached = moveDetailsCache[mName];
+          if (cached && String(cached.nameEs || '').toLowerCase().includes(q)) return true;
+        }
+      }
+      return false;
+    }
+
     function applyFilters() {
       const q = document.getElementById('searchInput').value.trim().toLowerCase();
       const typeVal = document.getElementById('typeFilter').value;
@@ -356,10 +605,13 @@
       filteredPokemon = allPokemon.filter(p => {
         if (typeVal && p.t1 !== typeVal && p.t2 !== typeVal) return false;
         if (q) {
-          return p.id.toLowerCase().includes(q) ||
+          const basicMatch =
+            p.id.toLowerCase().includes(q) ||
             p.name.toLowerCase().includes(q) ||
             (p.nameEs && p.nameEs.toLowerCase().includes(q)) ||
             p.abilities.toLowerCase().includes(q);
+          if (basicMatch) return true;
+          return matchesMoveQuery(p, q);
         }
         return true;
       });
@@ -400,7 +652,7 @@
     }
 
     function selectPokemon(id) {
-      if (!allPokemon.some(x => x.id === id)) return;
+      if (!pokemonById.has(id)) return;
       selectedId = id;
       renderSidebar();
       renderDetail();
@@ -429,10 +681,13 @@
 
         const catLabel = info.category === 'physical' ? 'Físico' : info.category === 'special' ? 'Especial' : 'Estado';
         const catClass = `cat-${info.category}`;
+        const showEnSub = info.nameEs.toLowerCase() !== String(mv.name).toLowerCase()
+          ? `<span class="move-sub-en">${mv.name}</span>`
+          : '';
 
         row.innerHTML = `
           <td><span class="lvl-tag">${mv.req}</span></td>
-          <td><strong>${mv.name}</strong></td>
+          <td><strong>${info.nameEs}</strong>${showEnSub}</td>
           <td><span class="mini-badge" style="background:${TYPE_COLORS[info.type] || '#555'}">${info.type}</span></td>
           <td><span class="cat-pill ${catClass}">${catLabel}</span></td>
           <td><strong>${info.power}</strong></td>
@@ -447,9 +702,62 @@
       renderDetail();
     }
 
+    function renderEvolutionSection(p) {
+      const preEvos = preEvoMap.get(p.id) || [];
+      const nextEvos = p.parsedEvos || [];
+
+      let html = '';
+
+      if (preEvos.length > 0) {
+        html += `<div class="evo-group-label">Preevolución / Origen</div><div class="evo-list">`;
+        html += preEvos.map(pre => `
+          <button class="evo-card-btn" onclick="selectPokemon('${pre.sourceId}')">
+            <div>
+              <div class="evo-target-name">← ${pre.sourceName} (#${pre.sourceId})</div>
+              <div class="evo-cond">Evoluciona a ${p.nameEs || p.name}: <strong>${pre.conditionText}</strong></div>
+            </div>
+            <span class="evo-badge">Ir a preevo →</span>
+          </button>
+        `).join('');
+        html += `</div>`;
+      }
+
+      if (nextEvos.length > 0) {
+        html += `<div class="evo-group-label">Evoluciones</div><div class="evo-list">`;
+        html += nextEvos.map(ev => {
+          if (ev.targetId) {
+            return `
+              <button class="evo-card-btn" onclick="selectPokemon('${ev.targetId}')">
+                <div>
+                  <div class="evo-target-name">→ ${ev.targetName} (#${ev.targetId})</div>
+                  <div class="evo-cond">Método: <strong>${ev.conditionText}</strong></div>
+                </div>
+                <span class="evo-badge">Ver ficha →</span>
+              </button>
+            `;
+          }
+          return `
+            <div class="evo-card-btn" style="cursor:default;">
+              <div>
+                <div class="evo-target-name">→ ${ev.targetName}</div>
+                <div class="evo-cond">Método: <strong>${ev.conditionText}</strong></div>
+              </div>
+            </div>
+          `;
+        }).join('');
+        html += `</div>`;
+      }
+
+      if (!preEvos.length && !nextEvos.length) {
+        html = `<p style="color:var(--text-muted); font-size:0.85rem;">No tiene preevoluciones ni evoluciones registradas.</p>`;
+      }
+
+      return html;
+    }
+
     function renderDetail() {
       const container = document.getElementById('detailContainer');
-      const p = allPokemon.find(x => x.id === selectedId) || filteredPokemon[0] || allPokemon[0];
+      const p = pokemonById.get(selectedId) || filteredPokemon[0] || allPokemon[0];
       if (!p) return;
 
       const curIdx = filteredPokemon.findIndex(x => x.id === p.id);
@@ -475,25 +783,7 @@
         ? abilitiesList.map(ab => `<button class="ability-btn" onclick="showAbilityInfo(this, '${ab.replace(/'/g, "\\'")}')">✨ ${ab}</button>`).join('')
         : '<span style="color:var(--text-muted);">Sin habilidades registradas</span>';
 
-      const evosHtml = p.evos.length
-        ? p.evos.map(ev => {
-            const rawStr = typeof ev === 'string' ? ev : ev.raw;
-            const targetId = typeof ev === 'object' ? ev.targetId : null;
-            const targetName = typeof ev === 'object' ? ev.targetName : rawStr;
-            if (targetId) {
-              return `
-                <button class="evo-card-btn" onclick="selectPokemon('${targetId}')">
-                  <div>
-                    <div class="evo-target-name">→ ${targetName} (#${targetId})</div>
-                    <div class="evo-cond">${rawStr}</div>
-                  </div>
-                  <span style="color:var(--accent); font-weight:700;">Ver ficha →</span>
-                </button>
-              `;
-            }
-            return `<div class="evo-card-btn" style="cursor:default;"><div class="evo-cond">${rawStr}</div></div>`;
-          }).join('')
-        : '<p style="color:var(--text-muted); font-size:0.85rem;">No tiene evoluciones posteriores.</p>';
+      const evosHtml = renderEvolutionSection(p);
 
       const moveCategories = [
         { key: 'level', label: `Por Nivel (${(p.moves.level || []).length})` },
@@ -522,7 +812,7 @@
               ${currentMoves.map((mv, idx) => `
                 <tr id="move-row-${idx}">
                   <td><span class="lvl-tag">${mv.req}</span></td>
-                  <td><strong>${mv.name}</strong></td>
+                  <td><strong>${MOVE_NAME_ES_FALLBACK[String(mv.name || '').toLowerCase()] || mv.name}</strong></td>
                   <td colspan="5" style="color:var(--text-muted); font-size:0.8rem;">Cargando detalles...</td>
                 </tr>
               `).join('')}
@@ -534,11 +824,11 @@
       container.innerHTML = `
         <div class="top-nav">
           <div class="top-nav-group">
-            ${prevPoke ? `<button class="nav-btn" onclick="selectPokemon('${prevPoke.id}')">← #${prevPoke.id} ${prevPoke.name}</button>` : ''}
+            ${prevPoke ? `<button class="nav-btn" onclick="selectPokemon('${prevPoke.id}')">← #${prevPoke.id} ${prevPoke.nameEs || prevPoke.name}</button>` : ''}
             <a href="entrenadores.html" class="nav-btn nav-btn-trainers">⚔️ Entrenadores</a>
           </div>
           <div class="top-nav-group">
-            ${nextPoke ? `<button class="nav-btn" onclick="selectPokemon('${nextPoke.id}')">#${nextPoke.id} ${nextPoke.name} →</button>` : ''}
+            ${nextPoke ? `<button class="nav-btn" onclick="selectPokemon('${nextPoke.id}')">#${nextPoke.id} ${nextPoke.nameEs || nextPoke.name} →</button>` : ''}
           </div>
         </div>
 
@@ -573,7 +863,7 @@
               <div class="info-cell"><span>ID Interno</span><strong>#${p.id}</strong></div>
             </div>
             <div class="card-title" style="margin-top:16px;"><span>Cadena Evolutiva (clic para ir)</span></div>
-            <div class="evo-list">${evosHtml}</div>
+            ${evosHtml}
           </section>
         </div>
 
@@ -628,6 +918,8 @@
 
       const list = Array.isArray(rawData) ? rawData : (rawData.pokemon || []);
       allPokemon = list.map(normalizeEntry);
+      rebuildEvolutionGraph();
+
       selectedId = allPokemon[0] ? allPokemon[0].id : '001';
       document.getElementById('totalBadge').textContent = allPokemon.length;
 
